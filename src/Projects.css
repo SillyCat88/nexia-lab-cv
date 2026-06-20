@@ -10,10 +10,9 @@
 ========================= */
 
 .bubble-chart {
-  width: 100%;
-  min-height: 420px;
-
   position: relative;
+  width: 100%;
+  min-height: 520px;
 
   display: flex;
   justify-content: center;
@@ -23,17 +22,20 @@
 
   /* легкий "dashboard feel" фон */
   background: rgba(255, 255, 255, 0.02);
+  overflow: hidden;
 }
 
 /* майбутні bubbles */
 .bubble {
   position: absolute;
+
   border-radius: 50%;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
 
   /* м’який glass/bubble ефект */
@@ -44,15 +46,14 @@
   );
 
   backdrop-filter: blur(6px);
-
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .bubble:hover {
   transform: scale(1.08);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* =========================
