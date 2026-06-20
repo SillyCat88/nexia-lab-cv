@@ -1,0 +1,45 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --bg: #0f1115;
+  --surface: #161a22;
+  --surface-2: #1c2230;
+  --text: #eaeaea;
+  --muted: #a0a0a0;
+  --accent: #ff7a59;   /* головний акцент */
+  --accent-2: #ffd84d; /* другий акцент (для підсвіток) */
+  --border: #2a2f3a;
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+}

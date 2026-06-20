@@ -1,0 +1,173 @@
+ .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 80px;
+}
+
+/* =========================
+   1. BUBBLE CHART SECTION
+========================= */
+
+.bubble-chart {
+  width: 100%;
+  min-height: 420px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 24px;
+
+  /* легкий "dashboard feel" фон */
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* майбутні bubbles */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  /* м’який glass/bubble ефект */
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.08)
+  );
+
+  backdrop-filter: blur(6px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.bubble:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   2. EXPLORER SECTION
+========================= */
+
+.explorer {
+  width: 100%;
+
+  padding: 24px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  /* “Jira / Notion card” feel */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.explorer-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 12px;
+
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.explorer-label {
+  opacity: 0.6;
+}
+
+.explorer-value {
+  opacity: 0.95;
+}
+
+/* =========================
+   3. SPACER
+========================= */
+
+.spacer {
+  height: 20px;
+}
+
+/* =========================
+   4. STATS CARDS SECTION
+========================= */
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+
+  margin-top: 10px;
+}
+
+.stat-card {
+  padding: 18px;
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  text-align: left;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.stat-label {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 6px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .stats-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bubble-chart {
+    min-height: 340px;
+  }
+
+  .explorer-row {
+    grid-template-columns: 140px 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    gap: 32px;
+  }
+
+  .explorer {
+    padding: 16px;
+  }
+
+  .bubble-chart {
+    min-height: 280px;
+  }
+}
