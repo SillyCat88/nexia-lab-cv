@@ -70,7 +70,7 @@ export default function App() {
             ))}
           </section>
 
-          {/* NEW BLOCK */}
+          {/* PROJECTS */}
           <Projects />
 
         </main>

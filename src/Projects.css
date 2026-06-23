@@ -10,6 +10,7 @@
 ========================= */
 
 .bubble-chart {
+  overflow: hidden;
   position: relative;
   width: 100%;
   min-height: 520px;
@@ -22,7 +23,12 @@
 
   /* легкий "dashboard feel" фон */
   background: rgba(255, 255, 255, 0.02);
-  overflow: hidden;
+}
+
+.bubble-chart:hover .bubble {
+  transition: 
+    transform 0.2s ease, 
+    opacity 0.2s ease;
 }
 
 /* майбутні bubbles */
@@ -45,16 +51,46 @@
     rgba(255, 255, 255, 0.08)
   );
 
-  backdrop-filter: blur(6px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition: 
+    transform 0.2s ease, 
+    box-shadow 0.2s ease;
 }
 
 .bubble:hover {
-  transform: scale(1.08);
-  z-index: 10;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1);
+  z-index: 50;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
+
+
+.tooltip {
+  position: fixed;
+  padding: 10px 12px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+
+  color: white;
+  font-size: 12px;
+
+  pointer-events: none;
+
+  transition: transform 0.1s ease;
+}
+
+.tooltip-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.tooltip-words {
+  opacity: 0.7;
+}
+
 
 /* =========================
    2. EXPLORER SECTION
@@ -147,7 +183,9 @@
   }
 
   .bubble-chart {
-    min-height: 340px;
+    min-height: 380px;
+    transform: scale(0.9);
+    transform-origin: top center;
   }
 
   .explorer-row {
@@ -169,6 +207,16 @@
   }
 
   .bubble-chart {
-    min-height: 280px;
+    min-height: 300px;
+    transform: scale(0.75);
+    transform-origin: top center;
+  }
+}
+
+@media (max-width: 380px) {
+  .bubble-chart {
+    min-height: 240px;
+    transform: scale(0.65);
+    transform-origin: top center;
   }
 }
