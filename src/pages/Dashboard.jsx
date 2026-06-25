@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import { projects } from "./projects.js";
-import "./Projects.css";
+import { projects } from "../projects";
+import "../Dashboard.css";
+import "../responsive.css"
 
-export default function Projects() {
+export default function Dashboard() {
   const [tooltip, setTooltip] = useState(null);
   const [selected, setSelected] = useState(null);
 
@@ -91,7 +92,6 @@ export default function Projects() {
                 setTooltip((prev) => prev ? { ...prev, x: e.clientX, y: e.clientY } : null);
               }}
               onMouseLeave={() => setTooltip(null)}
-              onClick={() => setSelected(p)}
               onClick={(e) => {
                 e.stopPropagation();
                 setSelected(p);
