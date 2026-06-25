@@ -21,7 +21,6 @@
 
   border-radius: 24px;
 
-  /* легкий "dashboard feel" фон */
   background: rgba(255, 255, 255, 0.02);
 }
 
@@ -31,7 +30,7 @@
     opacity 0.2s ease;
 }
 
-/* майбутні bubbles */
+
 .bubble {
   position: absolute;
 
@@ -58,11 +57,26 @@
 }
 
 .bubble:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
   z-index: 50;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
+.bubble.active {
+  transform: scale(1.1);
+  z-index: 60;
+
+  box-shadow:
+    0 0 20px rgba(255,255,255,0.18),
+    0 0 40px rgba(255,255,255,0.10);
+
+  outline: 2px solid rgba(255,255,255,0.35);
+  outline-offset: 3px;  
+}
+
+.bubble.active:hover {
+  transform: scale(1.14);
+}
 
 .tooltip {
   position: fixed;
@@ -98,38 +112,58 @@
 
 .explorer {
   width: 100%;
-
-  padding: 24px;
-
+  padding: 16px;
   border-radius: 18px;
-
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
-
   display: flex;
   flex-direction: column;
-  gap: 10px;
-
-  /* “Jira / Notion card” feel */
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 6px;
 }
+
+.explorer h3 {
+  margin: 0 0 8px 0;
+}
+
+.explorer-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.6);
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.explorer-close:hover {
+  color: rgba(255,255,255,0.9);
+}
+
 
 .explorer-row {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 120px 1fr;
   gap: 12px;
-
+  padding: 3px 0;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.3;
+  transition: background 0.2s ease;
 }
 
-.explorer-label {
+.explorer-row span:first-child {
   opacity: 0.6;
 }
 
-.explorer-value {
+.explorer-row span:last-child {
   opacity: 0.95;
 }
+
+/*.explorer-row:hover {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+}*/
 
 /* =========================
    3. SPACER

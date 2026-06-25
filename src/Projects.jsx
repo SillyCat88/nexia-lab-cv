@@ -1,9 +1,19 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import { projects } from "./projects.js";
 import "./Projects.css";
 
 export default function Projects() {
   const [tooltip, setTooltip] = useState(null);
+  const [selected, setSelected] = useState(null);
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (e.key === "Escape") setSelected(null);
+    };
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, []);
 
   const vertices = [
     { x: 200, y: 60 },
@@ -56,7 +66,7 @@ export default function Projects() {
           return (
             <div
               key={p.id}
-              className="bubble"
+              className={`bubble ${selected?.id === p.id ? "active" : ""}`}
               style={{
                 width: size,
                 height: size,
@@ -81,6 +91,11 @@ export default function Projects() {
                 setTooltip((prev) => prev ? { ...prev, x: e.clientX, y: e.clientY } : null);
               }}
               onMouseLeave={() => setTooltip(null)}
+              onClick={() => setSelected(p)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelected(p);
+              }}
             >
               {p.words}
             </div>
@@ -103,16 +118,46 @@ export default function Projects() {
             </div>
           </div>
         )}
-
       </div>
 
-      {/* SPACE */}
-      <div className="spacer" />
+      {selected && (
+        <div className="explorer">
+ 
+          <button
+            className="explorer-close"
+            onClick={() => setSelected(null)}
+          >
+            ×
+          </button>
 
-      {/* EXPLORER */}
-      <div className="explorer">
-        {/* click details */}
-      </div>
+          <h3>{selected.title}</h3>
+
+          <div className="explorer-row">
+            <span>Words</span>
+            <span>{selected.words}</span>
+          </div>
+
+          <div className="explorer-row">
+            <span>Category</span>
+            <span>{selected.category || "—"}</span>
+          </div>
+
+          <div className="explorer-row">
+            <span>Service</span>
+            <span>{selected.service || "MTPE / Translation"}</span>
+          </div>
+
+          <div className="explorer-row">
+            <span>Type</span>
+            <span>{selected.type || "Project"}</span>
+          </div>
+
+          <div className="explorer-row">
+            <span>ID</span>
+            <span>{selected.id}</span>
+          </div>
+        </div>
+      )}
 
       {/* SPACE */}
       <div className="spacer" />
