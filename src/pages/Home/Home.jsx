@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { content } from "../data";
-import "../Home.css";
+import { content } from "../../data";
+import "./Home.css";
+import "./HomeResponsive.css";
 
 export default function Home() {
   const [lang, setLang] = useState("en");
@@ -22,12 +22,6 @@ export default function Home() {
           <button onClick={() => setLang("ua")}>UA</button>
         </div>
       </header>
-
-      <nav className="section-nav">
-        <Link to="/dashboard">Dashboard</Link>
-        <Link to="/media">Media</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
 
       <div className="layout">
         <aside className="sidebar">

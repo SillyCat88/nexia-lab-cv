@@ -24,8 +24,8 @@ ul {
   --surface-2: #1c2230;
   --text: #eaeaea;
   --muted: #a0a0a0;
-  --accent: #ff7a59;   /* головний акцент */
-  --accent-2: #ffd84d; /* другий акцент (для підсвіток) */
+  --accent: #ff7a59;     /* grapefruit coral */
+  --accent-2: #ffe1d6;   /* light grapefruit */
   --border: #2a2f3a;
 }
 
