@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Dashboard from "./pages/Dashboard/Dashboard";
+import Dashboard from "./pages/Dashboard/dashboard/Dashboard";
 import Media from "./pages/Media";
 import Contact from "./pages/Contact";
 import SectionNav from "./components/SectionNav";
