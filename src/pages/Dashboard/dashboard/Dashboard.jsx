@@ -8,7 +8,6 @@ import BubbleChart from "./BubbleChart";
 import Explorer from "./Explorer";
 
 
-
 export default function Dashboard() {
   
   const [selected, setSelected] = useState(null);
@@ -47,7 +46,6 @@ export default function Dashboard() {
 
       <div className="dashboard-grid">
         {/* LEFT: BUBBLES */}
-        {/*hues винесемо потім у layout/bubbleLayout.js*/}
         <BubbleChart
           projects={projects}
           selected={selected}

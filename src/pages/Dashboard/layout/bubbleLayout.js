@@ -1,9 +1,10 @@
+const PALETTE = [238, 248];
+
 export function buildBubbleLayout(projects, dashboardVertices) {
   return projects.map((p, i) => {
-    const palette = [238, 248];
 
     const hue =
-      palette[i % palette.length] +
+      PALETTE[i % PALETTE.length] +
       Math.sin(i * 12.9898) * 3;
 
     let size;
@@ -25,16 +26,11 @@ export function buildBubbleLayout(projects, dashboardVertices) {
       words: p.words,
       hue,
       style: {
+        "--hue": hue,
         width: size,
         height: size,
         left: v.x + jitterX,
         top: v.y + jitterY,
-
-        background: `radial-gradient(
-          circle at 30% 30%,
-          hsla(${hue}, 60%, 55%, 0.6),
-          hsla(${hue}, 55%, 72%, 0.18)
-        )`,
       },
     };
   });

@@ -1,4 +1,5 @@
 import { buildBubbleLayout } from "../layout/bubbleLayout";
+import { useMemo } from "react";
 
 export default function BubbleChart({
   projects,

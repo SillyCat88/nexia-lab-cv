@@ -40,13 +40,13 @@
   font-weight: 500;
   color: rgb(255 255 255 / 85%);
   cursor: pointer;
-  background: radial-gradient(
-    circle at 30% 30%,
-    rgb(255 255 255 / 55%),
-    rgb(255 255 255 / 10%)
-  );
   border: 1px solid rgb(255 255 255 / 8%);
   transition: transform 0.18s ease, box-shadow 0.18s ease;
+  background: radial-gradient(
+    circle at 30% 30%,
+    hsla(var(--hue), 60%, 55%, 0.6),
+    hsla(var(--hue), 55%, 72%, 0.18)
+  );
 }
 
 .bubble:hover,
