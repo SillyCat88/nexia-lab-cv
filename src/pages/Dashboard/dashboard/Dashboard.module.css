@@ -1,0 +1,68 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  max-width: 1100px;
+  margin: 80px auto 0;
+  padding: 0 24px;
+}
+
+.dashboardGrid {
+  display: grid;
+  grid-template-columns: minmax(640px, 1.3fr) minmax(280px, 0.7fr);
+  gap: 124px;
+  align-items: start;
+}
+
+.dashboardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.dashboardHeader h1 {
+  margin-bottom: 0;
+}
+
+.dashboardHeader p {
+  max-width: 65ch;
+  color: var(--muted);
+}
+
+
+/* =========================
+   SPACER
+========================= */
+
+.spacer {
+  height: 20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .dashboardGrid {
+    display: none;
+  }
+
+  .bubbleChartMobilePlaceholder {
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    border-radius: 18px;
+    border: 1px dashed rgb(255 255 255 / 15%);
+    color: rgb(255 255 255 / 60%);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    gap: 32px;
+  }
+}

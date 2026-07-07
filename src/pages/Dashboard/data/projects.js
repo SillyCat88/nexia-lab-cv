@@ -60,7 +60,7 @@ export const projects = [
     languagePair: "Ru → En",
     topic: "Corporate Decks",
     words: 8013,
-    services: "Translation"
+    services: "Translation, DTP"
   },
   {
     id: 8,
@@ -78,7 +78,7 @@ export const projects = [
     languagePair: "En → Ru",
     topic: "Beauty Product Ads",
     words: 403,
-    services: "Translation"
+    services: "Translation, DTP"
   },
   {
     id: 10,
@@ -87,7 +87,7 @@ export const projects = [
     languagePair: "En → Ru",
     topic: "Beauty Product Ads",
     words: 853,
-    services: "Translation"
+    services: "Translation, DTP"
   },
   {
     id: 11,
@@ -114,7 +114,7 @@ export const projects = [
     languagePair: "En → Ru",
     topic: "Navigation Device",
     words: 1030,
-    services: "Translation, Localization"
+    services: "Translation, MTPE"
   },
   {
     id: 14,
@@ -168,6 +168,6 @@ export const projects = [
     languagePair: "En → Ru",
     topic: "Tourism Marketing",
     words: 698,
-    services: "Translation"
+    services: "Translation, DTP"
   }
 ]; 

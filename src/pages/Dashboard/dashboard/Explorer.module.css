@@ -1,0 +1,64 @@
+/* =========================
+   EXPLORER
+========================= */
+
+.explorer {
+  position: relative;
+  width: 100%;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.explorer h3 {
+  margin: 0 0 12px 0;
+  padding-right: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.explorerClose {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: rgb(255 255 255 / 50%);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.explorerRow {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.explorerRow span:first-child {
+  opacity: 0.55;
+}
+
+.explorerRow span:last-child {
+  opacity: 0.95;
+}
+
+.explorerColumn {
+  min-height: 520px;
+  display: flex;
+  align-items: stretch;
+}
+
+.explorerPlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.35;
+  border: 1px dashed rgb(255 255 255 / 12%);
+  border-radius: 18px;
+}
+

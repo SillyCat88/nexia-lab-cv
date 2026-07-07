@@ -1,0 +1,41 @@
+.sectionNav {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-5);
+  margin-bottom: var(--space-6);
+  padding: var(--space-4) var(--space-5);
+  border-top: 1px solid rgb(255 255 255 / 8%);
+  border-bottom: 1px solid rgb(255 255 255 / 8%);
+}
+
+.link {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text);
+  opacity: 0.6;
+}
+
+.link:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+  transition: 0.2s ease;
+}
+
+.isActive {
+  opacity: 1;
+  color: var(--text);
+  position: relative;
+}
+
+.isActive::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.6;
+}

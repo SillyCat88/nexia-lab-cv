@@ -1,30 +1,33 @@
 import { useState } from "react";
 import { content } from "../../data";
-import "./Home.css";
-import "./HomeResponsive.css";
+import styles from "./Home.module.css";
 
 export default function Home() {
   const [lang, setLang] = useState("en");
   const t = content[lang];
 
   return (
-    <div className="container">
-      <header className="hero">
+    <div className={styles.container}>
+      <header className={styles.hero}>
         <h1>{t.name}</h1>
+
         <h2>
-          <span className="accent">Localization Specialist</span> • EN↔UA Translator
+          <span className={styles.accent}>Localization Specialist</span>
+          {" • "}EN↔UA Translator
         </h2>
-        <p className="hero-subtitle">
+
+        <p className={styles.heroSubtitle}>
           MTPE • UX/UI Localization • Technical Translation • Content Writing
         </p>
-        <div className="buttons">
+
+        <div className={styles.buttons}>
           <button onClick={() => setLang("en")}>EN</button>
           <button onClick={() => setLang("ua")}>UA</button>
         </div>
       </header>
 
-      <div className="layout">
-        <aside className="sidebar">
+      <div className={styles.layout}>
+        <aside className={styles.sidebar}>
           <section>
             <h3>Languages</h3>
             <p>{t.languages}</p>
@@ -32,23 +35,25 @@ export default function Home() {
 
           <section>
             <h3>Tools & Technologies</h3>
-            <div className="tools-list">
+
+            <div className={styles.toolsList}>
               {t.tools.map((tool, i) => (
                 <span key={i}>{tool}</span>
               ))}
             </div>
           </section>
-        </aside>  
+        </aside>
 
-        <main className="main-content">
-          <section className="card">
+        <main className={styles.mainContent}>
+          <section className={styles.card}>
             <h3>About</h3>
             <p>{t.about}</p>
           </section>
 
           <section>
             <h3>Services</h3>
-            <ul className="tags">
+
+            <ul className={styles.tags}>
               {t.services.map((s, i) => (
                 <li key={i}>
                   <span>{s}</span>
@@ -59,10 +64,15 @@ export default function Home() {
 
           <section>
             <h3>Experience</h3>
+
             {t.experience.map((e, i) => (
-              <div key={i} className="card">
+              <div key={i} className={styles.card}>
                 <h4>{e.title}</h4>
-                <span className="highlight">{e.period}</span>
+
+                <span className={styles.highlight}>
+                  {e.period}
+                </span>
+
                 <p>{e.text}</p>
               </div>
             ))}
@@ -72,7 +82,7 @@ export default function Home() {
 
       <footer>
         <p>
-          <span className="accent">OLENA KULIKOVA</span>
+          <span className={styles.accent}>OLENA KULIKOVA</span>
           {" • "}Translator & Localization Specialist
         </p>
       </footer>

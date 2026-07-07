@@ -1,13 +1,15 @@
+import styles from "./Explorer.module.css";
+
 export default function Explorer({
   selected,
   setSelected,
 }) {
   return (
-    <div className="explorer-column">
+    <div className={styles.explorerColumn}>
       {selected ? (
-        <div className="explorer">
+        <div className={styles.explorer}>
           <button
-            className="explorer-close"
+            className={styles.explorerClose}
             onClick={() => setSelected(null)}
           >
             ×
@@ -15,33 +17,33 @@ export default function Explorer({
 
           <h3>{selected.title}</h3>
 
-          <div className="explorer-row">
+          <div className={styles.explorerRow}>
             <span>Words</span>
             <span>{selected.words}</span>
           </div>
 
-          <div className="explorer-row">
+          <div className={styles.explorerRow}>
             <span>Category</span>
             <span>{selected.category ?? "—"}</span>
           </div>
 
-          <div className="explorer-row">
+          <div className={styles.explorerRow}>
             <span>Service</span>
-            <span>{selected.service ?? "MTPE / Translation"}</span>
+            <span>{selected.services ?? "MTPE / Translation"}</span>
           </div>
 
-          <div className="explorer-row">
+          <div className={styles.explorerRow}>
             <span>Type</span>
             <span>{selected.type ?? "Project"}</span>
           </div>
 
-          <div className="explorer-row">
+          <div className={styles.explorerRow}>
             <span>ID</span>
             <span>{selected.id}</span>
           </div>
         </div>
       ) : (
-        <div className="explorer-placeholder">
+        <div className={styles.explorerPlaceholder}>
           Select a project bubble
         </div>
       )}

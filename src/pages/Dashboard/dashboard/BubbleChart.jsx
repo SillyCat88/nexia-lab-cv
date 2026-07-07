@@ -1,5 +1,6 @@
-import { buildBubbleLayout } from "../layout/bubbleLayout";
 import { useMemo } from "react";
+import { buildBubbleLayout } from "../layout/bubbleLayout";
+import styles from "./BubbleChart.module.css";
 
 export default function BubbleChart({
   projects,
@@ -9,34 +10,28 @@ export default function BubbleChart({
   tooltipRef,
   dashboardVertices,
 }) {
-
   const layout = useMemo(
     () => buildBubbleLayout(projects, dashboardVertices),
     [projects, dashboardVertices]
   );
 
   return (
-    <div className="bubble-chart-wrapper">
+    <div className={styles.bubbleChartWrapper}>
       <div
-        className="bubble-chart"
+        className={styles.bubbleChart}
         ref={chartRef}
       >
-        <div className="bubble-stage">
+        <div className={styles.bubbleStage}>
           {layout.map((bubble) => (
             <div
               key={bubble.id}
-              className={`bubble ${
-                selected?.id === bubble.id
-                  ? "active"
-                  : ""
+              className={`${styles.bubble} ${
+                selected?.id === bubble.id ? styles.active : ""
               }`}
-              
               data-title={bubble.title}
               data-words={bubble.words}
               data-hue={bubble.hue}
-
               style={bubble.style}
-
               onClick={(e) => {
                 e.stopPropagation();
                 setSelected(bubble.project);
@@ -49,12 +44,11 @@ export default function BubbleChart({
 
         <div
           ref={tooltipRef}
-          className="tooltip"
+          className={styles.tooltip}
         >
-          <div className="tooltip-title" />
-          <div className="tooltip-words" />
+          <div className={styles.tooltipTitle} />
+          <div className={styles.tooltipWords} />
         </div>
-
       </div>
     </div>
   );
