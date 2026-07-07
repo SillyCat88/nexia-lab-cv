@@ -28,6 +28,7 @@ export default function BubbleChart({
               className={`${styles.bubble} ${
                 selected?.id === bubble.id ? styles.active : ""
               }`}
+              data-role="bubble"
               data-title={bubble.title}
               data-words={bubble.words}
               data-hue={bubble.hue}
@@ -46,8 +47,14 @@ export default function BubbleChart({
           ref={tooltipRef}
           className={styles.tooltip}
         >
-          <div className={styles.tooltipTitle} />
-          <div className={styles.tooltipWords} />
+          <div
+              data-role="tooltip-title"
+              className={styles.tooltipTitle}
+          />
+          <div
+              data-role="tooltip-words"
+              className={styles.tooltipWords}
+          />
         </div>
       </div>
     </div>

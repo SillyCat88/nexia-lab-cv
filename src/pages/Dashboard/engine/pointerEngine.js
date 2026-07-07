@@ -10,11 +10,11 @@ function createPointerEngine({
   let latestY = 0;
 
   const EPS = 1; // стабілізація мікрорухів
-    
   const TOOLTIP_OFFSET = 16;
-  const titleEl = tooltipEl.querySelector(".tooltip-title");
-  const wordsEl = tooltipEl.querySelector(".tooltip-words");
-  
+
+  const titleEl = tooltipEl.querySelector('[data-role="tooltip-title"]');
+  const wordsEl = tooltipEl.querySelector('[data-role="tooltip-words"]');
+
   function handleMove(e) {
 
     // 1. завжди оновлюємо latest input
@@ -41,7 +41,7 @@ function createPointerEngine({
 
       const el = document.elementFromPoint(x, y);
 
-      if (!el || !el.classList.contains("bubble")) {
+      if (!el || el.dataset.role !== "bubble") {
    	    tooltipEl.style.opacity = "0";
         return;
       }

@@ -41,8 +41,7 @@
   transform: scale(1.06);
 }
 
-.bubbleChart,
-.explorer {
+.bubbleChart {
   background: rgb(255 255 255 / 2%);
   border: 1px solid rgb(255 255 255 / 2%);
   border-radius: 20px;
@@ -52,9 +51,6 @@
   position: relative;
 }
 
-.bubbleChartMobilePlaceholder {
-  display: none;
-}
 
 /* =========================
    TOOLTIP

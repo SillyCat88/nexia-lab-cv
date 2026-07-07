@@ -5,8 +5,7 @@ export default function SectionNav() {
   return (
     <nav className={styles.sectionNav}>
       <NavLink
-        to="/"
-        end
+        to="/home"
         className={({ isActive }) =>
           `${styles.link} ${isActive ? styles.isActive : ""}`
         }
