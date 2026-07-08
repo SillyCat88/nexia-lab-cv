@@ -1,0 +1,127 @@
+/* =========================
+   MEDIA EXPLORER
+========================= */
+
+.explorer {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+.explorer {
+  background: rgb(255 255 255 / 2%);
+  border: 1px solid rgb(255 255 255 / 2%);
+  border-radius: 20px;
+}
+
+
+/* =========================
+   CLOSE
+========================= */
+
+.close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  padding: 0;
+
+  background: transparent;
+  border: none;
+
+  color: rgb(255 255 255 / 55%);
+
+  font-size: 1rem;
+  line-height: 1;
+
+  cursor: pointer;
+  transition: color 0.18s ease;
+}
+
+.close:hover {
+  color: var(--accent);
+}
+
+
+/* =========================
+   LANGUAGE
+========================= */
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 0.875rem;
+  font-weight: 500;
+
+  color: var(--accent-2);
+}
+
+.language span {
+  color: var(--accent);
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.title {
+  margin: 0;
+  padding-right: 28px;
+
+  line-height: 1.35;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field h3 {
+  margin: 0;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.field p {
+  margin: 0;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  min-height: 320px;
+
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.6;
+
+  border: 1px dashed rgb(255 255 255 / 12%);
+  border-radius: 16px;
+}

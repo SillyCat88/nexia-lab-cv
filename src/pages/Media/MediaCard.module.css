@@ -1,0 +1,118 @@
+/* =========================
+   MEDIA CARD
+========================= */
+
+.card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background: rgb(255 255 255 / 2%);
+  border: 1px solid rgb(255 255 255 / 2%);
+  border-radius: 20px;
+}
+
+
+/* =========================
+   PREVIEW
+========================= */
+
+.preview {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.title {
+  margin: 0;
+
+  line-height: 1.35;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.links {
+  display: flex;
+  gap: 18px;
+}
+
+.link {
+  padding: 0;
+
+  background: transparent;
+  border: none;
+
+  color: var(--accent-2);
+  font: inherit;
+
+  cursor: pointer;
+  transition: color 0.18s ease;
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  padding: 0;
+
+  background: transparent;
+  border: none;
+
+  color: var(--accent-2);
+
+  font-size: 1.5rem;
+  line-height: 1;
+
+  cursor: pointer;
+  transition:
+    color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.arrow:hover {
+  color: var(--accent);
+  transform: scale(1.08);
+}
