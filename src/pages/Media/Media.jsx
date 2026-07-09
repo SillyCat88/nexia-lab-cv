@@ -28,7 +28,7 @@ export default function Media() {
   return (
     <section className={styles.media}>
       <header className={styles.header}>
-        <h1>Media archive</h1>
+        <h1>Media Archive</h1>
 
         <p>
           Collection of authored materials for a Ukrainian newspaper.

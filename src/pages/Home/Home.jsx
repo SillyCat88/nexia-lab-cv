@@ -12,7 +12,7 @@ export default function Home() {
         <h1>{t.name}</h1>
 
         <h2>
-          <span className={styles.accent}>Localization Specialist</span>
+          <span className={styles.accent}>Language Specialist</span>
           {" • "}EN↔UA Translator
         </h2>
 
@@ -83,7 +83,7 @@ export default function Home() {
       <footer>
         <p>
           <span className={styles.accent}>OLENA KULIKOVA</span>
-          {" • "}Translator & Localization Specialist
+          {" • "}Translator & Language Specialist
         </p>
       </footer>
     </div>

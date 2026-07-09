@@ -36,6 +36,7 @@
   line-height: 1.1;
   letter-spacing: -0.3px;
   color: var(--text);
+  font-size: clamp(2rem, 2.5vw, 3rem);
 }
 
 .link {

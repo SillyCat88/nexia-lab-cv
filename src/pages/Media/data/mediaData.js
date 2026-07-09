@@ -1,8 +1,8 @@
 // previews
-import preview01 from "../previews/preview-placeholder.webp";
-import preview02 from "../previews/preview-placeholder.webp";
-import preview03 from "../previews/preview-placeholder.webp";
-import preview04 from "../previews/preview-placeholder.webp";
+import preview01 from "../previews/preview01.webp";
+import preview02 from "../previews/preview02.webp";
+import preview03 from "../previews/preview03.webp";
+import preview04 from "../previews/preview04.webp";
 import preview05 from "../previews/preview-placeholder.webp";
 import preview06 from "../previews/preview-placeholder.webp";
 import preview07 from "../previews/preview-placeholder.webp";
@@ -39,8 +39,8 @@ export const mediaItems = [
     images: [article01],
 
     title: {
-      en: "Not wasting waste",
-      ua: "Not wasting waste",
+      en: "Not Wasting Waste",
+      ua: "Not Wasting Waste",
     },
 
     date: {
@@ -67,8 +67,8 @@ export const mediaItems = [
     images: [article02Page1, article02Page2],
 
     title: {
-      en: "Winter wonders spell trouble",
-      ua: "Winter wonders spell trouble",
+      en: "Winter Wonders Spell Trouble",
+      ua: "Winter Wonders Spell Trouble",
     },
 
     date: {
@@ -95,8 +95,8 @@ export const mediaItems = [
     images: [article03Page1, article03Page2],
 
     title: {
-      en: "All the lonely people",
-      ua: "All the lonely people",
+      en: "All the Lonely People",
+      ua: "All the Lonely People",
     },
 
     date: {
@@ -123,8 +123,8 @@ export const mediaItems = [
     images: [article04],
 
     title: {
-      en: "Business over living",
-      ua: "Business over living",
+      en: "Business Over Living",
+      ua: "Business Over Living",
     },
 
     date: {
@@ -151,8 +151,8 @@ export const mediaItems = [
     images: [article05Page1, article05Page2],
 
     title: {
-      en: "Kyiv: mostly harmless",
-      ua: "Kyiv: mostly harmless",
+      en: "Kyiv: Mostly Harmless",
+      ua: "Kyiv: Mostly Harmless",
     },
 
     date: {
@@ -179,8 +179,8 @@ export const mediaItems = [
     images: [article06Page1, article06Page2],
 
     title: {
-      en: "Bessarabka passes the test",
-      ua: "Bessarabka passes the test",
+      en: "Bessarabka Passes the Test",
+      ua: "Bessarabka Passes the Test",
     },
 
     date: {
@@ -207,8 +207,8 @@ export const mediaItems = [
     images: [article07Page1, article07Page2],
 
     title: {
-      en: "Streetcar: From past to future",
-      ua: "Streetcar: From past to future",
+      en: "Streetcar: From Past to Future",
+      ua: "Streetcar: From Past to Future",
     },
 
     date: {
