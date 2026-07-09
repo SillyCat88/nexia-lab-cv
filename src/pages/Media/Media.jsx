@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { mediaItems } from "./data/mediaData";
 
@@ -24,6 +24,12 @@ export default function Media() {
       prev === mediaItems.length - 1 ? 0 : prev + 1
     );
   };
+
+  useEffect(() => {
+    if (!selected) return;
+
+    setSelected(mediaItems[currentIndex]);
+  }, [currentIndex]);
 
   return (
     <section className={styles.media}>
