@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./MediaCard.module.css";
 
 export default function MediaCard({
@@ -22,16 +23,16 @@ export default function MediaCard({
         </h2>
 
         <div className={styles.links}>
-          <button
-            type="button"
+          <Link
+            to={`/media/${item.id}`}
             className={styles.link}
           >
             Open
-          </button>
+          </Link>
 
           <button
             type="button"
-            className={styles.link}
+            className={styles.open}
             onClick={onPreview}
           >
             Preview

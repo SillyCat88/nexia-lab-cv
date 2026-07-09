@@ -84,6 +84,21 @@
   color: var(--accent);
 }
 
+.open {
+  padding: 0;
+
+  background: transparent;
+  border: none;
+
+  color: var(--accent-2);
+  font: inherit;
+
+  cursor: pointer;
+}
+
+.open:hover {
+  transform: scale(1.08);
+}
 
 /* =========================
    NAVIGATION
@@ -113,6 +128,5 @@
 }
 
 .arrow:hover {
-  color: var(--accent);
   transform: scale(1.08);
 }

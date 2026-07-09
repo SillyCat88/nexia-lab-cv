@@ -30,8 +30,9 @@
   right: 12px;
   background: transparent;
   border: none;
-  color: rgb(255 255 255 / 50%);
-  font-size: 18px;
+  /*color: rgb(255 255 255 / 50%);*/
+  color:var(--accent-2);
+  font-size: 22px;
   cursor: pointer;
 }
 
@@ -64,6 +65,7 @@
   justify-content: center;
   align-items: center;
   opacity: 0.35;
+  background: rgb(255 255 255 / 2%);
   border: 1px dashed rgb(255 255 255 / 12%);
   border-radius: 18px;
 }

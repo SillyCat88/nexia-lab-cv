@@ -3,6 +3,7 @@ import Welcome from "./pages/Welcome/Welcome";
 import Home from "./pages/Home/Home";
 import Dashboard from "./pages/Dashboard/dashboard/Dashboard";
 import Media from "./pages/Media/Media";
+import ArticleViewer from "./pages/Media/ArticleViewer";
 import Contact from "./pages/Contact";
 import MainLayout from "./layouts/MainLayout";
 
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/media" element={<Media />} />
+        <Route path="media/:articleId" element={<ArticleViewer />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>
