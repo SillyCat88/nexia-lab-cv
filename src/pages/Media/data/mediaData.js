@@ -235,8 +235,8 @@ export const mediaItems = [
     images: [article08],
 
     title: {
-      en: "Arcane Art Gallery: 'Svetangs' and 'Objective Art'",
-      ua: "Arcane Art Gallery: 'Svetangs' and 'Objective Art'",
+      en: "Arcane Art Gallery: Svetangs and Objective Art",
+      ua: "Arcane Art Gallery: Svetangs and Objective Art",
     },
 
     date: {

@@ -8,8 +8,25 @@ import MediaExplorer from "./MediaExplorer";
 import styles from "./Media.module.css";
 
 export default function Media() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [selected, setSelected] = useState(null);
+  const STORAGE_KEY = "media-state";
+  
+  const [currentIndex, setCurrentIndex] = useState(() => {
+    const saved = JSON.parse(
+      sessionStorage.getItem(STORAGE_KEY)
+    );
+
+    return saved?.currentIndex ?? 0;
+  });
+
+  const [selected, setSelected] = useState(() => {
+    const saved = JSON.parse(
+      sessionStorage.getItem(STORAGE_KEY)
+    );
+
+    if (!saved?.explorerOpened) return null;
+
+    return mediaItems[saved.currentIndex];
+  });
 
   const currentItem = mediaItems[currentIndex];
 
@@ -30,6 +47,16 @@ export default function Media() {
 
     setSelected(mediaItems[currentIndex]);
   }, [currentIndex]);
+
+  useEffect(() => {
+    sessionStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({
+        currentIndex,
+        explorerOpened: selected !== null,
+      })
+    );
+  }, [currentIndex, selected]);
 
   return (
     <section className={styles.media}>
