@@ -3,10 +3,10 @@ import preview01 from "../previews/preview01.webp";
 import preview02 from "../previews/preview02.webp";
 import preview03 from "../previews/preview03.webp";
 import preview04 from "../previews/preview04.webp";
-import preview05 from "../previews/preview-placeholder.webp";
-import preview06 from "../previews/preview-placeholder.webp";
-import preview07 from "../previews/preview-placeholder.webp";
-import preview08 from "../previews/preview-placeholder.webp";
+import preview05 from "../previews/preview05.webp";
+import preview06 from "../previews/preview06.webp";
+import preview07 from "../previews/preview07.webp";
+import preview08 from "../previews/preview08.webp";
 
 // article images
 import article01 from "../articles/not-wasting-waste/page1.jpg";
@@ -49,13 +49,13 @@ export const mediaItems = [
     },
 
     subject: {
-      en: "",
-      ua: "",
+      en: "Urban Ecosystem",
+      ua: "Екосистема міста",
     },
 
     description: {
-      en: "",
-      ua: "",
+      en: "An article exploring the prospects for Ukraine's first recycling companies and the environmental risks associated with landfills",
+      ua: "Стаття про перспективи перших українських гравців в царині переробки і ризики сміттєзвалищ для екології країни",
     },
   },
 
@@ -77,13 +77,13 @@ export const mediaItems = [
     },
 
     subject: {
-      en: "",
-      ua: "",
+      en: "Urban Ecosystem",
+      ua: "Екосистема міста",
     },
 
     description: {
-      en: "",
-      ua: "",
+      en: "An article examining modern snow clearance practices, municipal maintenance regulations, and the performance of public utility services",
+      ua: "Стаття висвітлює сучасні методи снігоприбирання, дає оцінку міським законам благоустрою і роботі комунальних служб",
     },
   },
 
@@ -105,13 +105,13 @@ export const mediaItems = [
     },
 
     subject: {
-      en: "",
-      ua: "",
+      en: "Urban Ecosystem",
+      ua: "Екосистема міста",
     },
 
     description: {
-      en: "",
-      ua: "",
+      en: "An article about Kyiv's homeless population, the realities of municipal shelters, and the challenges of obtaining legal identification documents",
+      ua: "Стаття про безпритульних Києва, реальність міських притулків та перспективи документації",
     },
   },
 
@@ -133,13 +133,13 @@ export const mediaItems = [
     },
 
     subject: {
-      en: "",
-      ua: "",
+      en: "Urban Ecosystem",
+      ua: "Екосистема міста",
     },
 
     description: {
-      en: "",
-      ua: "",
+      en: "An article examining urban planning challenges, from master planning to development practices that undermine established architectural principles of urban living",
+      ua: "Стаття описує проблеми у містобудуванні - від генерального планування, до містобудівних практик котрі порушують архітектурні принципи розвитку сучаних міст",
     },
   },
 
@@ -161,13 +161,13 @@ export const mediaItems = [
     },
 
     subject: {
-      en: "",
-      ua: "",
+      en: "Urban Ecosystem",
+      ua: "Екосистема міста",
     },
 
     description: {
-      en: "",
-      ua: "",
+      en: "An article explores the historical and current trends of organized crime in Kyiv, presents crime statistics across residential districts, and discusses emerging forms of urban surveillance",
+      ua: "Стаття описує минуле і сучасність київського бандитизму, представляє статиску рівня злочинності у житлових масивах і нові практики спостереження за містянами",
     },
   },
 
@@ -189,13 +189,13 @@ export const mediaItems = [
     },
 
     subject: {
-      en: "",
-      ua: "",
+      en: "Urban Ecosystem",
+      ua: "Екосистема міста",
     },
 
     description: {
-      en: "",
-      ua: "",
+      en: "An article about food quality standards and food inspection practices at Kyiv's oldest indoor market",
+      ua: "Стаття про якість харчових продуктів і практики контролю якості на одному з найстаріших київських критих ринків",
     },
   },
 
@@ -217,13 +217,13 @@ export const mediaItems = [
     },
 
     subject: {
-      en: "",
-      ua: "",
+      en: "Urban Ecosystem",
+      ua: "Екосистема міста",
     },
 
     description: {
-      en: "",
-      ua: "",
+      en: "An article tracing the past, present, and uncertain future of Kyiv's tram network",
+      ua: "Стаття про минуле, сучасність і примарне майбутнє київських трамвайних маршрутів",
     },
   },
 
@@ -245,13 +245,13 @@ export const mediaItems = [
     },
 
     subject: {
-      en: "",
-      ua: "",
+      en: "Arts & Culture",
+      ua: "Культурне життя столиці",
     },
 
     description: {
-      en: "",
-      ua: "",
+      en: "An article covering the first exhibition by renowned Ukrainian artist Halyna Moskvitina, who spent ten years in Nepal and developed a distinctive artistic style of Svetangs - paintings that radiate transcendental light",
+      ua: "Стаття присвячена відкриттю першої виставки відомої української художниці Галини Москвітіної, котра 10 років жила у Непалі і віднайшла авторський художній стиль светангів - картин, котрі випромінюють трансцендентне світло",
     },
   },
 ];
