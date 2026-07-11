@@ -80,7 +80,6 @@ section {
 
 .card:hover {
 	transform: translateY(-3px);
-	border-color: var(--accent);
 }
 
 .card p {
@@ -135,8 +134,7 @@ button,
 
 .tags span:hover {
 	transform: translateY(-1px);
-	border-color: var(--accent-2);
-	border-color: rgb(255 255 255 / 36%);
+	border-color: var(--border-2);
 }
 
 

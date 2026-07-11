@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
-
 import { mediaItems } from "./data/mediaData";
-
 import MediaCard from "./MediaCard";
 import MediaExplorer from "./MediaExplorer";
-
 import styles from "./Media.module.css";
+
 
 export default function Media() {
   const STORAGE_KEY = "media-state";
@@ -14,7 +12,6 @@ export default function Media() {
     const saved = JSON.parse(
       sessionStorage.getItem(STORAGE_KEY)
     );
-
     return saved?.currentIndex ?? 0;
   });
 
@@ -22,9 +19,7 @@ export default function Media() {
     const saved = JSON.parse(
       sessionStorage.getItem(STORAGE_KEY)
     );
-
     if (!saved?.explorerOpened) return null;
-
     return mediaItems[saved.currentIndex];
   });
 
@@ -42,12 +37,13 @@ export default function Media() {
     );
   };
 
+
   useEffect(() => {
     if (!selected) return;
-
     setSelected(mediaItems[currentIndex]);
   }, [currentIndex]);
 
+  
   useEffect(() => {
     sessionStorage.setItem(
       STORAGE_KEY,
@@ -58,6 +54,7 @@ export default function Media() {
     );
   }, [currentIndex, selected]);
 
+  
   return (
     <section className={styles.media}>
       <header className={styles.header}>

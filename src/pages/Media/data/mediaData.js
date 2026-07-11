@@ -54,8 +54,8 @@ export const mediaItems = [
     },
 
     description: {
-      en: "An article exploring the prospects for Ukraine's first recycling companies and the environmental risks associated with landfills",
-      ua: "Стаття про перспективи перших українських гравців в царині переробки і ризики сміттєзвалищ для екології країни",
+      en: "An article explores the prospects for Ukraine's recycling companies and the environmental risks associated with landfills",
+      ua: "Стаття про перспективи українських гравців в царині переробки і ризики сміттєзвалищ для екології країни",
     },
   },
 
@@ -82,7 +82,7 @@ export const mediaItems = [
     },
 
     description: {
-      en: "An article examining modern snow clearance practices, municipal maintenance regulations, and the performance of public utility services",
+      en: "An article examines snow clearance practices, municipal maintenance regulations, and the performance of public utility services",
       ua: "Стаття висвітлює сучасні методи снігоприбирання, дає оцінку міським законам благоустрою і роботі комунальних служб",
     },
   },
@@ -110,7 +110,7 @@ export const mediaItems = [
     },
 
     description: {
-      en: "An article about Kyiv's homeless population, the realities of municipal shelters, and the challenges of obtaining legal identification documents",
+      en: "An article about Kyiv's homeless population, the realities of municipal shelters, and the challenges in obtaining legal identification documents",
       ua: "Стаття про безпритульних Києва, реальність міських притулків та перспективи документації",
     },
   },
@@ -138,7 +138,7 @@ export const mediaItems = [
     },
 
     description: {
-      en: "An article examining urban planning challenges, from master planning to development practices that undermine established architectural principles of urban living",
+      en: "An article examines urban planning challenges, from master planning to development practices that undermine architectural principles of urban living",
       ua: "Стаття описує проблеми у містобудуванні - від генерального планування, до містобудівних практик котрі порушують архітектурні принципи розвитку сучаних міст",
     },
   },
@@ -166,7 +166,7 @@ export const mediaItems = [
     },
 
     description: {
-      en: "An article explores the historical and current trends of organized crime in Kyiv, presents crime statistics across residential districts, and discusses emerging forms of urban surveillance",
+      en: "An article explores the historical and current trends in Kyiv's organized crime, presents crime statistics across residential areas, and discusses emerging forms of urban surveillance",
       ua: "Стаття описує минуле і сучасність київського бандитизму, представляє статиску рівня злочинності у житлових масивах і нові практики спостереження за містянами",
     },
   },
@@ -222,7 +222,7 @@ export const mediaItems = [
     },
 
     description: {
-      en: "An article tracing the past, present, and uncertain future of Kyiv's tram network",
+      en: "An article traces the past, present, and uncertain future of Kyiv's tram network",
       ua: "Стаття про минуле, сучасність і примарне майбутнє київських трамвайних маршрутів",
     },
   },
@@ -250,8 +250,8 @@ export const mediaItems = [
     },
 
     description: {
-      en: "An article covering the first exhibition by renowned Ukrainian artist Halyna Moskvitina, who spent ten years in Nepal and developed a distinctive artistic style of Svetangs - paintings that radiate transcendental light",
-      ua: "Стаття присвячена відкриттю першої виставки відомої української художниці Галини Москвітіної, котра 10 років жила у Непалі і віднайшла авторський художній стиль светангів - картин, котрі випромінюють трансцендентне світло",
+      en: "An article covers the first exhibition by Ukrainian artist Halyna Moskvitina, who spent ten years in Nepal and developed a distinctive artistic style of Svetangs - paintings that radiate transcendental light",
+      ua: "Стаття присвячена відкриттю першої виставки української художниці Галини Москвітіної, котра 10 років жила у Непалі і віднайшла авторський художній стиль светангів - картин, котрі випромінюють трансцендентне світло",
     },
   },
 ];

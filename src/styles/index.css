@@ -24,11 +24,10 @@ ul {
   --surface-2: #1c2230;
   --text: #eaeaea;
   --muted: #a0a0a0;
-  /*--accent: #ff7a59;*/
   --accent:#5834eb;
   --accent-2: #ffe1d6;
   --border: #2a2f3a;
-
+  --border-2:#464c52;
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
