@@ -52,15 +52,33 @@ export const content = {
       "XML"
     ],
 
-    languages: "Ukrainian (native), English (C1)"
+    languages: "Ukrainian (native), English (C1)",
+
+    heroRole: "Language Specialist",
+
+    heroLanguagePair: "EN↔UA Translator",
+
+    heroSubtitle: "MTPE • UX/UI Localization • Technical Translation • Content Writing",
+
+    sectionLanguages: "Languages",
+
+    sectionTools: "Tools & Technologies",
+
+    sectionAbout: "About",
+
+    sectionServices: "Services",
+
+    sectionExperience: "Experience",
+
+    footerRole: "Translator & Language Specialist"
   },
 
   ua: {
-    name: "OLENA KULIKOVA",
+    name: "ОЛЕНА КУЛІКОВА",
     title: "Перекладач EN↔UA | Локалізація | MTPE | Контент-фахівець",
 
     about:
-      "Лінгвіст з досвідом перекладу, редагування, MTPE та створення контенту. Робота з великими обсягами текстів у різних сферах.",
+      "Лінгвіст з досвідом перекладу, редагування, MTPE та створення контенту. Робота з великими обсягами текстів у сферах академічного письма, бізнесу та маркетингу.",
 
     services: [
       "Переклад EN↔UA",
@@ -70,7 +88,7 @@ export const content = {
       "UI локалізація",
       "Технічний переклад",
       "Контент-райтинг",
-      "Transcreation"
+      "Транскреація"
     ],
 
     experience: [
@@ -108,6 +126,24 @@ export const content = {
       "XML"
     ],
 
-    languages: "Українська (рідна), Англійська (C1)"
+    languages: "Українська (рідна), Англійська (C1)",
+
+    heroRole: "Лінгвіст",
+
+    heroLanguagePair: "EN↔UA Перекладач",
+
+    heroSubtitle: "Машинний переклад і редагування • UX/UI Локалізація • Технічний переклад • Написання контенту",
+
+    sectionLanguages: "Мови",
+
+    sectionTools: "Інструменти",
+
+    sectionAbout: "Про мене",
+
+    sectionServices: "Послуги",
+
+    sectionExperience: "Досвід",
+
+    footerRole: "Перекладач і Лінгвіст"
   }
 };

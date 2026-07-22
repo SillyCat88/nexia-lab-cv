@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { content } from "../../data";
+import { content } from "./data/contentHome";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -12,12 +12,12 @@ export default function Home() {
         <h1>{t.name}</h1>
 
         <h2>
-          <span className={styles.accent}>Language Specialist</span>
-          {" • "}EN↔UA Translator
+          <span className={styles.accent}>{t.heroRole}</span>
+          {" • "}{t.heroLanguagePair}
         </h2>
 
         <p className={styles.heroSubtitle}>
-          MTPE • UX/UI Localization • Technical Translation • Content Writing
+          {t.heroSubtitle}
         </p>
 
         <div className={styles.buttons}>
@@ -29,12 +29,12 @@ export default function Home() {
       <div className={styles.layout}>
         <aside className={styles.sidebar}>
           <section>
-            <h3>Languages</h3>
+            <h3>{t.sectionLanguages}</h3>
             <p>{t.languages}</p>
           </section>
 
           <section>
-            <h3>Tools & Technologies</h3>
+            <h3>{t.sectionTools}</h3>
 
             <div className={styles.toolsList}>
               {t.tools.map((tool, i) => (
@@ -46,12 +46,12 @@ export default function Home() {
 
         <main className={styles.mainContent}>
           <section className={styles.card}>
-            <h3>About</h3>
+            <h3>{t.sectionAbout}</h3>
             <p>{t.about}</p>
           </section>
 
           <section>
-            <h3>Services</h3>
+            <h3>{t.sectionServices}</h3>
 
             <ul className={styles.tags}>
               {t.services.map((s, i) => (
@@ -63,7 +63,7 @@ export default function Home() {
           </section>
 
           <section>
-            <h3>Experience</h3>
+            <h3>{t.sectionExperience}</h3>
 
             {t.experience.map((e, i) => (
               <div key={i} className={styles.card}>
@@ -82,8 +82,8 @@ export default function Home() {
 
       <footer>
         <p>
-          <span className={styles.accent}>OLENA KULIKOVA</span>
-          {" • "}Translator & Language Specialist
+          <span className={styles.accent}>{t.name}</span>
+          {" • "}{t.footerRole}
         </p>
       </footer>
     </div>
