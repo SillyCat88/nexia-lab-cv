@@ -1,6 +1,7 @@
 import styles from "./Explorer.module.css";
 
 export default function Explorer({
+  t,
   selected,
   setSelected,
 }) {
@@ -18,33 +19,33 @@ export default function Explorer({
           <h3>{selected.title}</h3>
 
           <div className={styles.explorerRow}>
-            <span>Words</span>
+            <span>{t.explorerWords}</span>
             <span>{selected.words}</span>
           </div>
 
           <div className={styles.explorerRow}>
-            <span>Category</span>
+            <span>{t.explorerCategory}</span>
             <span>{selected.category ?? "—"}</span>
           </div>
 
           <div className={styles.explorerRow}>
-            <span>Service</span>
+            <span>{t.explorerService}</span>
             <span>{selected.services ?? "MTPE / Translation"}</span>
           </div>
 
           <div className={styles.explorerRow}>
-            <span>Type</span>
-            <span>{selected.type ?? "Project"}</span>
+            <span>{t.explorerTopic}</span>
+            <span>{selected.topic ?? "Project"}</span>
           </div>
 
           <div className={styles.explorerRow}>
-            <span>ID</span>
-            <span>{selected.id}</span>
+            <span>{t.explorerLanguagePair}</span>
+            <span>{selected.languagePair}</span>
           </div>
         </div>
       ) : (
         <div className={styles.explorerPlaceholder}>
-          Select a project bubble
+          {t.explorerPlaceholder}
         </div>
       )}
     </div>

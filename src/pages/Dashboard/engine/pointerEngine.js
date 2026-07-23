@@ -1,6 +1,7 @@
 function createPointerEngine({
   chartEl,
   tooltipEl,
+  wordsLabel,
 }) {
   let raf = null;
 
@@ -51,7 +52,7 @@ function createPointerEngine({
       tooltipEl.style.opacity = "1";
 
       titleEl.textContent = title;
-      wordsEl.textContent = `${words} words`;
+      wordsEl.textContent = `${words} ${wordsLabel}`;
 
       tooltipEl.style.transform =
 	      `translate3d(${x + TOOLTIP_OFFSET}px, ${y + TOOLTIP_OFFSET}px, 0)`;

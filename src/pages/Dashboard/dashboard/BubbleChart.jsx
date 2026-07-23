@@ -35,7 +35,7 @@ export default function BubbleChart({
               style={bubble.style}
               onClick={(e) => {
                 e.stopPropagation();
-                setSelected(bubble.project);
+                setSelected(bubble.project.id);
               }}
             >
               {bubble.words}
