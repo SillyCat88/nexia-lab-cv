@@ -4,11 +4,11 @@ import { dashboardVertices } from "../layout/dashboardVertices";
 import createPointerEngine from "../engine/pointerEngine";
 import BubbleChart from "./BubbleChart";
 import Explorer from "./Explorer";
+import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 import styles from "./Dashboard.module.css";
 
 
-export default function Dashboard() {
-  const [lang, setLang] = useState("en");
+export default function Dashboard({ lang, setLang }) {
   const [selectedId, setSelectedId] = useState(null);
 
   const tooltipRef = useRef(null);
@@ -37,15 +37,15 @@ export default function Dashboard() {
   
   return (
     <section className={styles.projects}>
+      <LanguageSwitcher
+        lang={lang}
+        setLang={setLang}
+      />
+
       <header className={styles.dashboardHeader}>
         <h1>{t.pageTitle}</h1>
         <p>{t.pageDescription}</p>
       </header>
-
-      <div className={styles.buttons}>
-        <button onClick={() => setLang("en")}>EN</button>
-        <button onClick={() => setLang("ua")}>UA</button>
-      </div>
 
       <div className={styles.dashboardGrid}>
         {/* LEFT: BUBBLES */}

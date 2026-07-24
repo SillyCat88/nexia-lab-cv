@@ -30,6 +30,7 @@ import article07Page2 from "../articles/streetcar-from-past-to-future/page2.jpg"
 
 import article08 from "../articles/arcane-art-gallery/page1.jpg";
 
+
 export const mediaItems = {
   en: {
     headerTitle: "Media Archive",
@@ -52,7 +53,6 @@ export const mediaItems = {
     articleNotFound: "Article not found",
     pageAlt: "page",
     buttonBack: "Back",
-
     
     items: [
       {
@@ -206,7 +206,6 @@ export const mediaItems = {
     articleNotFound: "Статтю не знайдено",
     pageAlt: "сторінка",
     buttonBack: "Назад",
-
     
     items: [
       {
@@ -334,7 +333,7 @@ export const mediaItems = {
 
         subject: "Культурне життя столиці",
 
-        description: "Стаття присвячена відкриттю першої виставки української художниці Галини Москвітіної, котра 10 років жила у Непалі і створила авторський художній стиль светангів - картин, котрі випромінюють трансцендентне світло",
+        description: "Стаття присвячена відкриттю першої виставки української художниці Галини Москвітіної, котра 10 років жила у Непалі і створила авторський художній стиль светангів - картин, що випромінюють трансцендентне світло",
       },
     ]
   }  

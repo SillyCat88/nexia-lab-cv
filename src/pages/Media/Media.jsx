@@ -2,18 +2,12 @@ import { useState, useEffect } from "react";
 import { mediaItems } from "./data/contentMedia";
 import MediaCard from "./MediaCard";
 import MediaExplorer from "./MediaExplorer";
+import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher";
 import styles from "./Media.module.css";
 
 
-export default function Media() {
-
+export default function Media({ lang, setLang }) {
   const STORAGE_KEY = "media-state";  
-
-  const [lang, setLang] = useState(() => {
-    const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY));
-    return saved?.lang ?? "en";
-  });
-  
   const t = mediaItems[lang];
   
   const [currentIndex, setCurrentIndex] = useState(() => {
@@ -31,18 +25,15 @@ export default function Media() {
   });
 
   const selected = t.items.find(item => item.id === selectedId) ?? null;
-
   const currentItem = t.items[currentIndex];
 
   const handlePrevious = () => {
     setCurrentIndex((prev) => {
       const next =
         prev === 0 ? t.items.length - 1 : prev - 1;
-
       setSelectedId((id) =>
         id !== null ? t.items[next].id : null
       );
-
       return next;
     });
   };
@@ -51,11 +42,9 @@ export default function Media() {
     setCurrentIndex((prev) => {
       const next =
         prev === t.items.length - 1 ? 0 : prev + 1;
-
       setSelectedId((id) =>
         id !== null ? t.items[next].id : null
       );
-
       return next;
     });
   };
@@ -74,17 +63,17 @@ export default function Media() {
   
   return (
     <section className={styles.media}>
+      <LanguageSwitcher
+        lang={lang}
+        setLang={setLang}
+      />
+
       <header className={styles.header}>
         <h1>{t.headerTitle}</h1>
         <p>
           {t.headerDescription}
         </p>
       </header>
-
-      <div className={styles.buttons}>
-        <button onClick={() => setLang("en")}>EN</button>
-        <button onClick={() => setLang("ua")}>UA</button>
-      </div>
 
       <div className={styles.mediaGrid}>
         <MediaCard

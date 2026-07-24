@@ -50,26 +50,6 @@
 
 
 /* =========================
-   LANGUAGE
-========================= */
-
-.language {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  font-size: 0.875rem;
-  font-weight: 500;
-
-  color: var(--accent-2);
-}
-
-.language span {
-  color: var(--accent);
-}
-
-
-/* =========================
    CONTENT
 ========================= */
 
