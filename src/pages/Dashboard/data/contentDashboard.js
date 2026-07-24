@@ -264,7 +264,7 @@ export const projects = {
         languagePair: "Ru → En",
         topic: "Корпоративні презентації",
         words: 8013,
-        services: "Переклад, верстка (DTP)"
+        services: "Переклад, DTP"
       },
       {
         id: 8,
@@ -282,7 +282,7 @@ export const projects = {
         languagePair: "En → Ru",
         topic: "Реклама косметичних засобів",
         words: 403,
-        services: "Переклад, верстка (DTP)"
+        services: "Переклад, DTP"
       },
       {
         id: 10,
@@ -291,7 +291,7 @@ export const projects = {
         languagePair: "En → Ru",
         topic: "Реклама косметичних засобів",
         words: 853,
-        services: "Переклад, верстка (DTP)"
+        services: "Переклад, DTP"
       },
       {
         id: 11,
@@ -372,7 +372,7 @@ export const projects = {
         languagePair: "En → Ru",
         topic: "Туризм",
         words: 698,
-        services: "Переклад, верстка"
+        services: "Переклад, DTP"
       }
     ]
   }

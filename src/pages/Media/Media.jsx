@@ -1,12 +1,20 @@
 import { useState, useEffect } from "react";
-import { mediaItems } from "./data/mediaData";
+import { mediaItems } from "./data/contentMedia";
 import MediaCard from "./MediaCard";
 import MediaExplorer from "./MediaExplorer";
 import styles from "./Media.module.css";
 
 
 export default function Media() {
-  const STORAGE_KEY = "media-state";
+
+  const STORAGE_KEY = "media-state";  
+
+  const [lang, setLang] = useState(() => {
+    const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY));
+    return saved?.lang ?? "en";
+  });
+  
+  const t = mediaItems[lang];
   
   const [currentIndex, setCurrentIndex] = useState(() => {
     const saved = JSON.parse(
@@ -15,67 +23,82 @@ export default function Media() {
     return saved?.currentIndex ?? 0;
   });
 
-  const [selected, setSelected] = useState(() => {
+  const [selectedId, setSelectedId] = useState(() => {
     const saved = JSON.parse(
       sessionStorage.getItem(STORAGE_KEY)
     );
-    if (!saved?.explorerOpened) return null;
-    return mediaItems[saved.currentIndex];
+    return saved?.selectedId ?? null;
   });
 
-  const currentItem = mediaItems[currentIndex];
+  const selected = t.items.find(item => item.id === selectedId) ?? null;
+
+  const currentItem = t.items[currentIndex];
 
   const handlePrevious = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? mediaItems.length - 1 : prev - 1
-    );
+    setCurrentIndex((prev) => {
+      const next =
+        prev === 0 ? t.items.length - 1 : prev - 1;
+
+      setSelectedId((id) =>
+        id !== null ? t.items[next].id : null
+      );
+
+      return next;
+    });
   };
 
   const handleNext = () => {
-    setCurrentIndex((prev) =>
-      prev === mediaItems.length - 1 ? 0 : prev + 1
-    );
+    setCurrentIndex((prev) => {
+      const next =
+        prev === t.items.length - 1 ? 0 : prev + 1;
+
+      setSelectedId((id) =>
+        id !== null ? t.items[next].id : null
+      );
+
+      return next;
+    });
   };
 
-
-  useEffect(() => {
-    if (!selected) return;
-    setSelected(mediaItems[currentIndex]);
-  }, [currentIndex]);
-
-  
   useEffect(() => {
     sessionStorage.setItem(
       STORAGE_KEY,
       JSON.stringify({
         currentIndex,
-        explorerOpened: selected !== null,
+        selectedId,
+        lang,
       })
     );
-  }, [currentIndex, selected]);
+  }, [currentIndex, selectedId, lang]);  
 
   
   return (
     <section className={styles.media}>
       <header className={styles.header}>
-        <h1>Media Archive</h1>
-
+        <h1>{t.headerTitle}</h1>
         <p>
-          Collection of authored materials for a Ukrainian newspaper.
+          {t.headerDescription}
         </p>
       </header>
+
+      <div className={styles.buttons}>
+        <button onClick={() => setLang("en")}>EN</button>
+        <button onClick={() => setLang("ua")}>UA</button>
+      </div>
 
       <div className={styles.mediaGrid}>
         <MediaCard
           item={currentItem}
-          onPreview={() => setSelected(currentItem)}
+          onPreview={() => setSelectedId(currentItem.id)}
           onPrevious={handlePrevious}
           onNext={handleNext}
+          t={t}
         />
 
         <MediaExplorer
           selected={selected}
-          setSelected={setSelected}
+          setSelected={setSelectedId}
+          t={t}
         />
       </div>
     </section>

@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from "react";
-import { projects } from "../data/projects";
+import { projects } from "../data/contentDashboard";
 import { dashboardVertices } from "../layout/dashboardVertices";
 import createPointerEngine from "../engine/pointerEngine";
 import BubbleChart from "./BubbleChart";
 import Explorer from "./Explorer";
 import styles from "./Dashboard.module.css";
+
 
 export default function Dashboard() {
   const [lang, setLang] = useState("en");

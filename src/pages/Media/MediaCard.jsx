@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { mediaItems } from "./data/contentMedia";
 import styles from "./MediaCard.module.css";
 
 export default function MediaCard({
@@ -6,20 +7,21 @@ export default function MediaCard({
   onPreview,
   onPrevious,
   onNext,
+  t
 }) {
   return (
     <article className={styles.card}>
       <div className={styles.preview}>
         <img
           src={item.preview}
-          alt={`Preview of "${item.title.en}"`}
+          alt={`${t.previewAlt} ${item.title}`}
           className={styles.image}
         />
       </div>
 
       <div className={styles.content}>
         <h2 className={styles.title}>
-          {item.title.en}
+          {item.title}
         </h2>
 
         <div className={styles.links}>
@@ -27,7 +29,7 @@ export default function MediaCard({
             to={`/media/${item.id}`}
             className={styles.link}
           >
-            Open
+            {t.buttonOpen}
           </Link>
 
           <button
@@ -35,7 +37,7 @@ export default function MediaCard({
             className={styles.open}
             onClick={onPreview}
           >
-            Preview
+            {t.buttonPreview}
           </button>
         </div>
       </div>
@@ -45,7 +47,7 @@ export default function MediaCard({
           type="button"
           className={styles.arrow}
           onClick={onPrevious}
-          aria-label="Previous article"
+          aria-label={t.previousArticle}
         >
           &#8249;
         </button>
@@ -54,7 +56,7 @@ export default function MediaCard({
           type="button"
           className={styles.arrow}
           onClick={onNext}
-          aria-label="Next article"
+          aria-label={t.nextArticle}
         >
           &#8250;
         </button>
