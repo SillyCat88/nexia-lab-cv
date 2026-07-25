@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home";
 import Dashboard from "./pages/Dashboard/dashboard/Dashboard";
 import Media from "./pages/Media/Media";
 import ArticleViewer from "./pages/Media/ArticleViewer";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Contact/Contact";
 import MainLayout from "./layouts/MainLayout";
 
 
