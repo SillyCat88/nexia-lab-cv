@@ -1,4 +1,4 @@
-.page {
+.mainLayout {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -7,14 +7,14 @@
   animation: fadeIn 240ms ease forwards;
 }
 
-.container {
+.mainContainer {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
   padding: var(--space-7);
 }
 
-.panel {
+.cardContainer {
   display: flex;
   flex-direction: column;
   gap: var(--space-5);
@@ -25,11 +25,11 @@
   transition: border-color 180ms ease;
 }
 
-.panel:hover {
+.cardContainer:hover {
   border-color: var(--border);
 }
 
-.title {
+.mainTitle {
   margin: 0;
   font-size: 42px;
   font-weight: 600;
@@ -39,7 +39,7 @@
   font-size: clamp(2rem, 2.5vw, 3rem);
 }
 
-.link {
+.cardLink {
   align-self: flex-start;
   color: var(--accent);
   font-size: 15px;
@@ -52,11 +52,11 @@
     opacity 180ms ease;
 }
 
-.link:hover {
+.cardLink:hover {
   opacity: 1;
 }
 
-.link:focus-visible {
+.cardLink:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 4px;
 }
@@ -72,15 +72,15 @@
 }
 
 @media (max-width: 600px) {
-  .container {
+  .mainContainer {
     padding: var(--space-5);
   }
 
-  .panel {
+  .cardContainer {
     padding: var(--space-5);
   }
 
-  .title {
+  .mainTitle {
     font-size: 34px;
   }
 }

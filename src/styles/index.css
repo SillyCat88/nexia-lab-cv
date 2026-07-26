@@ -4,20 +4,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
 :root {
   --bg: #0f1115;
   --surface: #161a22;
@@ -43,6 +29,76 @@ ul {
   --space-6: 32px;
   --space-7: 48px;
 }
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.65;
+	letter-spacing: 0.2px;
+	background: var(--bg);
+	color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.2px;
+}
+
+h1 {
+	margin: 0;
+	margin-bottom: var(--space-2);
+	line-height: 1.1;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.25;
+	color: var(--muted);
+	opacity: 0.7;
+}
+
+h3 {
+	margin-bottom: var(--space-4);
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.25;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--text);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+	margin-top: 0;
+	margin-bottom: var(--space-4);
+}
+
+p {
+	line-height: 1.65;
+	color: rgb(255 255 255 / 80%);
+}
+
+
 
 ::selection {
   background: var(--accent);

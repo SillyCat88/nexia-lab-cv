@@ -8,17 +8,17 @@ export default function Welcome({ lang, setLang }) {
   const t = content[lang];
 
   return (
-    <main className={styles.page}>
+    <main className={styles.mainLayout}>
       <LanguageSwitcher
         lang={lang}
         setLang={setLang}
       />
 
-      <div className={styles.container}>
-        <section className={styles.panel}>
-          <h1 className={styles.title}>{t.pageTitle}</h1>
+      <div className={styles.mainContainer}>
+        <section className={styles.cardContainer}>
+          <h1 className={styles.mainTitle}>{t.pageTitle}</h1>
           
-          <Link to="/home" className={styles.link}>
+          <Link to="/home" className={styles.cardLink}>
             {t.exploreLink}
           </Link>
         </section>

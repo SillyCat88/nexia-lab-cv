@@ -71,7 +71,6 @@ export const content = {
 
     sectionExperience: "Experience",
 
-    footerRole: "Translator & Language Specialist"
   },
 
   ua: {
@@ -146,6 +145,5 @@ export const content = {
 
     sectionExperience: "Досвід",
 
-    footerRole: "Перекладач і Лінгвіст"
   }
 };

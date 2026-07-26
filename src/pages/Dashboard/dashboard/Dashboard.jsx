@@ -5,6 +5,7 @@ import createPointerEngine from "../engine/pointerEngine";
 import BubbleChart from "./BubbleChart";
 import Explorer from "./Explorer";
 import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
+import Footer from "../../../components/Footer/Footer";
 import styles from "./Dashboard.module.css";
 
 
@@ -72,6 +73,10 @@ export default function Dashboard({ lang, setLang }) {
 
       {/* SPACE */}
       <div className={styles.spacer} />
+
+      <Footer 
+        lang={lang}
+      />
     </section>
   );
 }

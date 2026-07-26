@@ -2,6 +2,8 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher";
+import Footer from "../../components/Footer/Footer";
+
 import styles from "./Contact.module.css";
 import { contentContact } from "./contentContact";
 
@@ -92,7 +94,6 @@ export default function Contact({ lang, setLang }) {
         <form
           className={styles.form}
           onSubmit={handleSubmit}
-          noValidate
         >
           <label>
             <span>{t.nameLabel}</span>
@@ -100,6 +101,7 @@ export default function Contact({ lang, setLang }) {
             <input
               type="text"
               name="name"
+              required
               value={formData.name}
               onChange={handleChange}
               placeholder={t.namePlaceholder}
@@ -168,6 +170,10 @@ export default function Contact({ lang, setLang }) {
 
         </form>
       </div>
+
+      <Footer 
+        lang={lang}
+      />
     </section>
   );
 }
