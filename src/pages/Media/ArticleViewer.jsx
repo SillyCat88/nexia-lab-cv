@@ -12,34 +12,44 @@ export default function ArticleViewer({ lang, setLang }) {
   const article = articleMap[lang][articleId];
 
   if (!article) {
-    return <h1>{t.articleNotFound}</h1>;
+    return (
+      <main className={styles.mainContainer}>
+        <div className={styles.mainLayout}>
+          <h1 className={styles.mainHeaderTitle}>
+            {t.articleNotFound}
+          </h1>
+        </div>
+      </main>
+    );
   }
 
   return (
-    <main className={styles.viewer}>
-      <LanguageSwitcher
-        lang={lang}
-        setLang={setLang}
-      />
+    <main className={styles.mainContainer}>
+      <div className={styles.mainLayout}>
+        <LanguageSwitcher
+          lang={lang}
+          setLang={setLang}
+        />
 
-      <header className={styles.header}>
-        <h1>{article.title}</h1>
-      </header>
+        <header className={styles.mainHeader}>
+          <h1 className={styles.mainHeaderTitle}>{article.title}</h1>
+        </header>
 
-      <section className={styles.pages}>
-        {article.images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`${article.title} – ${t.pageAlt} ${index + 1}`}
-            className={styles.page}
-          />
-        ))}
-      </section>
+        <section className={styles.pagesLayout}>
+          {article.images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`${article.title} – ${t.pageAlt} ${index + 1}`}
+              className={styles.pageImage}
+            />
+          ))}
+        </section>
 
-      <button className={styles.button} onClick={() => navigate(-1)}>
-        {t.buttonBack}
-      </button>
+        <button className={styles.backButton} onClick={() => navigate(-1)}>
+          {t.buttonBack}
+        </button>
+      </div>
     </main>
   );
 }

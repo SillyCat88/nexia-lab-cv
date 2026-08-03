@@ -196,7 +196,7 @@ export const mediaItems = {
     previousArticle: "Попередня стаття",
     nextArticle: "Наступна стаття",
 
-    explorerPlaceholder: "Натисніть «Перегляд», щоб переглянути статтю.",
+    explorerPlaceholder: "Натисніть «Перегляд», щоб переглянути опис статті.",
     closeExplorer: "Закрити",
 
     fieldDate: "Дата",

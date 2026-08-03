@@ -2,28 +2,29 @@
    ARTICLE VIEWER
 ========================= */
 
-.viewer {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-
+.mainContainer {
   max-width: 1100px;
   margin: 80px auto;
   padding: 0 24px;
 }
 
+.mainLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 
 /* =========================
    HEADER
 ========================= */
 
-.header {
+.mainHeader {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
 }
 
-.header h1 {
+.mainHeaderTitle {
   margin: 0;
 
   font-size: clamp(2rem, 4vw, 3rem);
@@ -36,13 +37,13 @@
    PAGES
 ========================= */
 
-.pages {
+.pagesLayout {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.page {
+.pageImage {
   display: block;
 
   width: 100%;
@@ -53,7 +54,7 @@
   border-radius: 20px;
 }
 
-.button {
+.backButton {
   padding: var(--space-2);
   margin-bottom: var(--space-7);
 }
@@ -63,11 +64,11 @@
 ========================= */
 
 @media (max-width: 768px) {
-  .viewer {
+  .mainLayout {
     gap: 24px;
   }
 
-  .pages {
+  .pagesLayout {
     gap: 24px;
   }
 }
