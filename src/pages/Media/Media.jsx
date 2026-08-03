@@ -63,41 +63,43 @@ export default function Media({ lang, setLang }) {
 
   
   return (
-    <section className={styles.media}>
-      <LanguageSwitcher
-        lang={lang}
-        setLang={setLang}
-      />
-
-      <header className={styles.header}>
-        <h1>{t.headerTitle}</h1>
-        <p>
-          {t.headerDescription}
-        </p>
-      </header>
-
-      <div className={styles.mediaGrid}>
-        <MediaCard
-          item={currentItem}
-          onPreview={() => setSelectedId(currentItem.id)}
-          onPrevious={handlePrevious}
-          onNext={handleNext}
-          t={t}
+    <section className={styles.mainContainer}>
+      <div className={styles.mainLayout}>
+        <LanguageSwitcher
+          lang={lang}
+          setLang={setLang}
         />
 
-        <MediaExplorer
-          selected={selected}
-          setSelected={setSelectedId}
-          t={t}
+        <header className={styles.mainHeader}>
+          <h1 className={styles.mainHeaderTitle}>{t.headerTitle}</h1>
+          <p className={styles.mainHeaderText}>
+            {t.headerDescription}
+          </p>
+        </header>
+
+        <div className={styles.mainGrid}>
+          <MediaCard
+            item={currentItem}
+            onPreview={() => setSelectedId(currentItem.id)}
+            onPrevious={handlePrevious}
+            onNext={handleNext}
+            t={t}
+          />
+
+          <MediaExplorer
+            selected={selected}
+            setSelected={setSelectedId}
+            t={t}
+          />
+        </div>
+
+        {/* SPACE */}
+        <div className={styles.spacer} />
+
+        <Footer 
+          lang={lang}
         />
       </div>
-
-      {/* SPACE */}
-      <div className={styles.spacer} />
-
-      <Footer 
-        lang={lang}
-      />
     </section>
   );
 }

@@ -1,6 +1,7 @@
 /* =========================
    EXPLORER
 ========================= */
+
 .explorerLayout {
   display: flex;
   flex-direction: column;
@@ -31,10 +32,17 @@
   right: 12px;
   background: transparent;
   border: none;
-  /*color: rgb(255 255 255 / 50%);*/
-  color:var(--accent-2);
+  color: rgb(255 255 255 / 55%);
   font-size: 22px;
   cursor: pointer;
+  transition:
+    color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.explorerClose:hover {
+  transform: scale(1.08);
+  color: var(--accent-2);
 }
 
 .explorerRow {

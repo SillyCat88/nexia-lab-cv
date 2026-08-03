@@ -4,9 +4,7 @@ import { articleMap } from "./articleMap";
 import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher";
 import styles from "./ArticleViewer.module.css";
 
-
 export default function ArticleViewer({ lang, setLang }) {
-
   const { articleId } = useParams();
   const navigate = useNavigate();
 

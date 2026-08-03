@@ -2,21 +2,19 @@
    MEDIA CARD
 ========================= */
 
-.card {
+.cardContainer {
   position: relative;
-
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
   width: 100%;
   padding: 20px;
-}
-
-.card {
   background: rgb(255 255 255 / 2%);
   border: 1px solid rgb(255 255 255 / 2%);
   border-radius: 20px;
+}
+
+.cardLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 
@@ -24,12 +22,12 @@
    PREVIEW
 ========================= */
 
-.preview {
+.previewContainer {
   overflow: hidden;
   border-radius: 16px;
 }
 
-.image {
+.previewImage {
   display: block;
 
   width: 100%;
@@ -43,13 +41,13 @@
    CONTENT
 ========================= */
 
-.content {
+.contentLayout {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
-.title {
+.cardTitle {
   margin: 0;
 
   line-height: 1.35;
@@ -62,16 +60,15 @@
    LINKS
 ========================= */
 
-.links {
+.linksLayout {
   display: flex;
   gap: 18px;
 }
 
-.link {
+.actionLink {
   padding: 0;
 
   background: transparent;
-  border: none;
 
   color: var(--accent-2);
   font: inherit;
@@ -80,11 +77,11 @@
   transition: color 0.18s ease;
 }
 
-.link:hover {
+.actionLink:hover {
   color: var(--accent);
 }
 
-.open {
+.previewButton {
   padding: 0;
 
   background: transparent;
@@ -96,7 +93,7 @@
   cursor: pointer;
 }
 
-.open:hover {
+.previewButton:hover {
   transform: scale(1.08);
 }
 
@@ -104,7 +101,7 @@
    NAVIGATION
 ========================= */
 
-.navigation {
+.navigationLayout {
   display: flex;
   justify-content: space-between;
   align-items: center;

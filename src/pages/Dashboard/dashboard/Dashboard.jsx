@@ -8,7 +8,6 @@ import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitc
 import Footer from "../../../components/Footer/Footer";
 import styles from "./Dashboard.module.css";
 
-
 export default function Dashboard({ lang, setLang }) {
   const [selectedId, setSelectedId] = useState(null);
 

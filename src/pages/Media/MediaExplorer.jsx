@@ -8,42 +8,46 @@ export default function MediaExplorer({
 }) {
   if (!selected) {
     return (
-      <aside className={styles.explorer}>
-        <p className={styles.placeholder}>
-          {t.explorerPlaceholder}
-        </p>
+      <aside className={styles.explorerContainer}>
+        <div className={styles.explorerLayout}>
+          <p className={styles.explorerPlaceholder}>
+            {t.explorerPlaceholder}
+          </p>
+        </div>
       </aside>
     );
   }
 
   return (
-    <aside className={styles.explorer}>
-      <button
-        type="button"
-        className={styles.close}
-        onClick={() => setSelected(null)}
-        aria-label={t.closeExplorer}
-      >
-        ✕
-      </button>
+    <aside className={styles.explorerContainer}>
+      <div className={styles.explorerLayout}>
+        <button
+          type="button"
+          className={styles.closeButton}
+          onClick={() => setSelected(null)}
+          aria-label={t.closeExplorer}
+        >
+          ✕
+        </button>
 
-      <h2 className={styles.title}>
-        {selected.title}
-      </h2>
+        <h2 className={styles.explorerTitle}>
+          {selected.title}
+        </h2>
 
-      <div className={styles.field}>
-        <h3>{t.fieldDate}</h3>
-        <p>{selected.date}</p>
-      </div>
+        <div className={styles.fieldLayout}>
+          <h3 className={styles.fieldLabel}>{t.fieldDate}</h3>
+          <p className={styles.fieldText}>{selected.date}</p>
+        </div>
 
-      <div className={styles.field}>
-        <h3>{t.fieldSubject}</h3>
-        <p>{selected.subject}</p>
-      </div>
+        <div className={styles.fieldLayout}>
+          <h3 className={styles.fieldLabel}>{t.fieldSubject}</h3>
+          <p className={styles.fieldText}>{selected.subject}</p>
+        </div>
 
-      <div className={styles.field}>
-        <h3>{t.fieldDescription}</h3>
-        <p>{selected.description}</p>
+        <div className={styles.fieldLayout}>
+          <h3 className={styles.fieldLabel}>{t.fieldDescription}</h3>
+          <p className={styles.fieldText}>{selected.description}</p>
+        </div>
       </div>
     </aside>
   );

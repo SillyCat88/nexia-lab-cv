@@ -10,56 +10,58 @@ export default function MediaCard({
   t
 }) {
   return (
-    <article className={styles.card}>
-      <div className={styles.preview}>
-        <img
-          src={item.preview}
-          alt={`${t.previewAlt} ${item.title}`}
-          className={styles.image}
-        />
-      </div>
+    <article className={styles.cardContainer}>
+      <div className={styles.cardLayout}>
+        <div className={styles.previewContainer}>
+          <img
+            src={item.preview}
+            alt={`${t.previewAlt} ${item.title}`}
+            className={styles.previewImage}
+          />
+        </div>
 
-      <div className={styles.content}>
-        <h2 className={styles.title}>
-          {item.title}
-        </h2>
+        <div className={styles.contentLayout}>
+          <h2 className={styles.cardTitle}>
+            {item.title}
+          </h2>
 
-        <div className={styles.links}>
-          <Link
-            to={`/media/${item.id}`}
-            className={styles.link}
+          <div className={styles.linksLayout}>
+            <Link
+              to={`/media/${item.id}`}
+              className={styles.actionLink}
+            >
+              {t.buttonOpen}
+            </Link>
+
+            <button
+              type="button"
+              className={styles.previewButton}
+              onClick={onPreview}
+            >
+              {t.buttonPreview}
+            </button>
+          </div>
+        </div>
+
+        <div className={styles.navigationLayout}>
+          <button
+            type="button"
+            className={styles.arrow}
+            onClick={onPrevious}
+            aria-label={t.previousArticle}
           >
-            {t.buttonOpen}
-          </Link>
+            &#8249;
+          </button>
 
           <button
             type="button"
-            className={styles.open}
-            onClick={onPreview}
+            className={styles.arrow}
+            onClick={onNext}
+            aria-label={t.nextArticle}
           >
-            {t.buttonPreview}
+            &#8250;
           </button>
         </div>
-      </div>
-
-      <div className={styles.navigation}>
-        <button
-          type="button"
-          className={styles.arrow}
-          onClick={onPrevious}
-          aria-label={t.previousArticle}
-        >
-          &#8249;
-        </button>
-
-        <button
-          type="button"
-          className={styles.arrow}
-          onClick={onNext}
-          aria-label={t.nextArticle}
-        >
-          &#8250;
-        </button>
       </div>
     </article>
   );
