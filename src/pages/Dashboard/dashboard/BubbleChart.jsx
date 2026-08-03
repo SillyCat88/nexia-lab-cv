@@ -16,9 +16,9 @@ export default function BubbleChart({
   );
 
   return (
-    <div className={styles.bubbleChartWrapper}>
+    <div className={styles.bubbleChartLayout}>
       <div
-        className={styles.bubbleChart}
+        className={styles.bubbleChartContainer}
         ref={chartRef}
       >
         <div className={styles.bubbleStage}>

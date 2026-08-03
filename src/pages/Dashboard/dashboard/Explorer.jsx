@@ -6,9 +6,9 @@ export default function Explorer({
   setSelected,
 }) {
   return (
-    <div className={styles.explorerColumn}>
+    <div className={styles.explorerLayout}>
       {selected ? (
-        <div className={styles.explorer}>
+        <div className={styles.explorerContainer}>
           <button
             className={styles.explorerClose}
             onClick={() => setSelected(null)}
@@ -16,7 +16,7 @@ export default function Explorer({
             ×
           </button>
 
-          <h3>{selected.title}</h3>
+          <h3 className={styles.explorerTitle}>{selected.title}</h3>
 
           <div className={styles.explorerRow}>
             <span>{t.explorerWords}</span>

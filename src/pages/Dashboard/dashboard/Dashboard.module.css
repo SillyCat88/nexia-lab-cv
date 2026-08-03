@@ -1,40 +1,42 @@
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap:56px;
-
+.mainContainer {
   max-width: 1100px;
   margin: 56px auto 0;
   padding: 0 24px;
 }
 
-.dashboardGrid {
+.mainLayout {
+  display: flex;
+  flex-direction: column;
+  gap:56px;
+}
+
+.mainGrid {
   display: grid;
   grid-template-columns: minmax(640px, 1.3fr) minmax(280px, 0.7fr);
   gap: 124px;
   align-items: stretch;
 }
 
-.dashboardHeader {
+.headerContainer {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
 }
 
-.dashboardHeader h1 {
+.headerTitle {
   margin-bottom: var(--space-2);
   line-height: 1.25;
   font-size: clamp(2rem, 2.5vw, 3rem);
   font-weight: 600;
 }
 
-.dashboardHeader p {
+.headerText {
   max-width: 80ch;
   color: var(--muted);
   line-height: 1.6;
 }
 
-.bubbleChartMobilePlaceholder {
+.bubbleChartPlaceholder {
   display: none;
 }
 
@@ -52,11 +54,11 @@
 ========================= */
 
 @media (max-width: 900px) {
-  .dashboardGrid {
+  .mainGrid {
     display: none;
   }
 
-  .bubbleChartMobilePlaceholder {
+  .bubbleChartPlaceholder {
     display: flex;
     width: 100%;
     min-height: 300px;
@@ -71,7 +73,7 @@
 }
 
 @media (max-width: 600px) {
-  .projects {
+  .mainLayout {
     gap: 32px;
   }
 }

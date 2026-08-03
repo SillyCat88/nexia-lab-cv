@@ -37,46 +37,48 @@ export default function Dashboard({ lang, setLang }) {
   const selected = t.items.find((project) => project.id === selectedId) ?? null;
   
   return (
-    <section className={styles.projects}>
-      <LanguageSwitcher
-        lang={lang}
-        setLang={setLang}
-      />
-
-      <header className={styles.dashboardHeader}>
-        <h1>{t.pageTitle}</h1>
-        <p>{t.pageDescription}</p>
-      </header>
-
-      <div className={styles.dashboardGrid}>
-        {/* LEFT: BUBBLES */}
-        <BubbleChart
-          projects={t.items}
-          selected={selected}
-          setSelected={setSelectedId}
-          chartRef={chartRef}
-          tooltipRef={tooltipRef}
-          dashboardVertices={dashboardVertices}
+    <section className={styles.mainContainer}>
+      <div className={styles.mainLayout}>
+        <LanguageSwitcher
+          lang={lang}
+          setLang={setLang}
         />
 
-        {/* RIGHT: EXPLORER */}
-        <Explorer
-          t={t}
-          selected={selected}
-          setSelected={setSelectedId}
+        <header className={styles.headerContainer}>
+          <h1 className={styles.headerTitle}>{t.pageTitle}</h1>
+          <p className={styles.headerText}>{t.pageDescription}</p>
+        </header>
+
+        <div className={styles.mainGrid}>
+          {/* LEFT: BUBBLES */}
+          <BubbleChart
+            projects={t.items}
+            selected={selected}
+            setSelected={setSelectedId}
+            chartRef={chartRef}
+            tooltipRef={tooltipRef}
+            dashboardVertices={dashboardVertices}
+          />
+
+          {/* RIGHT: EXPLORER */}
+          <Explorer
+            t={t}
+            selected={selected}
+            setSelected={setSelectedId}
+          />
+        </div>
+
+        <div className={styles.bubbleChartPlaceholder}>
+          {t.mobilePlaceholder}
+        </div>
+
+        {/* SPACE */}
+        <div className={styles.spacer} />
+
+        <Footer 
+          lang={lang}
         />
       </div>
-
-      <div className={styles.bubbleChartMobilePlaceholder}>
-        {t.mobilePlaceholder}
-      </div>
-
-      {/* SPACE */}
-      <div className={styles.spacer} />
-
-      <Footer 
-        lang={lang}
-      />
     </section>
   );
 }

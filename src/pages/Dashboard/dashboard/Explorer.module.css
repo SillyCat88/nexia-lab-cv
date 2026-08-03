@@ -1,23 +1,24 @@
 /* =========================
    EXPLORER
 ========================= */
-
-.explorer {
-  position: relative;
-  width: 100%;
-  padding: 18px;
+.explorerLayout {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: stretch;
 }
 
-.explorer {
+.explorerContainer {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  padding: 18px;
   background: rgb(255 255 255 / 2%);
   border: 1px solid rgb(255 255 255 / 2%);
   border-radius: 20px;
 }
 
-.explorer h3 {
+.explorerTitle {
   margin: 0 0 12px 0;
   padding-right: 24px;
   font-weight: 600;
@@ -42,6 +43,7 @@
   gap: 12px;
   font-size: 14px;
   line-height: 1.4;
+  margin-top: 8px;
 }
 
 .explorerRow span:first-child {
@@ -50,12 +52,6 @@
 
 .explorerRow span:last-child {
   opacity: 0.95;
-}
-
-.explorerColumn {
-  min-height: 520px;
-  display: flex;
-  align-items: stretch;
 }
 
 .explorerPlaceholder {
