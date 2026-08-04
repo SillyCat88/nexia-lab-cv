@@ -3,7 +3,6 @@ import { mediaItems } from "./data/contentMedia";
 import MediaCard from "./MediaCard";
 import MediaExplorer from "./MediaExplorer";
 import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher";
-import Footer from "../../components/Footer/Footer";
 import styles from "./Media.module.css";
 
 
@@ -96,9 +95,6 @@ export default function Media({ lang, setLang }) {
         {/* SPACE */}
         <div className={styles.spacer} />
 
-        <Footer 
-          lang={lang}
-        />
       </div>
     </section>
   );

@@ -7,6 +7,7 @@ import Media from "./pages/Media/Media";
 import ArticleViewer from "./pages/Media/ArticleViewer";
 import Contact from "./pages/Contact/Contact";
 import MainLayout from "./layouts/MainLayout";
+import PageLayout from "./components/PageLayout/PageLayout";
 
 
 export default function App() {
@@ -22,23 +23,58 @@ export default function App() {
       <Route element={<MainLayout />}>
         <Route 
           path="/home" 
-          element={<Home lang={lang} setLang={setLang} />} 
+          element={
+            <PageLayout lang={lang}>
+              <Home 
+                lang={lang} 
+                setLang={setLang} 
+              />
+            </PageLayout>
+          } 
         />
         <Route 
           path="/dashboard" 
-          element={<Dashboard lang={lang} setLang={setLang} />} 
+          element={
+            <PageLayout lang={lang}>
+              <Dashboard 
+                lang={lang} 
+                setLang={setLang} 
+              />
+            </PageLayout>
+          } 
         />
         <Route 
           path="/media" 
-          element={<Media lang={lang} setLang={setLang} />} 
+          element={
+            <PageLayout lang={lang}>
+              <Media 
+                lang={lang} 
+                setLang={setLang} 
+              />
+            </PageLayout>
+          } 
         />
         <Route 
           path="media/:articleId" 
-          element={<ArticleViewer lang={lang} setLang={setLang} />} 
+          element={
+            <PageLayout lang={lang}>
+              <ArticleViewer 
+                lang={lang} 
+                setLang={setLang} 
+              />
+            </PageLayout>
+          } 
         />
         <Route 
           path="/contact" 
-          element={<Contact lang={lang} setLang={setLang} />} 
+          element={
+            <PageLayout lang={lang}>
+              <Contact 
+                lang={lang} 
+                setLang={setLang} 
+              />
+            </PageLayout>
+          } 
         />
       </Route>
     </Routes>

@@ -1,6 +1,5 @@
 import { content } from "./data/contentHome";
 import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher";
-import Footer from "../../components/Footer/Footer";
 import styles from "./Home.module.css";
 
 
@@ -80,9 +79,6 @@ export default function Home({ lang, setLang }) {
         </section>
       </div>
 
-      <Footer 
-        lang={lang}
-      />
     </div>
   );
 }

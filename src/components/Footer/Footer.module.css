@@ -13,8 +13,8 @@
 }
 
 .footerAccent {
-    color: var(--accent-2);
-    font-weight: 600;
+  color: var(--accent-2);
+  font-weight: 600;
 }
 
 .backToTopButton {
