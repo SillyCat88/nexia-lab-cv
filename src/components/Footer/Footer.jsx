@@ -11,6 +11,18 @@ export default function Footer ({ lang }) {
         {"© "}{year} <span className={styles.footerAccent}>{t.name}</span>
         {" • "}{t.footerRole}
       </p>
+      <button
+        type="button"
+        className={styles.backToTopButton}
+        onClick={() =>
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          })
+        }
+      >
+        {t.backToTop}
+      </button>
     </footer>
   ) 
 }
