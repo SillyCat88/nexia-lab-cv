@@ -3,11 +3,12 @@ import styles from "./Footer.module.css";
  
 export default function Footer ({ lang }) {
   const t = content[lang];
+  const year = new Date().getFullYear();
 
   return (
     <footer className={styles.footerContainer}>
       <p>
-        <span className={styles.accent}>{t.name}</span>
+        {"© "}{year} <span className={styles.footerAccent}>{t.name}</span>
         {" • "}{t.footerRole}
       </p>
     </footer>

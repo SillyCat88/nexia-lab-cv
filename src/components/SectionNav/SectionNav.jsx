@@ -3,11 +3,11 @@ import styles from "./SectionNav.module.css";
 
 export default function SectionNav() {
   return (
-    <nav className={styles.sectionNav}>
+    <nav className={styles.navContainer}>
       <NavLink
         to="/home"
         className={({ isActive }) =>
-          `${styles.link} ${isActive ? styles.isActive : ""}`
+          `${styles.navLink} ${isActive ? styles.isActive : ""}`
         }
       >
         Home
@@ -16,7 +16,7 @@ export default function SectionNav() {
       <NavLink
         to="/dashboard"
         className={({ isActive }) =>
-          `${styles.link} ${isActive ? styles.isActive : ""}`
+          `${styles.navLink} ${isActive ? styles.isActive : ""}`
         }
       >
         Dashboard
@@ -25,7 +25,7 @@ export default function SectionNav() {
       <NavLink
         to="/media"
         className={({ isActive }) =>
-          `${styles.link} ${isActive ? styles.isActive : ""}`
+          `${styles.navLink} ${isActive ? styles.isActive : ""}`
         }
       >
         Media
@@ -34,7 +34,7 @@ export default function SectionNav() {
       <NavLink
         to="/contact"
         className={({ isActive }) =>
-          `${styles.link} ${isActive ? styles.isActive : ""}`
+          `${styles.navLink} ${isActive ? styles.isActive : ""}`
         }
       >
         Contact
