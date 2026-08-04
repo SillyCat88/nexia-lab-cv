@@ -61,15 +61,15 @@ export const content = {
 
     heroSubtitle: "MTPE • UX/UI Localization • Technical Translation • Content Writing",
 
-    sectionLanguages: "Languages",
+    contentLanguages: "Languages",
 
-    sectionTools: "Tools & Technologies",
+    contentTools: "Tools & Technologies",
 
-    sectionAbout: "About",
+    contentAbout: "About",
 
-    sectionServices: "Services",
+    contentServices: "Services",
 
-    sectionExperience: "Experience",
+    contentExperience: "Experience",
 
   },
 
@@ -135,15 +135,15 @@ export const content = {
 
     heroSubtitle: "Постредагування • UX/UI Локалізація • Технічний переклад • Написання контенту",
 
-    sectionLanguages: "Мови",
+    contentLanguages: "Мови",
 
-    sectionTools: "Інструменти",
+    contentTools: "Інструменти",
 
-    sectionAbout: "Про мене",
+    contentAbout: "Про мене",
 
-    sectionServices: "Послуги",
+    contentServices: "Послуги",
 
-    sectionExperience: "Досвід",
+    conentExperience: "Досвід",
 
   }
 };

@@ -16,7 +16,7 @@
 	min-width: 0;
 }
 
-.sectionContainer {
+.contentContainer {
 	padding: var(--space-6) 0;
 	margin-bottom: var(--space-6);
 }

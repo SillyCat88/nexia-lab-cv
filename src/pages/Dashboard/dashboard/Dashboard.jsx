@@ -43,7 +43,7 @@ export default function Dashboard({ lang, setLang }) {
           setLang={setLang}
         />
 
-        <header className={styles.headerContainer}>
+        <header className={styles.headerLayout}>
           <h1 className={styles.headerTitle}>{t.pageTitle}</h1>
           <p className={styles.headerText}>{t.pageDescription}</p>
         </header>

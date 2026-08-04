@@ -1,7 +1,7 @@
 export const contentContact = {
   en: {
     title: "Contact",
-    subtitle: "I'd love to hear from you.",
+    description: "I'd love to hear from you.",
 
     nameLabel: "Name",
     namePlaceholder: "Your name or nickname",

@@ -18,20 +18,20 @@
    HEADER
 ========================= */
 
-.mainHeader {
+.headerLayout {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
 }
 
-.mainHeaderTitle {
+.headerTitle {
   margin: 0;
   font-size: clamp(2rem, 2.5vw, 3rem);
   font-weight: 600;
   line-height: 1.25;
 }
 
-.mainHeaderText {
+.headerText {
   max-width: 80ch;
   margin: 0;
   color: var(--muted);

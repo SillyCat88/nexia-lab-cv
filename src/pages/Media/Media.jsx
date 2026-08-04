@@ -70,9 +70,9 @@ export default function Media({ lang, setLang }) {
           setLang={setLang}
         />
 
-        <header className={styles.mainHeader}>
-          <h1 className={styles.mainHeaderTitle}>{t.headerTitle}</h1>
-          <p className={styles.mainHeaderText}>
+        <header className={styles.headerLayout}>
+          <h1 className={styles.headerTitle}>{t.headerTitle}</h1>
+          <p className={styles.headerText}>
             {t.headerDescription}
           </p>
         </header>

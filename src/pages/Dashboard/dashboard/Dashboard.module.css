@@ -17,7 +17,7 @@
   align-items: stretch;
 }
 
-.headerContainer {
+.headerLayout {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);

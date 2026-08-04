@@ -1,17 +1,19 @@
 .mainLayout {
-  min-height: 100vh;
   display: flex;
   align-items: center;
-  background: var(--bg);
-  opacity: 0;
-  animation: fadeIn 240ms ease forwards;
+  min-height: 100vh;
 }
 
 .mainContainer {
   width: 100%;
   max-width: 1100px;
+  
   margin: 0 auto;
   padding: var(--space-7);
+
+  background: var(--bg);
+  opacity: 0;
+  animation: fadeIn 240ms ease forwards;
 }
 
 .cardContainer {

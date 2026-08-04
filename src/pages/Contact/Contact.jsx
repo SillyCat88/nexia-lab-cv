@@ -78,25 +78,25 @@ export default function Contact({ lang, setLang }) {
   };
 
   return (
-    <section className={styles.contact}>
+    <section className={styles.mainContainer}>
       
       <LanguageSwitcher
         lang={lang}
         setLang={setLang}
       />
 
-      <div className={styles.container}>
-        <header className={styles.header}>
-          <h1>{t.title}</h1>
-          <p>{t.subtitle}</p>
+      <div className={styles.mainLayout}>
+        <header className={styles.headerLayout}>
+          <h1 className={styles.headerTitle}>{t.title}</h1>
+          <p className={styles.headerText}>{t.description}</p>
         </header>
 
         <form
-          className={styles.form}
+          className={styles.formLayout}
           onSubmit={handleSubmit}
         >
-          <label>
-            <span>{t.nameLabel}</span>
+          <label className={styles.labelLayout}>
+            <span className={styles.labelField}>{t.nameLabel}</span>
 
             <input
               type="text"
@@ -105,11 +105,12 @@ export default function Contact({ lang, setLang }) {
               value={formData.name}
               onChange={handleChange}
               placeholder={t.namePlaceholder}
+              className={styles.inputField}
             />
           </label>
 
-          <label>
-            <span>{t.whatsappLabel}</span>
+          <label className={styles.labelLayout}>
+            <span className={styles.labelField}>{t.whatsappLabel}</span>
 
             <input
               type="tel"
@@ -117,11 +118,12 @@ export default function Contact({ lang, setLang }) {
               value={formData.whatsapp}
               onChange={handleChange}
               placeholder={t.whatsappPlaceholder}
+              className={styles.inputField}
             />
           </label>
 
-          <label>
-            <span>
+          <label className={styles.labelLayout}>
+            <span className={styles.labelField}>
               {t.emailLabel}
               <sup>*</sup>
             </span>
@@ -133,11 +135,12 @@ export default function Contact({ lang, setLang }) {
               value={formData.email}
               onChange={handleChange}
               placeholder={t.emailPlaceholder}
+              className={styles.inputField}
             />
           </label>
 
-          <label>
-            <span>{t.messageLabel}</span>
+          <label className={styles.labelLayout}>
+            <span className={styles.labelField}>{t.messageLabel}</span>
 
             <textarea
               name="message"
@@ -146,24 +149,26 @@ export default function Contact({ lang, setLang }) {
               value={formData.message}
               onChange={handleChange}
               placeholder={t.messagePlaceholder}
+              className={styles.textareaField}
             />
           </label>
 
           <button 
             type="submit" 
             disabled={isSending}
+            className={styles.submitButton}
           >
             {isSending ? t.sendingButton : t.submitButton}
           </button>
 
           {status === "success" && (
-            <p className={styles.success}>
+            <p className={styles.successMessage}>
               {t.successMessage}
             </p>
           )}
 
           {status === "error" && (
-            <p className={styles.error}>
+            <p className={styles.errorMessage}>
               {t.errorMessage}
             </p>
           )}
