@@ -1,13 +1,11 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
-import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher";
-
 import styles from "./Contact.module.css";
 import { contentContact } from "./data/contentContact";
 
 
-export default function Contact({ lang, setLang }) {
+export default function Contact({ lang }) {
   const t = contentContact[lang];
 
   const [formData, setFormData] = useState({
@@ -77,12 +75,7 @@ export default function Contact({ lang, setLang }) {
   };
 
   return (
-    <section className={styles.mainContainer}>
-      
-      <LanguageSwitcher
-        lang={lang}
-        setLang={setLang}
-      />
+    <div className={styles.mainContainer}>
 
       <div className={styles.mainLayout}>
         <header className={styles.headerLayout}>
@@ -175,6 +168,6 @@ export default function Contact({ lang, setLang }) {
         </form>
       </div>
 
-    </section>
+    </div>
   );
 }

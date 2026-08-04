@@ -17,17 +17,22 @@ export default function App() {
     <Routes>
       <Route 
         path="/" 
-        element={<Welcome lang={lang} setLang={setLang} />}
+        element={
+          <PageLayout lang={lang} setLang={setLang}>
+            <Welcome 
+              lang={lang} 
+            />
+          </PageLayout>
+        }
       />
 
       <Route element={<MainLayout />}>
         <Route 
           path="/home" 
           element={
-            <PageLayout lang={lang}>
+            <PageLayout lang={lang} setLang={setLang}>
               <Home 
                 lang={lang} 
-                setLang={setLang} 
               />
             </PageLayout>
           } 
@@ -35,10 +40,9 @@ export default function App() {
         <Route 
           path="/dashboard" 
           element={
-            <PageLayout lang={lang}>
+            <PageLayout lang={lang} setLang={setLang}>
               <Dashboard 
                 lang={lang} 
-                setLang={setLang} 
               />
             </PageLayout>
           } 
@@ -46,10 +50,9 @@ export default function App() {
         <Route 
           path="/media" 
           element={
-            <PageLayout lang={lang}>
+            <PageLayout lang={lang} setLang={setLang}>
               <Media 
                 lang={lang} 
-                setLang={setLang} 
               />
             </PageLayout>
           } 
@@ -57,10 +60,9 @@ export default function App() {
         <Route 
           path="media/:articleId" 
           element={
-            <PageLayout lang={lang}>
+            <PageLayout lang={lang} setLang={setLang}>
               <ArticleViewer 
                 lang={lang} 
-                setLang={setLang} 
               />
             </PageLayout>
           } 
@@ -68,10 +70,9 @@ export default function App() {
         <Route 
           path="/contact" 
           element={
-            <PageLayout lang={lang}>
+            <PageLayout lang={lang} setLang={setLang}>
               <Contact 
                 lang={lang} 
-                setLang={setLang} 
               />
             </PageLayout>
           } 

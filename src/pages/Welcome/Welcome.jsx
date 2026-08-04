@@ -4,15 +4,11 @@ import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher
 import styles from "./Welcome.module.css";
 
 
-export default function Welcome({ lang, setLang }) {
+export default function Welcome({ lang }) {
   const t = content[lang];
 
   return (
-    <main className={styles.mainLayout}>
-      <LanguageSwitcher
-        lang={lang}
-        setLang={setLang}
-      />
+    <div className={styles.mainLayout}>
 
       <div className={styles.mainContainer}>
         <section className={styles.cardContainer}>
@@ -23,6 +19,7 @@ export default function Welcome({ lang, setLang }) {
           </Link>
         </section>
       </div>
-    </main>
+
+    </div>
   );
 }

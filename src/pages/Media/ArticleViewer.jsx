@@ -1,10 +1,10 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { mediaItems } from "./data/contentMedia";
 import { articleMap } from "./articleMap";
-import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher";
+
 import styles from "./ArticleViewer.module.css";
 
-export default function ArticleViewer({ lang, setLang }) {
+export default function ArticleViewer({ lang }) {
   const { articleId } = useParams();
   const navigate = useNavigate();
 
@@ -13,23 +13,19 @@ export default function ArticleViewer({ lang, setLang }) {
 
   if (!article) {
     return (
-      <main className={styles.mainContainer}>
+      <div className={styles.mainContainer}>
         <div className={styles.mainLayout}>
           <h1 className={styles.mainHeaderTitle}>
             {t.articleNotFound}
           </h1>
         </div>
-      </main>
+      </div>
     );
   }
 
   return (
-    <main className={styles.mainContainer}>
+    <div className={styles.mainContainer}>
       <div className={styles.mainLayout}>
-        <LanguageSwitcher
-          lang={lang}
-          setLang={setLang}
-        />
 
         <header className={styles.mainHeader}>
           <h1 className={styles.mainHeaderTitle}>{article.title}</h1>
@@ -50,6 +46,6 @@ export default function ArticleViewer({ lang, setLang }) {
           {t.buttonBack}
         </button>
       </div>
-    </main>
+    </div>
   );
 }

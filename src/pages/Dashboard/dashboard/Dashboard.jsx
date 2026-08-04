@@ -4,10 +4,9 @@ import { dashboardVertices } from "../layout/dashboardVertices";
 import createPointerEngine from "../engine/pointerEngine";
 import BubbleChart from "./BubbleChart";
 import Explorer from "./Explorer";
-import LanguageSwitcher from "../../../components/LanguageSwitcher/LanguageSwitcher";
 import styles from "./Dashboard.module.css";
 
-export default function Dashboard({ lang, setLang }) {
+export default function Dashboard({ lang }) {
   const [selectedId, setSelectedId] = useState(null);
 
   const tooltipRef = useRef(null);
@@ -35,12 +34,8 @@ export default function Dashboard({ lang, setLang }) {
   const selected = t.items.find((project) => project.id === selectedId) ?? null;
   
   return (
-    <section className={styles.mainContainer}>
+    <div className={styles.mainContainer}>
       <div className={styles.mainLayout}>
-        <LanguageSwitcher
-          lang={lang}
-          setLang={setLang}
-        />
 
         <header className={styles.headerLayout}>
           <h1 className={styles.headerTitle}>{t.pageTitle}</h1>
@@ -74,6 +69,6 @@ export default function Dashboard({ lang, setLang }) {
         <div className={styles.spacer} />
 
       </div>
-    </section>
+    </div>
   );
 }

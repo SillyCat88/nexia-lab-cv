@@ -2,11 +2,10 @@ import { useState, useEffect } from "react";
 import { mediaItems } from "./data/contentMedia";
 import MediaCard from "./MediaCard";
 import MediaExplorer from "./MediaExplorer";
-import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher";
 import styles from "./Media.module.css";
 
 
-export default function Media({ lang, setLang }) {
+export default function Media({ lang }) {
   const STORAGE_KEY = "media-state";  
   const t = mediaItems[lang];
   
@@ -62,12 +61,8 @@ export default function Media({ lang, setLang }) {
 
   
   return (
-    <section className={styles.mainContainer}>
+    <div className={styles.mainContainer}>
       <div className={styles.mainLayout}>
-        <LanguageSwitcher
-          lang={lang}
-          setLang={setLang}
-        />
 
         <header className={styles.headerLayout}>
           <h1 className={styles.headerTitle}>{t.headerTitle}</h1>
@@ -96,6 +91,6 @@ export default function Media({ lang, setLang }) {
         <div className={styles.spacer} />
 
       </div>
-    </section>
+    </div>
   );
 }

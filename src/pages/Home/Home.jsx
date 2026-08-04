@@ -1,17 +1,12 @@
 import { content } from "./data/contentHome";
-import LanguageSwitcher from "../../components/LanguageSwitcher/LanguageSwitcher";
 import styles from "./Home.module.css";
 
 
-export default function Home({ lang, setLang }) {
+export default function Home({ lang }) {
   const t = content[lang];
 
   return (
     <div className={styles.mainContainer}>
-      <LanguageSwitcher
-        lang={lang}
-        setLang={setLang}
-      />
       
       <header className={styles.heroLayout}>
         <h1 className={styles.heroName}>{t.name}</h1>
@@ -43,7 +38,7 @@ export default function Home({ lang, setLang }) {
           </div>
         </aside>
 
-        <section className={styles.mainContent}>
+        <div className={styles.mainContent}>
           <div className={styles.cardContainer}>
             <div className={styles.cardLayout}>
               <h3>{t.contentAbout}</h3>
@@ -76,7 +71,7 @@ export default function Home({ lang, setLang }) {
               </div>
             ))}
           </div>
-        </section>
+        </div>
       </div>
 
     </div>
