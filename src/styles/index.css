@@ -9,6 +9,11 @@
   --bg: #0f1115;
   --surface: #161a22;
   --surface-2: #1c2230;
+  
+  --surface-card: rgb(22 26 34 / 90%);
+  --surface-card-hover: rgb(22 26 34 / 96%);
+  --surface-overlay: rgb(22 26 34 / 75%);
+  
   --text: #eaeaea;
   --muted: #a0a0a0;
   --accent:#5834eb;
@@ -53,6 +58,7 @@
   --letter-spacing-tight: -0.2px;
   --letter-spacing-normal: 0.2px;
   --letter-spacing-wide: 0.08em;
+  --letter-spacing-hero: -0.3px;
 
   /* Radius */
   --radius-sm: 0.25rem;      /* 4px */
@@ -133,5 +139,5 @@ p {
 
 ::selection {
   background: var(--accent);
-  color:  rgb(255 255 255 / 100%);
+  color: #fff;
 }

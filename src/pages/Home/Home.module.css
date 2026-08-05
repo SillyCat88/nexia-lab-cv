@@ -25,11 +25,11 @@
 	padding: var(--space-4);
 	margin-top: var(--space-3);
 
-	background: rgba(22, 26, 34, 0.9);
+	background: var(--surface-card);
 	backdrop-filter: blur(4px);
 
 	border: 0.5px solid var(--border);
-	border-radius: 14px;
+	border-radius: var(--radius-lg);
 }
 
 .cardLayout {
@@ -50,8 +50,8 @@
 .cardExperienceTitle {
 	margin-bottom: var(--space-1);
 
-	font-size: 15px;
-	font-weight: 400;
+	font-size: var(--font-size-base);
+	font-weight: var(--font-weight-normal);
 	line-height: 1.2;
 }
 
@@ -59,7 +59,7 @@
 	display: inline-block;
 	margin-bottom: var(--space-2);
 
-	font-size: 12px;
+	font-size: var(--font-size-xs);
 	color: var(--accent-2);
 	opacity: 0.5;
 }
@@ -69,16 +69,15 @@
 	transition:
 		transform 0.2s ease,
 		border-color 0.2s ease,
-		background-color 0.2s ease;
 }
 
 .tagsContainer {
 	padding: var(--space-1) var(--space-3);
 	background: var(--surface-2);
 	border: 1px solid var(--border);
-	border-radius: 8px;
-	font-size: 13px;
-	letter-spacing: 0.2px;
+	border-radius: var(--radius-md);
+	font-size: var(--font-size-sm);
+	letter-spacing: var(--letter-spacing-normal);
 	white-space: nowrap;
 }
 
@@ -98,7 +97,7 @@
 }
 
 .heroName {
-	font-weight: 600;
+	font-weight: var(--font-weight-semibold);
 	letter-spacing: -0.5px;
 	font-size: clamp(2rem, 2.5vw, 3rem);
 }
@@ -110,15 +109,13 @@
 
 .heroRole {
 	color: var(--accent);
-	font-weight: 600;
+	font-weight: var(--font-weight-semibold);
 }
 
 .heroSubtitle {
 	margin-top: var(--space-3);
-
 	color: var(--muted);
-
-	font-size: 14px;
+	font-size: var(--font-size-sm);
 	letter-spacing: 0.4px;
 }
 
@@ -126,7 +123,7 @@
 	position: sticky;
 	top: var(--space-6);
 	padding-right: var(--space-4);
-	border-right: 1px solid rgba(255, 255, 255, 0.08);
+	border-right: 1px solid rgb(255 255 255 / 8%);
 }
 
 .sidebarLayout {
@@ -136,14 +133,10 @@
 }
 
 .sidebarLanguagesText {
-	color: rgba(255, 255, 255, 0.75);
-	font-size: 13px;
-	line-height: 1.4;
-
 	padding: var(--space-6) 0;
 	margin-bottom: var(--space-6);
-
-	line-height: 1.65;
+	font-size: var(--font-size-sm);
+	line-height: var(--line-height-normal);
 	color: rgb(255 255 255 / 80%);
 }
 
@@ -161,9 +154,9 @@
 
 .toolsContainer {
 	padding: 2px 0;
-	color: rgba(255, 255, 255, 0.75);
-	font-size: 13px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	color: rgb(255 255 255 / 75%);
+	font-size: var(--font-size-sm);
+	border-bottom: 1px solid rgb(255 255 255 / 6%);
 }
 
 .toolsContainer:last-child {
@@ -187,43 +180,41 @@
 
 @media (max-width: 768px) {
 	.mainContainer {
-		padding: 40px 24px;
+		padding: var(--space-6) var(--space-5);
 	}
 
 	.heroLayout {
-		margin-bottom: 40px;
+		margin-bottom: var(--space-6);
 	}
 
 	.heroName {
-		font-size: 34px;
 		line-height: 1.15;
 	}
 
 	.heroLanguagePair {
-		margin-top: 10px;
-
-		font-size: 16px;
+		margin-top: var(--space-2);
+		font-size: var(--font-size-md);
 		line-height: 1.5;
 	}
 
 	.cardContainer {
-		padding: 16px;
+		padding: var(--space-4);
 	}
 
 	.tagsLayout {
-		gap: 8px;
+		gap: var(--space-2);
 	}
 
 	.tagsContainer {
 		padding: 6px 10px;
-		font-size: 11px;
+		font-size: 0.75rem;
 	}
 }
 
 @media (max-width: 900px) {
 	.mainGrid {
 		grid-template-columns: 1fr;
-		gap: 40px;
+		gap: var(--space-6);
 	}
 
 	.sidebarContent {
