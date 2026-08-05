@@ -18,11 +18,10 @@ export default function App() {
       <Route 
         path="/" 
         element={
-          <PageLayout lang={lang} setLang={setLang}>
-            <Welcome 
-              lang={lang} 
-            />
-          </PageLayout>
+          <Welcome 
+            lang={lang}
+            setLang={setLang}
+          />
         }
       />
 
