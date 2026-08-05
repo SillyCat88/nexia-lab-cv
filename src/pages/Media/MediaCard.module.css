@@ -5,16 +5,16 @@
 .cardContainer {
   position: relative;
   width: 100%;
-  padding: 20px;
+  padding: var(--space-5);
   background: rgb(255 255 255 / 2%);
   border: 1px solid rgb(255 255 255 / 2%);
-  border-radius: 20px;
+  border-radius: var(--radius-xl);
 }
 
 .cardLayout {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--space-5);
 }
 
 
@@ -24,7 +24,7 @@
 
 .previewContainer {
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: var(--radius-xl);
 }
 
 .previewImage {
@@ -44,15 +44,15 @@
 .contentLayout {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: var(--space-3);
 }
 
 .cardTitle {
   margin: 0;
 
   line-height: 1.35;
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
 }
 
 
@@ -62,7 +62,7 @@
 
 .linksLayout {
   display: flex;
-  gap: 18px;
+  gap: var(--space-4);
 }
 
 .actionLink {
@@ -115,7 +115,7 @@
 
   color: var(--accent-2);
 
-  font-size: 1.5rem;
+  font-size: var(--font-size-2xl);
   line-height: 1;
 
   cursor: pointer;
