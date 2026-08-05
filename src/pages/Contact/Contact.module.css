@@ -17,10 +17,18 @@
 
 .headerTitle {
   margin-bottom: 0.75rem;
+  line-height: 1.25;
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-weight: var(--font-weight-semibold);
 }
 
 .headerText {
+  max-width: 80ch;
+  margin: 0;
   color: var(--muted);
+  line-height: 1.6;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-normal);
 }
 
 
@@ -37,7 +45,7 @@
 }
 
 .labelField {
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
 }
 
 .inputField,
@@ -50,7 +58,7 @@
   background: var(--surface);
 
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
 
   transition:
     border-color 0.2s ease,
@@ -81,13 +89,13 @@
   padding: 0.9rem 1.8rem;
 
   font: inherit;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
 
   color: #fff;
   background: var(--accent);
 
   border: none;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
 
   cursor: pointer;
 
