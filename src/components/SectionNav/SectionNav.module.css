@@ -9,8 +9,8 @@
 }
 
 .navLink {
-  font-size: 12px;
-  font-weight: 500;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--text);

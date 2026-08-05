@@ -25,7 +25,7 @@ export const contentContact = {
 
   ua: {
     title: "Контакти",
-    subtitle: "Чекаю на ваші повідомлення.",
+    description: "Чекаю на ваші повідомлення.",
 
     nameLabel: "Ім'я",
     namePlaceholder: "Ваше ім'я або нікнейм",

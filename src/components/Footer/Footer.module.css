@@ -9,12 +9,12 @@
 	
 	border-top: 1px solid var(--border);
 	color: var(--muted);
-	font-size: 12px;
+	font-size: var(--font-size-xs);
 }
 
 .footerAccent {
   color: var(--accent-2);
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
 }
 
 .backToTopButton {
@@ -23,8 +23,8 @@
   background: transparent;
   border: none;
 
-  color: rgb(255 255 255 / 100%);
-  font-size: 14px;
+  color: var(--text);
+  font-size: var(--font-size-sm);
 
   cursor: pointer;
   transition:
