@@ -65,9 +65,6 @@ export default function Dashboard({ lang }) {
           {t.mobilePlaceholder}
         </div>
 
-        {/* SPACE */}
-        <div className={styles.spacer} />
-
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 .navContainer {
   display: flex;
   justify-content: flex-end;
-  gap: var(--space-5);
+  gap: 1.5rem;
   margin-bottom: var(--space-6);
   padding: var(--space-4) var(--space-5);
   border-top: 1px solid rgb(255 255 255 / 8%);
@@ -12,7 +12,7 @@
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: var(--letter-spacing-nav);
   color: var(--text);
   opacity: 0.6;
   transition:

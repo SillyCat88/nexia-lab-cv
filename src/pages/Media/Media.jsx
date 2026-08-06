@@ -87,9 +87,6 @@ export default function Media({ lang }) {
           />
         </div>
 
-        {/* SPACE */}
-        <div className={styles.spacer} />
-
       </div>
     </div>
   );

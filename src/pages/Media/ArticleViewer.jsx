@@ -15,7 +15,7 @@ export default function ArticleViewer({ lang }) {
     return (
       <div className={styles.mainContainer}>
         <div className={styles.mainLayout}>
-          <h1 className={styles.mainHeaderTitle}>
+          <h1 className={styles.headerTitle}>
             {t.articleNotFound}
           </h1>
         </div>
@@ -27,8 +27,8 @@ export default function ArticleViewer({ lang }) {
     <div className={styles.mainContainer}>
       <div className={styles.mainLayout}>
 
-        <header className={styles.mainHeader}>
-          <h1 className={styles.mainHeaderTitle}>{article.title}</h1>
+        <header className={styles.headerLayout}>
+          <h1 className={styles.headerTitle}>{article.title}</h1>
         </header>
 
         <section className={styles.pagesLayout}>

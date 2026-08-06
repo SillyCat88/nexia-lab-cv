@@ -7,7 +7,7 @@ export default function Footer ({ lang }) {
 
   return (
     <footer className={styles.footerContainer}>
-      <p>
+      <p className={styles.footerText}>
         {"© "}{year} <span className={styles.footerAccent}>{t.name}</span>
         {" • "}{t.footerRole}
       </p>

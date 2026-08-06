@@ -58,7 +58,7 @@
   left: 0;
   top: 0;
   opacity: 0;
-  padding: 10px 12px;
+  padding: var(--space-2) var(--space-3);
   background: rgb(20 20 24 / 72%);
   border: 1px solid rgb(255 255 255 / 2%);
   border-radius: var(--radius-lg);
@@ -72,7 +72,7 @@
 
 .tooltipTitle {
   font-weight: var(--font-weight-semibold);
-  margin-bottom: 4px;
+  margin-bottom: var(--space-1);
 }
 
 .tooltipWords {

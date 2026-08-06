@@ -1,7 +1,6 @@
 /* =========================
    MEDIA CARD
 ========================= */
-
 .cardContainer {
   position: relative;
   width: 100%;
@@ -17,11 +16,9 @@
   gap: var(--space-5);
 }
 
-
 /* =========================
    PREVIEW
 ========================= */
-
 .previewContainer {
   overflow: hidden;
   border-radius: var(--radius-xl);
@@ -36,11 +33,9 @@
   object-fit: cover;
 }
 
-
 /* =========================
    CONTENT
 ========================= */
-
 .contentLayout {
   display: flex;
   flex-direction: column;
@@ -48,18 +43,15 @@
 }
 
 .cardTitle {
-  margin: 0;
-
-  line-height: 1.35;
+  margin-bottom: var(--space-3);
+  line-height: var(--line-height-label);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
 }
 
-
 /* =========================
    LINKS
 ========================= */
-
 .linksLayout {
   display: flex;
   gap: var(--space-4);
@@ -100,7 +92,6 @@
 /* =========================
    NAVIGATION
 ========================= */
-
 .navigationLayout {
   display: flex;
   justify-content: space-between;

@@ -4,8 +4,8 @@
 
 .mainContainer {
   max-width: 1100px;
-  margin: 80px auto;
-  padding: 0 24px;
+  margin: var(--space-7) auto;
+  padding: 0 var(--space-5);
 }
 
 .mainLayout {
@@ -18,18 +18,17 @@
    HEADER
 ========================= */
 
-.mainHeader {
+.headerLayout {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
 }
 
-.mainHeaderTitle {
-  margin: 0;
-
+.headerTitle {
+  margin-bottom: var(--space-3);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: var(--font-weight-semibold);
-  line-height: 1.25;
+  line-height: var(--line-height-heading);
 }
 
 

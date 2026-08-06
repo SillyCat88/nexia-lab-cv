@@ -3,7 +3,6 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: var(--space-4);
-
 	margin-top: var(--space-7);
 	padding-top: var(--space-5);
 	
@@ -17,8 +16,13 @@
   font-weight: var(--font-weight-semibold);
 }
 
+.footerText {
+  padding-inline: var(--space-3);
+}
+
 .backToTopButton {
-  padding: 0;
+  margin-right: var(--space-3);
+  padding: var(--space-2);
 
   background: transparent;
   border: none;
@@ -38,9 +42,8 @@
 }
 
 @media (max-width: 768px) {
-    .footerContainer {
-        margin-top: var(--space-6);
-		text-align: center;
-		line-height: 1.5;
+  .footerContainer {
+    margin-top: var(--space-6);
+	  text-align: center;
 	}
 }

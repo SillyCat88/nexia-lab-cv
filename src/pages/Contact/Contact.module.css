@@ -1,7 +1,7 @@
 .mainContainer {
   width: min(100%, 720px);
-  margin: 0 auto;
-  padding: 6rem 2rem;
+  margin: var(--space-7) auto;
+  padding: 0 var(--space-5);
 }
 
 .mainLayout {
@@ -16,8 +16,8 @@
 }
 
 .headerTitle {
-  margin-bottom: 0.75rem;
-  line-height: 1.25;
+  margin-bottom: var(--space-3);
+  line-height: var(--line-height-heading);
   font-size: clamp(2rem, 2.5vw, 3rem);
   font-weight: var(--font-weight-semibold);
 }
@@ -26,7 +26,6 @@
   max-width: 80ch;
   margin: 0;
   color: var(--muted);
-  line-height: 1.6;
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-normal);
 }
@@ -119,12 +118,12 @@
 
 
 .successMessage {
-  margin-top: 1rem;
+  margin-top: var(--space-4);
   color: var(--success);
 }
 
 .errorMessage {
-  margin-top: 1rem;
+  margin-top: var(--space-4);
   color: var(--error);
 }
 
