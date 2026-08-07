@@ -13,7 +13,7 @@
 .mainGrid {
   display: grid;
   grid-template-columns: minmax(640px, 1.3fr) minmax(280px, 0.7fr);
-  gap: 124px;
+  gap: var(--layout-grid-gap-xl);
   align-items: stretch;
 }
 

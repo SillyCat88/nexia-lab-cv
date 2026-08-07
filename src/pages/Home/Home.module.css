@@ -1,7 +1,7 @@
 .mainContainer {
 	max-width: 1100px;
-	margin: 0 auto;
-	padding: var(--space-7);
+	margin: var(--layout-home-margin-y) auto;
+	padding: 0 var(--layout-home-padding-x);
 }
 
 .mainGrid {
@@ -150,7 +150,7 @@
 }
 
 .toolsContainer {
-	padding: 2px 0;
+	padding: var(--space-2xs) 0;
 	color: rgb(255 255 255 / 75%);
 	font-size: var(--font-size-sm);
 	border-bottom: 1px solid rgb(255 255 255 / 6%);
