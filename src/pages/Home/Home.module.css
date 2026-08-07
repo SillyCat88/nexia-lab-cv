@@ -1,7 +1,7 @@
 .mainContainer {
 	max-width: 1100px;
-	margin: var(--layout-home-margin-y) auto;
-	padding: 0 var(--layout-home-padding-x);
+	margin: var(--space-7) auto;
+	padding: 0 var(--space-5);
 }
 
 .mainGrid {
@@ -57,7 +57,7 @@
 .cardExperienceYears {
 	display: inline-block;
 	margin-bottom: var(--space-2);
-	font-size: var(--font-size-xs);
+	font-size: var(--font-size-sm);
 	color: var(--accent-2);
 	opacity: 0.5;
 }
@@ -94,9 +94,10 @@
 }
 
 .heroName {
-	font-weight: var(--font-weight-semibold);
-	letter-spacing: -0.5px;
 	font-size: clamp(2rem, 2.5vw, 3rem);
+	font-weight: var(--font-weight-semibold);
+	line-height: var(--line-height-heading);
+	letter-spacing: -0.5px;
 }
 
 .heroLanguagePair {
@@ -112,7 +113,7 @@
 .heroSubtitle {
 	margin-top: var(--space-3);
 	color: var(--muted);
-	font-size: var(--font-size-sm);
+	font-size: var(--font-size-base);
 	letter-spacing: 0.4px;
 }
 
@@ -132,7 +133,7 @@
 .sidebarLanguagesText {
 	padding: var(--space-6) 0;
 	margin-bottom: var(--space-6);
-	font-size: var(--font-size-sm);
+	font-size: var(--font-size-base);
 
 	color: rgb(255 255 255 / 80%);
 }
@@ -170,37 +171,9 @@
 		margin-bottom: var(--space-3);
 	}
 
-	.sectionContainer {
-		margin-bottom: var(--space-6);
-	}
-}
-
-@media (max-width: 768px) {
-	.mainContainer {
-		padding: var(--space-6) var(--space-5);
-	}
-
-	.heroLayout {
-		margin-bottom: var(--space-6);
-	}
-
-	.heroName {
-		line-height: var(--line-height-heading);
-	}
-
 	.heroLanguagePair {
-		margin-top: var(--space-2);
 		font-size: var(--font-size-md);
 		line-height: 1.5;
-	}
-
-	.cardContainer {
-		padding: var(--space-4);
-	}
-
-	.tagsContainer {
-		padding: var(--space-1) var(--space-2);
-		font-size: var(--font-size-sm);
 	}
 }
 

@@ -44,7 +44,7 @@
 }
 
 .labelField {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
 }
 
 .inputField,
@@ -125,14 +125,4 @@
 .errorMessage {
   margin-top: var(--space-4);
   color: var(--error);
-}
-
-@media (max-width: 768px) {
-  .mainContainer {
-    padding: 4rem 1.25rem;
-  }
-
-  .submitButton {
-    width: 100%;
-  }
 }

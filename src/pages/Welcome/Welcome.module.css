@@ -73,13 +73,3 @@
     opacity: 1;
   }
 }
-
-@media (max-width: 600px) {
-  .mainContainer {
-    padding: var(--space-5);
-  }
-
-  .cardContainer {
-    padding: var(--space-5);
-  }
-}

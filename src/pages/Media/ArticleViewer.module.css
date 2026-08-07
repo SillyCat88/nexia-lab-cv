@@ -26,7 +26,7 @@
 
 .headerTitle {
   margin-bottom: var(--space-3);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 2.5vw, 3rem);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-heading);
 }
@@ -55,7 +55,6 @@
 
 .backButton {
   padding: var(--space-2);
-  margin-bottom: var(--space-7);
 }
 
 /* =========================

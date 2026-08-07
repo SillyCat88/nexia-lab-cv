@@ -1,7 +1,7 @@
 .navContainer {
   display: flex;
   justify-content: flex-end;
-  gap: 1.5rem;
+  gap: var(--space-5);
   margin-bottom: var(--space-6);
   padding: var(--space-4) var(--space-5);
   border-top: 1px solid rgb(255 255 255 / 8%);
@@ -9,7 +9,7 @@
 }
 
 .navLink {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-nav);

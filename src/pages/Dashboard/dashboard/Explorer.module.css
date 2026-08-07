@@ -49,17 +49,19 @@
   display: grid;
   grid-template-columns: 120px 1fr;
   gap: var(--space-3);
-  font-size: var(--font-size-sm);
+
   line-height: var(--line-height-label);
   margin-top: var(--space-2);
 }
 
 .explorerRow span:first-child {
   opacity: 0.55;
+  font-size: var(--font-size-sm);
 }
 
 .explorerRow span:last-child {
   opacity: 0.95;
+  font-size: var(--font-size-base);
 }
 
 .explorerPlaceholder {

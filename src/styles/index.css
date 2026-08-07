@@ -38,8 +38,6 @@
   --space-7: 48px;
   
   /* Layout */
-  --layout-home-margin-y: 40px;
-  --layout-home-padding-x: 74px;
   --layout-grid-gap-xl: 124px;
 
   /* Micro spacing */
@@ -48,7 +46,6 @@
   /* Typography */
   --font-family-base: Arial, sans-serif;
   --font-family-heading: inherit;
-  
   --font-size-xs: 0.75rem;      /* 12px */
   --font-size-sm: 0.875rem;     /* 14px */
   --font-size-base: 0.9375rem;  /* 15px */
@@ -123,12 +120,12 @@ h2 {
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-heading);
   color: var(--muted);
-  opacity: .7;
+  opacity: 0.7;
 }
 
 h3 {
   margin-bottom: var(--space-4);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-heading);
   letter-spacing: var(--letter-spacing-wide);
