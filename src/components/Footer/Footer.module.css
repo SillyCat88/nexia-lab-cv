@@ -32,8 +32,8 @@
 
   cursor: pointer;
   transition:
-    color 0.18s ease,
-    transform 0.18s ease;
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .backToTopButton:hover {

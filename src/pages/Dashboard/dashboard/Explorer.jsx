@@ -44,8 +44,10 @@ export default function Explorer({
           </div>
         </div>
       ) : (
-        <div className={styles.explorerPlaceholder}>
-          {t.explorerPlaceholder}
+        <div className={styles.explorerContainer}>
+          <p className={styles.explorerPlaceholder}>
+            {t.explorerPlaceholder}
+          </p>
         </div>
       )}
     </div>

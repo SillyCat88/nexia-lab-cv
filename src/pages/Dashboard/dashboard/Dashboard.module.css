@@ -61,8 +61,17 @@
     text-align: center;
     padding: var(--space-5);
     border-radius: var(--radius-xl);
+    background: var(--surface-card);
     border: 1px dashed rgb(255 255 255 / 15%);
     color: rgb(255 255 255 / 60%);
+  }
+
+  .bubbleChartContainer {
+    width: 100%;
+    min-height: 100%;
+    padding: var(--space-5);
+    background: var(--surface-card);
+    border-radius: var(--radius-xl);
   }
 }
 

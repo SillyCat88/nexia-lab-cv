@@ -14,7 +14,7 @@
   width: 100%;
   min-height: 520px;
   padding: var(--space-5);
-  background: rgb(255 255 255 / 2%);
+  background: var(--surface-card);
   border: 1px solid rgb(255 255 255 / 2%);
   border-radius: var(--radius-xl);
 }
@@ -36,8 +36,8 @@
   font-size: 22px;
   cursor: pointer;
   transition:
-    color 0.18s ease,
-    transform 0.18s ease;
+    color 0.1s ease,
+    transform 0.1s ease;
 }
 
 .explorerClose:hover {
@@ -70,8 +70,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.35;
-  background: rgb(255 255 255 / 2%);
+  color: rgb(255 255 255 / 60%);
+  background: var(--surface-card);
   border: 1px dashed rgb(255 255 255 / 12%);
   border-radius: var(--radius-xl);
 }

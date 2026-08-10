@@ -61,8 +61,10 @@ export default function Dashboard({ lang }) {
           />
         </div>
 
-        <div className={styles.bubbleChartPlaceholder}>
+        <div className={styles.bubbleChartContainer}>
+          <p className={styles.bubbleChartPlaceholder}>
           {t.mobilePlaceholder}
+          </p>
         </div>
 
       </div>

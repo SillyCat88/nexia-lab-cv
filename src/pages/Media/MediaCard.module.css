@@ -5,7 +5,8 @@
   position: relative;
   width: 100%;
   padding: var(--space-5);
-  background: rgb(255 255 255 / 2%);
+  background: var(--surface-card);
+
   border: 1px solid rgb(255 255 255 / 2%);
   border-radius: var(--radius-xl);
 }
@@ -66,7 +67,7 @@
   font: inherit;
 
   cursor: pointer;
-  transition: color 0.18s ease;
+  transition: color 0.2s ease;
 }
 
 .actionLink:hover {
@@ -111,10 +112,9 @@
 
   cursor: pointer;
   transition:
-    color 0.18s ease,
-    transform 0.18s ease;
+    transform 0.1s ease;
 }
 
 .arrow:hover {
-  transform: scale(1.08);
+  transform: scale(1.12);
 }

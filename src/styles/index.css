@@ -10,21 +10,19 @@
   --surface: #161a22;
   --surface-2: #1c2230;
   
-  --surface-card: rgb(22 26 34 / 90%);
-  --surface-card-hover: rgb(22 26 34 / 96%);
+  --surface-card: rgb(22 26 34 / 86%);
+  --surface-card-hover: rgb(22 26 34 / 106%);
   --surface-overlay: rgb(22 26 34 / 75%);
   
+  --border: #2a2f3a;
+  --border-2:#363c52;
+
   --text: #eaeaea;
   --muted: #a0a0a0;
+
   --accent:#5834eb;
   --accent-2: #ffe1d6;
-  --accent-3: #F8E88C;
-  --accent-4: #FFF2A8;
-  --accent-5: #F9E79F;
-  --accent-6: #F7E7A9;
-  --accent-7: #FFF6C2;
-  --border: #2a2f3a;
-  --border-2:#464c52;
+  
   --success: #34c759;
   --error: #ff4d4f;
 
@@ -36,10 +34,8 @@
   --space-5: 24px;
   --space-6: 32px;
   --space-7: 48px;
-  
   /* Layout */
   --layout-grid-gap-xl: 124px;
-
   /* Micro spacing */
   --space-2xs: 2px;
 
