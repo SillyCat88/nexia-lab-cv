@@ -90,7 +90,7 @@
   font: inherit;
   font-weight: var(--font-weight-semibold);
 
-  color: #fff;
+  color: var(--text-on-accent);
   background: var(--accent);
 
   border: none;

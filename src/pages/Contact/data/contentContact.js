@@ -14,7 +14,7 @@ export const contentContact = {
 
     messageLabel: "Message",
     messagePlaceholder:
-      "Tell me about your project, ask a question, or simply say hello. I'll get back to you as soon as possible.",
+      "Tell me about your project, ask a question, or say hello. I'll get back to you as soon as possible.",
 
     submitButton: "Send Message",
     sendingButton: "Sending...",
@@ -38,7 +38,7 @@ export const contentContact = {
 
     messageLabel: "Повідомлення",
     messagePlaceholder:
-      "Розкажіть про свій проект, поставте запитання або просто привітайтеся. Я відповім вам найближчим часом.",
+      "Розкажіть про свій проект, поставте запитання або привітайтеся. Я відповім вам найближчим часом.",
 
     submitButton: "Відправити повідомлення",
     sendingButton: "Відправлення...",

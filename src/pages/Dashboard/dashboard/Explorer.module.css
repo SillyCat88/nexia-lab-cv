@@ -32,7 +32,7 @@
   right: var(--space-3);
   background: transparent;
   border: none;
-  color: rgb(255 255 255 / 55%);
+  color: var(--text-control);
   font-size: 22px;
   cursor: pointer;
   transition:
@@ -70,7 +70,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(255 255 255 / 60%);
+  color: var(--text-placeholder);
   background: var(--surface-card);
   border: 1px dashed rgb(255 255 255 / 12%);
   border-radius: var(--radius-xl);

@@ -53,7 +53,7 @@
 	margin-bottom: var(--space-2);
 	font-size: var(--font-size-sm);
 	color: var(--accent-2);
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 .tagsLayout {
@@ -121,7 +121,7 @@
 	padding: var(--space-6) 0;
 	margin-bottom: var(--space-6);
 	font-size: var(--font-size-base);
-
+	
 	color: rgb(255 255 255 / 80%);
 }
 

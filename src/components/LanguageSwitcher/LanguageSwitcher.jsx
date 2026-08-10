@@ -17,8 +17,6 @@ export default function LanguageSwitcher({
                 EN
             </button>
 
-            <span className={styles.barSymbol}>|</span>
-
             <button
                 type="button"
                 onClick={() => setLang("ua")}

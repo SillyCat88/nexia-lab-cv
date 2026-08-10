@@ -63,7 +63,7 @@
     border-radius: var(--radius-xl);
     background: var(--surface-card);
     border: 1px dashed rgb(255 255 255 / 15%);
-    color: rgb(255 255 255 / 60%);
+    color: var(--text-placeholder);
   }
 
   .bubbleChartContainer {

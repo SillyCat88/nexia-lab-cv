@@ -3,9 +3,13 @@
   top: 5rem;
   right: 2rem;
   z-index: 100;
+  background: rgb(150 140 220 / 16%);
+  padding: 0 var(--space-2);
+  border-radius: var(--radius-md);
 }
 
 .switcherLayout {
+  margin: var(--space-2xs) 0;
   display: flex;
   align-items: center;
   gap: var(--space-2);
@@ -18,21 +22,17 @@
 
   cursor: pointer;
 
-  color: inherit;
+  color: var(--text);
   font: inherit;
 
-  opacity: 0.45;
+  opacity: 0.7;
   transition: opacity 0.2s ease;
 }
 
 .switcherButton:hover {
-  opacity: 0.75;
+  opacity: 0.9;
 }
 
 .active {
   opacity: 1;
-}
-
-.barSymbol {
-  color: inherit;
 }

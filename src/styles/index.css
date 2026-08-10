@@ -11,7 +11,7 @@
   --surface-2: #1c2230;
   
   --surface-card: rgb(22 26 34 / 86%);
-  --surface-card-hover: rgb(22 26 34 / 106%);
+  --surface-card-hover: rgb(22 26 34 / 99%);
   --surface-overlay: rgb(22 26 34 / 75%);
   
   --border: #2a2f3a;
@@ -19,6 +19,10 @@
 
   --text: #eaeaea;
   --muted: #a0a0a0;
+  --text-placeholder: rgb(255 255 255 / 60%);
+  --text-control: rgb(255 255 255 / 55%);
+  --text-on-accent: #fff;
+  --text-body: rgb(255 255 255 / 80%);
 
   --accent:#5834eb;
   --accent-2: #ffe1d6;
@@ -34,7 +38,7 @@
   --space-5: 24px;
   --space-6: 32px;
   --space-7: 48px;
-  /* Layout */
+  /* Layout spacing */
   --layout-grid-gap-xl: 124px;
   /* Micro spacing */
   --space-2xs: 2px;
@@ -109,6 +113,7 @@ h1 {
   margin: 0;
   margin-bottom: var(--space-2);
   line-height: var(--line-height-normal);
+  color: inherit;
 }
 
 h2 {
@@ -126,7 +131,7 @@ h3 {
   line-height: var(--line-height-heading);
   letter-spacing: var(--letter-spacing-wide);
   text-transform: uppercase;
-  color: var(--text);
+  color: inherit;
 }
 
 h1,
@@ -141,11 +146,11 @@ ul {
 
 p {
   line-height: var(--line-height-normal);
-  color: rgb(255 255 255 / 80%);
+  color: var(--text-body);
 }
 
 
 ::selection {
   background: var(--accent);
-  color: #fff;
+  color: var(--text-on-accent);
 }
