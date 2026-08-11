@@ -16,8 +16,12 @@
   min-height: 520px;
   margin: 0 auto;
   background: var(--surface-card);
-
   border-radius: var(--radius-xl);
+}
+
+.bubbleStage {
+  position: absolute;
+  inset: 0;
 }
 
 .bubble {

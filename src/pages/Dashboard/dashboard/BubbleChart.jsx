@@ -4,8 +4,8 @@ import styles from "./BubbleChart.module.css";
 
 export default function BubbleChart({
   projects,
-  selected,
-  setSelected,
+  selectedId,
+  setSelectedId,
   chartRef,
   tooltipRef,
   dashboardVertices,
@@ -21,12 +21,15 @@ export default function BubbleChart({
         className={styles.bubbleChartContainer}
         ref={chartRef}
       >
-        <div className={styles.bubbleStage}>
+        <div 
+          className={styles.bubbleStage}
+          onClick={() => setSelectedId(null)}
+        >
           {layout.map((bubble) => (
             <div
               key={bubble.id}
               className={`${styles.bubble} ${
-                selected?.id === bubble.id ? styles.active : ""
+                selectedId === bubble.project.id ? styles.active : ""
               }`}
               data-role="bubble"
               data-title={bubble.title}
@@ -35,7 +38,12 @@ export default function BubbleChart({
               style={bubble.style}
               onClick={(e) => {
                 e.stopPropagation();
-                setSelected(bubble.project.id);
+
+                setSelectedId(
+                  selectedId === bubble.project.id
+                    ? null
+                    : bubble.project.id
+                );
               }}
             >
               {bubble.words}

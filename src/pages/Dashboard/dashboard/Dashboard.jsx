@@ -24,13 +24,18 @@ export default function Dashboard({ lang }) {
 
   useEffect(() => {
     const handler = (e) => {
-      if (e.key === "Escape") setSelected(null);
+      if (e.key === "Escape") {
+        setSelectedId(null);
+      }
     };
+
     window.addEventListener("keydown", handler);
+    
     return () => window.removeEventListener("keydown", handler);
   }, []);
 
   const t = projects[lang];
+
   const selected = t.items.find((project) => project.id === selectedId) ?? null;
   
   return (
@@ -46,8 +51,8 @@ export default function Dashboard({ lang }) {
           {/* LEFT: BUBBLES */}
           <BubbleChart
             projects={t.items}
-            selected={selected}
-            setSelected={setSelectedId}
+            selectedId={selectedId}
+            setSelectedId={setSelectedId}
             chartRef={chartRef}
             tooltipRef={tooltipRef}
             dashboardVertices={dashboardVertices}
