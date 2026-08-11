@@ -1,9 +1,12 @@
+import { content } from "./data/contentSwitcher";
 import styles from "./LanguageSwitcher.module.css";
 
 export default function LanguageSwitcher({
   lang,
   setLang,
 }) {
+  const t = content[lang];
+  
   return (
     <div className={styles.switcherContainer}>
         <div className={styles.switcherLayout}>
@@ -14,7 +17,7 @@ export default function LanguageSwitcher({
                 lang === "en" ? styles.active : ""
                 }`}
             >
-                EN
+                {t.en}
             </button>
 
             <button
@@ -24,7 +27,7 @@ export default function LanguageSwitcher({
                 lang === "ua" ? styles.active : ""
                 }`}
             >
-                UA
+                {t.ua}
             </button>
         </div>
     </div>

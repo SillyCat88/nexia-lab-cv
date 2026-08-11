@@ -1,13 +1,13 @@
 export const content = {
   en: {
     name: "OLENA KULIKOVA",
-    title: "EN↔UA Translator | Localization Specialist | MTPE | Content Writer",
+    title: "En↔Ua Translator | Localization Specialist | MTPE | Content Writer",
 
     about:
       "Linguist with experience in translation, editing, proofreading, MTPE and content creation. Experienced in high-volume text processing across academic, business, and marketing domains.",
 
     services: [
-      "EN↔UA Translation",
+      "Translation",
       "Editing & Proofreading",
       "MTPE",
       "Website & Software Localization",
@@ -57,7 +57,7 @@ export const content = {
 
     heroRole: "Language Specialist",
 
-    heroLanguagePair: "EN↔UA Translator",
+    heroLanguagePair: "En↔Ua Translator",
 
     heroSubtitle: "MTPE • UX/UI Localization • Technical Translation • Content Writing",
 
@@ -75,13 +75,13 @@ export const content = {
 
   ua: {
     name: "ОЛЕНА КУЛІКОВА",
-    title: "Перекладач EN↔UA | Локалізація | MTPE | Контент-фахівець",
+    title: "Перекладач En↔Укр | Локалізація | MTPE | Контент-фахівець",
 
     about:
       "Лінгвіст з досвідом перекладу, редагування, постредагування та створення контенту. Робота з великими обсягами текстів у сферах академічного письма, бізнесу та маркетингу.",
 
     services: [
-      "Переклад EN↔UA",
+      "Переклад",
       "Редагування та коректура",
       "Постредагування",
       "Локалізація сайтів і ПЗ",
@@ -131,7 +131,7 @@ export const content = {
 
     heroRole: "Лінгвіст",
 
-    heroLanguagePair: "EN↔UA Перекладач",
+    heroLanguagePair: "En↔Укр Перекладач",
 
     heroSubtitle: "Постредагування • UX/UI Локалізація • Технічний переклад • Написання контенту",
 

@@ -1,7 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { content } from "./data/contentNav";
 import styles from "./SectionNav.module.css";
 
-export default function SectionNav() {
+export default function SectionNav({ lang }) {
+  const t = content[lang];
+
   return (
     <nav className={styles.navContainer}>
       <NavLink
@@ -10,7 +13,7 @@ export default function SectionNav() {
           `${styles.navLink} ${isActive ? styles.isActive : ""}`
         }
       >
-        Home
+        {t.home}
       </NavLink>
 
       <NavLink
@@ -19,7 +22,7 @@ export default function SectionNav() {
           `${styles.navLink} ${isActive ? styles.isActive : ""}`
         }
       >
-        Dashboard
+        {t.dashboard}
       </NavLink>
 
       <NavLink
@@ -28,7 +31,7 @@ export default function SectionNav() {
           `${styles.navLink} ${isActive ? styles.isActive : ""}`
         }
       >
-        Media
+        {t.media}
       </NavLink>
 
       <NavLink
@@ -37,7 +40,7 @@ export default function SectionNav() {
           `${styles.navLink} ${isActive ? styles.isActive : ""}`
         }
       >
-        Contact
+        {t.contact}
       </NavLink>
     </nav>
   );

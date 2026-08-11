@@ -25,7 +25,7 @@ export default function App() {
         }
       />
 
-      <Route element={<MainLayout />}>
+      <Route element={<MainLayout lang={lang} />}>
         <Route 
           path="/home" 
           element={
