@@ -40,7 +40,7 @@
 .labelLayout {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: var(--space-2);
 }
 
 .labelField {
@@ -84,7 +84,7 @@
 .submitButton {
   align-self: center;
 
-  margin-top: 0.5rem;
+  margin-top: var(--space-2);
   padding: 0.9rem 1.8rem;
 
   font: inherit;
@@ -95,6 +95,8 @@
 
   border: none;
   border-radius: var(--radius-pill);
+
+  letter-spacing: var(--letter-spacing-medium);
 
   cursor: pointer;
 

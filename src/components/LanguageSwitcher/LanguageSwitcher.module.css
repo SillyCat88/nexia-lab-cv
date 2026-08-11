@@ -3,13 +3,13 @@
   top: 5rem;
   right: 2rem;
   z-index: 100;
-  background: rgb(150 140 220 / 16%);
+  background: var(--surface);
+  border: 1px solid rgb(255 255 255 / 2%);
+  border-radius: var(--radius-sm);
   padding: 0 var(--space-2);
-  border-radius: var(--radius-md);
 }
 
 .switcherLayout {
-  margin: var(--space-2xs) 0;
   display: flex;
   align-items: center;
   gap: var(--space-2);
@@ -18,15 +18,16 @@
 .switcherButton {
   background: none;
   border: none;
-  padding: 0;
+  padding: 0 var(--space-2xs);
 
+  line-height: var(--line-height-heading);
   cursor: pointer;
 
   color: var(--text);
   font: inherit;
 
   opacity: 0.7;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.1s ease;
 }
 
 .switcherButton:hover {

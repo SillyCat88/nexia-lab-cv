@@ -73,9 +73,7 @@
     background: var(--surface-card);
     border-radius: var(--radius-xl);
   }
-}
 
-@media (max-width: 600px) {
   .mainLayout {
     gap: var(--space-6);
   }
