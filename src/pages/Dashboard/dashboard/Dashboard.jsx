@@ -7,10 +7,29 @@ import Explorer from "./Explorer";
 import styles from "./Dashboard.module.css";
 
 export default function Dashboard({ lang }) {
-  const [selectedId, setSelectedId] = useState(null);
-
   const tooltipRef = useRef(null);
   const chartRef = useRef(null);
+
+  const STORAGE_KEY = "dashboard-state";
+
+  const [selectedId, setSelectedId] = useState(() => {
+    const saved = sessionStorage.getItem(STORAGE_KEY);
+
+    if (!saved) return null;
+
+    try {
+      return JSON.parse(saved).selectedId ?? null;
+    } catch {
+      return null;
+    }
+  });
+
+  useEffect(() => {
+    sessionStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({ selectedId })
+    );
+  }, [selectedId]);
 
   useEffect(() => {
     if (!chartRef.current || !tooltipRef.current) return;
