@@ -2,62 +2,60 @@ import { useState, useEffect } from "react";
 import { mediaItems } from "./data/contentMedia";
 import MediaCard from "./MediaCard";
 import MediaExplorer from "./MediaExplorer";
+import useSessionStorage from "../../hooks/useSessionStorage";
 import styles from "./Media.module.css";
 
-
 export default function Media({ lang }) {
-  const STORAGE_KEY = "media-state";  
   const t = mediaItems[lang];
-  
-  const [currentIndex, setCurrentIndex] = useState(() => {
-    const saved = JSON.parse(
-      sessionStorage.getItem(STORAGE_KEY)
-    );
-    return saved?.currentIndex ?? 0;
-  });
 
-  const [selectedId, setSelectedId] = useState(() => {
-    const saved = JSON.parse(
-      sessionStorage.getItem(STORAGE_KEY)
-    );
-    return saved?.selectedId ?? null;
-  });
+  const [mediaState, setMediaState] = useSessionStorage(
+    "media-state",
+    {
+      currentIndex: 0,
+      selectedId: null
+    }
+  );
+  
+  const { currentIndex, selectedId } = mediaState;
 
   const selected = t.items.find(item => item.id === selectedId) ?? null;
   const currentItem = t.items[currentIndex];
 
   const handlePrevious = () => {
-    setCurrentIndex((prev) => {
+    setMediaState((prev) => {
       const next =
-        prev === 0 ? t.items.length - 1 : prev - 1;
-      setSelectedId((id) =>
-        id !== null ? t.items[next].id : null
-      );
-      return next;
+        prev.currentIndex === 0
+          ? t.items.length - 1
+          : prev.currentIndex - 1;
+
+      return {
+        ...prev,
+        currentIndex: next,
+        selectedId:
+          prev.selectedId !== null
+            ? t.items[next].id
+            : null,
+      };
     });
   };
 
   const handleNext = () => {
-    setCurrentIndex((prev) => {
+    setMediaState((prev) => {
       const next =
-        prev === t.items.length - 1 ? 0 : prev + 1;
-      setSelectedId((id) =>
-        id !== null ? t.items[next].id : null
-      );
-      return next;
+        prev.currentIndex === t.items.length - 1
+          ? 0
+          : prev.currentIndex + 1;
+
+      return {
+        ...prev,
+        currentIndex: next,
+        selectedId:
+          prev.selectedId !== null
+            ? t.items[next].id
+            : null,
+      };
     });
   };
-
-  useEffect(() => {
-    sessionStorage.setItem(
-      STORAGE_KEY,
-      JSON.stringify({
-        currentIndex,
-        selectedId,
-        lang,
-      })
-    );
-  }, [currentIndex, selectedId, lang]);  
 
   
   return (
@@ -74,7 +72,12 @@ export default function Media({ lang }) {
         <div className={styles.mainGrid}>
           <MediaCard
             item={currentItem}
-            onPreview={() => setSelectedId(currentItem.id)}
+            onPreview={() =>
+              setMediaState((prev) => ({
+                ...prev,
+                selectedId: currentItem.id,
+              }))
+            }
             onPrevious={handlePrevious}
             onNext={handleNext}
             t={t}
@@ -82,7 +85,12 @@ export default function Media({ lang }) {
 
           <MediaExplorer
             selected={selected}
-            setSelected={setSelectedId}
+            setSelected={(id) =>
+              setMediaState((prev) => ({
+                ...prev,
+                selectedId: id,
+              }))
+            }
             t={t}
           />
         </div>

@@ -4,32 +4,28 @@ import { dashboardVertices } from "../layout/dashboardVertices";
 import createPointerEngine from "../engine/pointerEngine";
 import BubbleChart from "./BubbleChart";
 import Explorer from "./Explorer";
+import useSessionStorage from "../../../hooks/useSessionStorage";
 import styles from "./Dashboard.module.css";
 
 export default function Dashboard({ lang }) {
   const tooltipRef = useRef(null);
   const chartRef = useRef(null);
 
-  const STORAGE_KEY = "dashboard-state";
-
-  const [selectedId, setSelectedId] = useState(() => {
-    const saved = sessionStorage.getItem(STORAGE_KEY);
-
-    if (!saved) return null;
-
-    try {
-      return JSON.parse(saved).selectedId ?? null;
-    } catch {
-      return null;
+  const [dashboardState, setDashboardState] = useSessionStorage(
+    "dashboard-state",
+    {
+      selectedId: null
     }
-  });
+  );
 
-  useEffect(() => {
-    sessionStorage.setItem(
-      STORAGE_KEY,
-      JSON.stringify({ selectedId })
-    );
-  }, [selectedId]);
+  const { selectedId } = dashboardState;
+
+  const setSelectedId = (id) => {
+    setDashboardState((prev) => ({
+      ...prev,
+      selectedId: id,
+    }));
+  };
 
   useEffect(() => {
     if (!chartRef.current || !tooltipRef.current) return;
