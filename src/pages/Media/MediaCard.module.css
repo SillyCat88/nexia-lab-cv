@@ -21,17 +21,22 @@
    PREVIEW
 ========================= */
 .previewContainer {
+  aspect-ratio: 3 / 2;
   overflow: hidden;
   border-radius: var(--radius-xl);
 }
 
 .previewImage {
   display: block;
-
   width: 100%;
   height: auto;
-
   object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.previewImage.loaded {
+  opacity: 1;
 }
 
 /* =========================

@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import { useState } from "react";
 import Welcome from "./pages/Welcome/Welcome";
 import Home from "./pages/Home/Home";
 import Dashboard from "./pages/Dashboard/dashboard/Dashboard";

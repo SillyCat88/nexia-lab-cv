@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
 import { mediaItems } from "./data/contentMedia";
 import MediaCard from "./MediaCard";
 import MediaExplorer from "./MediaExplorer";
 import useSessionStorage from "../../hooks/useSessionStorage";
 import styles from "./Media.module.css";
+
 
 export default function Media({ lang }) {
   const t = mediaItems[lang];

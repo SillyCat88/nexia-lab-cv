@@ -1,34 +1,34 @@
 // previews
-import preview01 from "../previews/preview01.webp";
-import preview02 from "../previews/preview02.webp";
-import preview03 from "../previews/preview03.webp";
-import preview04 from "../previews/preview04.webp";
-import preview05 from "../previews/preview05.webp";
-import preview06 from "../previews/preview06.webp";
-import preview07 from "../previews/preview07.webp";
-import preview08 from "../previews/preview08.webp";
+import preview01 from "../../../assets/media/previews/preview01.webp";
+import preview02 from "../../../assets/media/previews/preview02.webp";
+import preview03 from "../../../assets/media/previews/preview03.webp";
+import preview04 from "../../../assets/media/previews/preview04.webp";
+import preview05 from "../../../assets/media/previews/preview05.webp";
+import preview06 from "../../../assets/media/previews/preview06.webp";
+import preview07 from "../../../assets/media/previews/preview07.webp";
+import preview08 from "../../../assets/media/previews/preview08.webp";
 
 // article images
-import article01 from "../articles/not-wasting-waste/page1.jpg";
+import article01 from "../../../assets/media/articles/not-wasting-waste/page1.jpg";
 
-import article02Page1 from "../articles/winter-wonders/page1.jpg";
-import article02Page2 from "../articles/winter-wonders/page2.jpg";
+import article02Page1 from "../../../assets/media/articles/winter-wonders/page1.jpg";
+import article02Page2 from "../../../assets/media/articles/winter-wonders/page2.jpg";
 
-import article03Page1 from "../articles/all-the-lonely-people/page1.jpg";
-import article03Page2 from "../articles/all-the-lonely-people/page2.jpg";
+import article03Page1 from "../../../assets/media/articles/all-the-lonely-people/page1.jpg";
+import article03Page2 from "../../../assets/media/articles/all-the-lonely-people/page2.jpg";
 
-import article04 from "../articles/business-over-living/page1.jpg";
+import article04 from "../../../assets/media/articles/business-over-living/page1.jpg";
 
-import article05Page1 from "../articles/kyiv-mostly-harmless/page1.jpg";
-import article05Page2 from "../articles/kyiv-mostly-harmless/page2.jpg";
+import article05Page1 from "../../../assets/media/articles/kyiv-mostly-harmless/page1.jpg";
+import article05Page2 from "../../../assets/media/articles/kyiv-mostly-harmless/page2.jpg";
 
-import article06Page1 from "../articles/bessarabka-passes-the-test/page1.jpg";
-import article06Page2 from "../articles/bessarabka-passes-the-test/page2.jpg";
+import article06Page1 from "../../../assets/media/articles/bessarabka-passes-the-test/page1.jpg";
+import article06Page2 from "../../../assets/media/articles/bessarabka-passes-the-test/page2.jpg";
 
-import article07Page1 from "../articles/streetcar-from-past-to-future/page1.jpg";
-import article07Page2 from "../articles/streetcar-from-past-to-future/page2.jpg";
+import article07Page1 from "../../../assets/media/articles/streetcar-from-past-to-future/page1.jpg";
+import article07Page2 from "../../../assets/media/articles/streetcar-from-past-to-future/page2.jpg";
 
-import article08 from "../articles/arcane-art-gallery/page1.jpg";
+import article08 from "../../../assets/media/articles/arcane-art-gallery/page1.jpg";
 
 
 export const mediaItems = {
@@ -60,7 +60,13 @@ export const mediaItems = {
 
         preview: preview01,
 
-        images: [article01],
+        images: [
+          {
+            src: article01,
+            width: 1275,
+            height: 1755,
+          }
+        ],
 
         title: "Not Wasting Waste",
 
@@ -76,7 +82,18 @@ export const mediaItems = {
 
         preview: preview02,
 
-        images: [article02Page1, article02Page2],
+        images: [
+          {
+            src: article02Page1,
+            width: 1755,
+            height: 1275
+          },
+          {
+            src: article02Page2,
+            width: 1755,
+            height: 1275
+          }
+        ],
 
         title: "Winter Wonders Spell Trouble",
 
@@ -92,7 +109,18 @@ export const mediaItems = {
 
         preview: preview03,
 
-        images: [article03Page1, article03Page2],
+        images: [
+          {
+            src: article03Page1,
+            width: 1755,
+            height: 1275
+          },
+          {
+            src: article03Page2,
+            width: 1755,
+            height: 1275
+          }
+        ],
 
         title: "All the Lonely People",
 
@@ -108,7 +136,13 @@ export const mediaItems = {
 
         preview: preview04,
 
-        images: [article04],
+        images: [
+          {
+            src: article04,
+            width: 1275,
+            height: 1755,
+          }
+        ],
 
         title: "Business Over Living",
 
@@ -124,7 +158,18 @@ export const mediaItems = {
 
         preview: preview05,
 
-        images: [article05Page1, article05Page2],
+        images: [
+          {
+            src: article05Page1,
+            width: 1755,
+            height: 1275
+          },
+          {
+            src: article05Page2,
+            width: 1755,
+            height: 1275
+          }
+        ],
 
         title: "Kyiv: Mostly Harmless",
 
@@ -140,7 +185,18 @@ export const mediaItems = {
 
         preview: preview06,
 
-        images: [article06Page1, article06Page2],
+        images: [
+          {
+            src: article06Page1,
+            width: 1755,
+            height: 1275
+          },
+          {
+            src: article06Page2,
+            width: 1755,
+            height: 1275
+          }
+        ],
 
         title: "Bessarabka Passes the Test",
 
@@ -156,7 +212,18 @@ export const mediaItems = {
 
         preview: preview07,
 
-        images: [article07Page1, article07Page2],
+        images: [
+          {
+            src: article07Page1,
+            width: 1755,
+            height: 1275
+          },
+          {
+            src: article07Page2,
+            width: 1755,
+            height: 1275
+          }
+        ],
 
         title: "Streetcar: From Past to Future",
 
@@ -172,7 +239,13 @@ export const mediaItems = {
 
         preview: preview08,
 
-        images: [article08],
+        images: [
+          {
+            src: article08,
+            width: 1275,
+            height: 1755,
+          }
+        ],
 
         title: "Arcane Art Gallery: Svetangs and Objective Art",
 
@@ -213,7 +286,13 @@ export const mediaItems = {
 
         preview: preview01,
 
-        images: [article01],
+        images: [
+          {
+            src: article01,
+            width: 1275,
+            height: 1755,
+          }
+        ],
 
         title: "Not Wasting Waste",
 
@@ -229,7 +308,18 @@ export const mediaItems = {
 
         preview: preview02,
 
-        images: [article02Page1, article02Page2],
+        images: [
+          {
+            src: article02Page1,
+            width: 1755,
+            height: 1275
+          },
+          {
+            src: article02Page2,
+            width: 1755,
+            height: 1275
+          }
+        ],
 
         title: "Winter Wonders Spell Trouble",
 
@@ -245,7 +335,18 @@ export const mediaItems = {
 
         preview: preview03,
 
-        images: [article03Page1, article03Page2],
+        images: [
+          {
+            src: article03Page1,
+            width: 1755,
+            height: 1275
+          },
+          {
+            src: article03Page2,
+            width: 1755,
+            height: 1275
+          }
+        ],
 
         title: "All the Lonely People",
 
@@ -261,7 +362,13 @@ export const mediaItems = {
 
         preview: preview04,
 
-        images: [article04],
+        images: [
+          {
+            src: article04,
+            width: 1275,
+            height: 1755,
+          }
+        ],
 
         title: "Business Over Living",
 
@@ -277,7 +384,18 @@ export const mediaItems = {
 
         preview: preview05,
 
-        images: [article05Page1, article05Page2],
+        images: [
+          {
+            src: article05Page1,
+            width: 1755,
+            height: 1275
+          },
+          {
+            src: article05Page2,
+            width: 1755,
+            height: 1275
+          }
+        ],
 
         title: "Kyiv: Mostly Harmless",
 
@@ -293,7 +411,18 @@ export const mediaItems = {
 
         preview: preview06,
 
-        images: [article06Page1, article06Page2],
+        images: [
+          {
+            src: article06Page1,
+            width: 1755,
+            height: 1275
+          },
+          {
+            src: article06Page2,
+            width: 1755,
+            height: 1275
+          }
+        ],
 
         title: "Bessarabka Passes the Test",
 
@@ -309,7 +438,18 @@ export const mediaItems = {
 
         preview: preview07,
 
-        images: [article07Page1, article07Page2],
+        images: [
+          {
+            src: article07Page1,
+            width: 1755,
+            height: 1275
+          },
+          {
+            src: article07Page2,
+            width: 1755,
+            height: 1275
+          }
+        ],
 
         title: "Streetcar: From Past to Future",
 
@@ -325,7 +465,13 @@ export const mediaItems = {
 
         preview: preview08,
 
-        images: [article08],
+        images: [
+          {
+            src: article08,
+            width: 1275,
+            height: 1755,
+          }
+        ],
 
         title: "Arcane Art Gallery: Svetangs and Objective Art",
 

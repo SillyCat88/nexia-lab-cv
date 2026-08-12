@@ -1,7 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { mediaItems } from "./data/contentMedia";
 import { articleMap } from "./articleMap";
-
 import styles from "./ArticleViewer.module.css";
 
 export default function ArticleViewer({ lang }) {
@@ -35,9 +34,15 @@ export default function ArticleViewer({ lang }) {
           {article.images.map((image, index) => (
             <img
               key={index}
-              src={image}
+              src={image.src}
+              width={image.width}
+              height={image.height}
               alt={`${article.title} – ${t.pageAlt} ${index + 1}`}
               className={styles.pageImage}
+              decoding="async"
+              onLoad={(event) => {
+                event.currentTarget.classList.add(styles.loaded);
+              }}
             />
           ))}
         </section>

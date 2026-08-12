@@ -44,13 +44,19 @@
 
 .pageImage {
   display: block;
-
   width: 100%;
   height: auto;
 
   background: rgb(255 255 255 / 2%);
   border: 1px solid rgb(255 255 255 / 2%);
   border-radius: var(--radius-xl);
+
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.pageImage.loaded {
+  opacity: 1;
 }
 
 .backButton {
@@ -63,7 +69,7 @@
 
   background: var(--surface);
   border: 1px solid rgb(255 255 255 / 2%);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
 
   cursor: pointer;
   transition:

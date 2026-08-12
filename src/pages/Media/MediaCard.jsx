@@ -17,6 +17,10 @@ export default function MediaCard({
             src={item.preview}
             alt={`${t.previewAlt} ${item.title}`}
             className={styles.previewImage}
+            decoding="async"
+            onLoad={(event) => {
+              event.currentTarget.classList.add(styles.loaded);
+            }}            
           />
         </div>
 
