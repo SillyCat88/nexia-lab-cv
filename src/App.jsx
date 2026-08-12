@@ -8,10 +8,11 @@ import ArticleViewer from "./pages/Media/ArticleViewer";
 import Contact from "./pages/Contact/Contact";
 import MainLayout from "./layouts/MainLayout";
 import PageLayout from "./components/PageLayout/PageLayout";
+import useLang from "./hooks/useLang";
 
 
 export default function App() {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useLang();
 
   return (
     <Routes>
