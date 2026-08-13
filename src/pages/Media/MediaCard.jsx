@@ -16,6 +16,8 @@ export default function MediaCard({
           <img
             src={item.preview}
             alt={`${t.previewAlt} ${item.title}`}
+            width={768}
+            height={512}
             className={styles.previewImage}
             decoding="async"
             onLoad={(event) => {

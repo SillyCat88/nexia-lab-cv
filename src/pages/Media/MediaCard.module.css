@@ -21,9 +21,18 @@
    PREVIEW
 ========================= */
 .previewContainer {
+  position: relative;
   aspect-ratio: 3 / 2;
   overflow: hidden;
   border-radius: var(--radius-xl);
+}
+
+.previewContainer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(255 255 255 / 2%);
+  pointer-events: none;
 }
 
 .previewImage {

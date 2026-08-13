@@ -16,7 +16,7 @@
 
 .mainGrid {
   display: grid;
-  grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: var(--space-7);
   align-items: stretch;
 }
@@ -50,13 +50,15 @@
    RESPONSIVE
 ========================= */
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .mainGrid {
     grid-template-columns: 1fr;
-    gap: var(--space-6);
+    width: min(100%, 526px);
+    margin-inline: 0;
+    gap: var(--space-5);
   }
 
   .mainLayout {
-    gap: var(--space-6);
+    gap: var(--space-5);
   }
 }
