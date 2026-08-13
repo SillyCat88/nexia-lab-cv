@@ -3,9 +3,9 @@
   top: 5rem;
   right: 2rem;
   z-index: 100;
-  background: var(--surface);
+  background: rgb(255 255 255 / 2%);
   border: 1px solid rgb(255 255 255 / 2%);
-  border-radius: var(--radius-sm);
+  border-radius: none;
   padding: 0 var(--space-2);
 }
 

@@ -99,3 +99,14 @@
   border: 1px dashed rgb(255 255 255 / 12%);
   border-radius: var(--radius-xl);
 }
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .explorerTitle {
+    display: none;
+  }
+}

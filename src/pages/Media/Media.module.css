@@ -50,7 +50,7 @@
    RESPONSIVE
 ========================= */
 
-@media (max-width: 960px) {
+@media (max-width: 600px) {
   .mainGrid {
     grid-template-columns: 1fr;
     gap: var(--space-6);

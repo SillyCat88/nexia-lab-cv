@@ -36,9 +36,11 @@
     transform 0.2s ease;
 }
 
-.backToTopButton:hover {
-  color: var(--accent);
-  transform: translateY(-1px);
+@media (hover: hover) and (pointer: fine) {
+  .backToTopButton:hover {
+    color: var(--accent);
+    transform: translateY(-1px);
+  }
 }
 
 @media (max-width: 768px) {
