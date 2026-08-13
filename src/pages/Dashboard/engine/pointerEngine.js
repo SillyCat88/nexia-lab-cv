@@ -62,10 +62,17 @@ function createPointerEngine({
     });
   }
 
+  function handleLeave() {
+    tooltipEl.style.opacity = "0";
+  }
+
   chartEl.addEventListener("pointermove", handleMove);
+  chartEl.addEventListener("pointerleave", handleLeave);
 
   return () => {
     chartEl.removeEventListener("pointermove", handleMove);
+    chartEl.removeEventListener("pointerleave", handleLeave);
+
     if (raf !== null) {
       cancelAnimationFrame(raf);
       raf = null;

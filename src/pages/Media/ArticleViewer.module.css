@@ -69,7 +69,7 @@
 
   background: var(--surface);
   border: 1px solid rgb(255 255 255 / 2%);
-  border-radius: var(--radius-sm);
+  border-radius: none;
 
   cursor: pointer;
   transition:

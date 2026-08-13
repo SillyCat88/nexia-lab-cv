@@ -11,6 +11,8 @@ export default function Dashboard({ lang }) {
   const tooltipRef = useRef(null);
   const chartRef = useRef(null);
 
+  const t = projects[lang];
+
   const [dashboardState, setDashboardState] = useSessionStorage(
     "dashboard-state",
     {
@@ -34,8 +36,9 @@ export default function Dashboard({ lang }) {
       tooltipEl: tooltipRef.current,
       wordsLabel: t.wordsLabel,
     });
+
     return cleanup;
-  }, []);
+  }, [t.wordsLabel]);
 
   useEffect(() => {
     const handler = (e) => {
@@ -49,7 +52,7 @@ export default function Dashboard({ lang }) {
     return () => window.removeEventListener("keydown", handler);
   }, []);
 
-  const t = projects[lang];
+  
 
   const selected = t.items.find((project) => project.id === selectedId) ?? null;
   
