@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { projects } from "../data/contentDashboard";
 import { dashboardVertices } from "../layout/dashboardVertices";
 import createPointerEngine from "../engine/pointerEngine";
@@ -29,6 +29,10 @@ export default function Dashboard({ lang }) {
     }));
   };
 
+  const selected = 
+    t.items.find((project) => project.id === selectedId) ?? null;
+
+
   useEffect(() => {
     if (!chartRef.current || !tooltipRef.current) return;
     const cleanup = createPointerEngine({
@@ -51,10 +55,8 @@ export default function Dashboard({ lang }) {
     
     return () => window.removeEventListener("keydown", handler);
   }, []);
+ 
 
-  
-
-  const selected = t.items.find((project) => project.id === selectedId) ?? null;
   
   return (
     <div className={styles.mainContainer}>

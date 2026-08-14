@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { mediaItems } from "./data/contentMedia";
 import MediaCard from "./MediaCard";
 import MediaExplorer from "./MediaExplorer";
@@ -57,6 +58,20 @@ export default function Media({ lang }) {
     });
   };
 
+  useEffect(() => {
+    const handler = (e) => {
+      if (e.key === "Escape") {
+        setMediaState((prev) => ({
+          ...prev,
+          selectedId: null,
+        }));
+      }
+    };
+
+    window.addEventListener("keydown", handler);
+
+    return () => window.removeEventListener("keydown", handler);
+  }, []);
   
   return (
     <div className={styles.mainContainer}>

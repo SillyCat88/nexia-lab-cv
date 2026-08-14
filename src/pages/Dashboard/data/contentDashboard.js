@@ -10,6 +10,7 @@ export const projects = {
     explorerTopic: "Topic",
     explorerLanguagePair: "Language Pair",
     explorerPlaceholder: "Select a project bubble",
+    closeExplorer: "Close explorer",
 
     wordsLabel: "words",
 
@@ -199,6 +200,7 @@ export const projects = {
     explorerTopic: "Тема",
     explorerLanguagePair: "Мовна пара",
     explorerPlaceholder: "Оберіть бульбашку з проектом",
+    closeExplorer: "Закрити експлорер",
 
     wordsLabel: "слів",
 

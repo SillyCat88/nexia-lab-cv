@@ -12,6 +12,7 @@ export default function Explorer({
           <button
             className={styles.explorerClose}
             onClick={() => setSelected(null)}
+            aria-label={t.closeExplorer}
           >
             ×
           </button>
