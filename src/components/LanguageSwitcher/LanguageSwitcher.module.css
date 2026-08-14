@@ -22,15 +22,12 @@
   
   font: inherit;
   color: var(--text);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
+  letter-spacing: var(--letter-spacing-wide);
 
   cursor: pointer;
   opacity: 0.7;
   transition: opacity 0.1s ease;
-}
-
-.switcherButton:hover {
-  opacity: 0.9;
 }
 
 .active {
