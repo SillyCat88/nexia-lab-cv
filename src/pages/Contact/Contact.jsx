@@ -59,6 +59,10 @@ export default function Contact({ lang }) {
       setStatus("success");
       setIsSending(false);
 
+      setTimeout(() => {
+        setStatus(null);
+      }, 3000);
+
       setFormData({
         name: "",
         whatsapp: "",
@@ -66,6 +70,8 @@ export default function Contact({ lang }) {
         message: "",
         time: "",
       });
+
+
     } catch (error) {
       console.error(error);
 
@@ -87,10 +93,11 @@ export default function Contact({ lang }) {
           className={styles.formLayout}
           onSubmit={handleSubmit}
         >
-          <label className={styles.labelLayout}>
+          <label htmlFor="name" className={styles.labelLayout}>
             <span className={styles.labelField}>{t.nameLabel}</span>
 
             <input
+              id="name"
               type="text"
               name="name"
               required
@@ -101,10 +108,11 @@ export default function Contact({ lang }) {
             />
           </label>
 
-          <label className={styles.labelLayout}>
+          <label htmlFor="whatsapp" className={styles.labelLayout}>
             <span className={styles.labelField}>{t.whatsappLabel}</span>
 
             <input
+              id="whatsapp"
               type="tel"
               name="whatsapp"
               value={formData.whatsapp}
@@ -114,13 +122,14 @@ export default function Contact({ lang }) {
             />
           </label>
 
-          <label className={styles.labelLayout}>
+          <label htmlFor="email" className={styles.labelLayout}>
             <span className={styles.labelField}>
               {t.emailLabel}
               <sup>*</sup>
             </span>
 
             <input
+              id="email"
               type="email"
               name="email"
               required
@@ -131,10 +140,11 @@ export default function Contact({ lang }) {
             />
           </label>
 
-          <label className={styles.labelLayout}>
+          <label htmlFor="message" className={styles.labelLayout}>
             <span className={styles.labelField}>{t.messageLabel}</span>
 
             <textarea
+              id="message"
               name="message"
               required
               rows={8}

@@ -61,15 +61,14 @@
 
 .backButton {
   width: 100%;
-  
   padding: var(--space-1) 0;
-
-  font: inherit;
+  
   color: var(--text);
+  font: inherit;
 
   background:rgb(255 255 255 / 2%);;
   border: 1px solid rgb(255 255 255 / 2%);
-  border-radius: none;
+  border-radius: 0;
 
   cursor: pointer;
   transition:
