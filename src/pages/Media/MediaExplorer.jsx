@@ -1,5 +1,5 @@
-import { mediaItems } from "./data/contentMedia";
 import styles from "./MediaExplorer.module.css";
+
 
 export default function MediaExplorer({
   selected,

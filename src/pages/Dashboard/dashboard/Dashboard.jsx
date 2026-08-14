@@ -2,10 +2,13 @@ import { useEffect, useRef } from "react";
 import { projects } from "../data/contentDashboard";
 import { dashboardVertices } from "../layout/dashboardVertices";
 import createPointerEngine from "../engine/pointerEngine";
+
 import BubbleChart from "./BubbleChart";
 import Explorer from "./Explorer";
 import useSessionStorage from "../../../hooks/useSessionStorage";
+
 import styles from "./Dashboard.module.css";
+
 
 export default function Dashboard({ lang }) {
   const tooltipRef = useRef(null);
