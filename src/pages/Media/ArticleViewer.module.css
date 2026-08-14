@@ -67,20 +67,19 @@
   font: inherit;
   color: var(--text);
 
-  background: var(--surface);
+  background:rgb(255 255 255 / 2%);;
   border: 1px solid rgb(255 255 255 / 2%);
   border-radius: none;
 
   cursor: pointer;
   transition:
-    background-color 0.2s ease,
-    color 0.2 ease;
+    background-color 0.1s ease;
 }
 
 .backButton:hover {
-  background: var(--surface-2);
-  color: var(--text-body);
+  background: rgb(255 255 255 / 4%);
 }
+
 
 /* =========================
    RESPONSIVE
