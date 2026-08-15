@@ -50,10 +50,10 @@
    RESPONSIVE
 ========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   .mainGrid {
     grid-template-columns: 1fr;
     width: min(100%, 526px);
-    margin-inline: 0;
+    margin-inline: auto;
   }
 }
