@@ -12,6 +12,7 @@
 .explorerContainer {
   position: relative;
   width: 100%;
+  min-width: 300px;
   min-height: 520px;
   padding: var(--space-5);
   background: var(--surface-card);
@@ -70,7 +71,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  
   color: var(--text-placeholder);
+  font-size: var(--font-size-base);
   background: var(--surface-card);
   border: 1px dashed rgb(255 255 255 / 12%);
   border-radius: var(--radius-xl);

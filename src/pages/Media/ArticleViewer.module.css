@@ -66,17 +66,17 @@
   color: var(--text);
   font: inherit;
 
-  background:rgb(255 255 255 / 2%);;
+  background: rgb(22 26 34 / 55%);
   border: 1px solid rgb(255 255 255 / 2%);
   border-radius: 0;
 
   cursor: pointer;
   transition:
-    background-color 0.1s ease;
+    border-color 0.1s ease;
 }
 
 .backButton:hover {
-  background: rgb(255 255 255 / 4%);
+  border: 1px solid rgb(255 255 255 / 6%);
 }
 
 

@@ -38,6 +38,6 @@
   right: 0;
   bottom: -6px;
   height: 1px;
-  background: rgb(112 86 230 / 80%);
+  background: var(--accent);
   opacity: 1;
 }
