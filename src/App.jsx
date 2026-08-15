@@ -8,10 +8,13 @@ import Contact from "./pages/Contact/Contact";
 import MainLayout from "./layouts/MainLayout";
 import PageLayout from "./components/PageLayout/PageLayout";
 import useLang from "./hooks/useLang";
+import useRouteStorage from "./hooks/useRouteStorage";
 
 
 export default function App() {
   const [lang, setLang] = useLang();
+
+  useRouteStorage();
 
   return (
     <Routes>

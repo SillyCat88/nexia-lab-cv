@@ -10,6 +10,11 @@ export default function ArticleViewer({ lang }) {
   const t = mediaItems[lang];
   const article = articleMap[lang][articleId];
 
+  const handleBack = () => {
+    sessionStorage.setItem("media-route", "/media");
+    navigate("/media");
+  };
+
   if (!article) {
     return (
       <div className={styles.mainContainer}>
@@ -47,7 +52,10 @@ export default function ArticleViewer({ lang }) {
           ))}
         </section>
 
-        <button className={styles.backButton} onClick={() => navigate(-1)}>
+        <button 
+          className={styles.backButton} 
+          onClick={handleBack}
+        >
           {t.buttonBack}
         </button>
       </div>
