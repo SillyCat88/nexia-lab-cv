@@ -46,11 +46,16 @@ export const content = {
       "SDL Trados",
       "Phrase",
       "Lokalise",
-      "HTML",
-      "CSS",
-      "JavaScript",
+      "Unity",
+      "VS Code",
+      "Google Sheets",
+      "GitHub",
+      "Weblate",
       "JSON",
-      "XML"
+      "XML",
+      "YAML",
+      "CSV",
+      "PO"
     ],
 
     languages: "Ukrainian (native), English (C1)",
@@ -120,11 +125,16 @@ export const content = {
       "SDL Trados",
       "Phrase",
       "Lokalise",
-      "HTML",
-      "CSS",
-      "JavaScript",
+      "Unity",
+      "VS Code",
+      "Google Sheets",
+      "GitHub",
+      "Weblate",
       "JSON",
-      "XML"
+      "XML",
+      "YAML",
+      "CSV",
+      "PO"
     ],
 
     languages: "Українська (рідна), Англійська (C1)",
