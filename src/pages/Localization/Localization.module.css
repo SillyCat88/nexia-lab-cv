@@ -301,11 +301,20 @@
   top: var(--space-3);
   right: var(--space-3);
 
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
   background: transparent;
   border: none;
   color: var(--text-control);
 
-  font-size: var(--font-size-md);
+  font-size: 22px;
   line-height: 1;
 
   cursor: pointer;
@@ -373,7 +382,8 @@
 
 @media (max-width: 900px) {
   .mainContainer {
-    width: 61%;
+    width: 96%;
+
     margin-inline: 0;
   }
 
@@ -391,6 +401,7 @@
 @media (max-width: 600px) {
   .mainContainer {
     width: 96%;
+    margin-inline: auto;
   }
 
   .cardsGrid,
