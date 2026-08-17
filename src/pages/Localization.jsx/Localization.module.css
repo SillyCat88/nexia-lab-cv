@@ -1,0 +1,405 @@
+/* Localization.module.css */
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.mainContainer {
+  width: min(100%, 1100px);
+  margin: var(--space-7) auto;
+}
+
+.mainLayout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.headerLayout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.headerTitle {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-heading);
+}
+
+.headerText {
+  max-width: 80ch;
+  margin: 0;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+}
+
+
+/* =========================
+   LOCALIZATION CARDS
+========================= */
+
+.cardsSection {
+  width: 100%;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.faceCard {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: var(--space-5);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+
+  background: var(--surface-card);
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.faceCard:hover {
+  background: var(--surface-card-hover);
+  border-color: var(--border-2);
+  transform: translateY(-2px);
+}
+
+.cardTitle {
+  margin: 0 0 var(--space-3);
+
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-heading);
+}
+
+.cardDescription {
+  margin: 0 0 var(--space-4);
+
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-card);
+}
+
+.cardPoints {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.cardPoints li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-label);
+}
+
+.cardPoints strong {
+  font-weight: 600;
+}
+
+.cardPoints span {
+  opacity: 0.85;
+}
+
+.cardButton {
+  margin-top: auto;
+  padding: var(--space-2) var(--space-3);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+
+  background: transparent;
+  color: inherit;
+
+  font: inherit;
+  font-size: var(--font-size-sm);
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.cardButton:hover {
+  background: var(--surface-card-hover);
+  border-color: var(--border-2);
+}
+
+
+/* =========================
+   FILE FORMATS
+========================= */
+
+.fileFormatsSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.sectionTitle {
+  margin: 0;
+
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-heading);
+}
+
+.fileFormatsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.fileFormatCard {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: var(--space-5);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+
+  background: var(--surface-card);
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.fileFormatCard:hover {
+  background: var(--surface-card-hover);
+  border-color: var(--border-2);
+}
+
+.fileFormatHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+
+  margin-bottom: var(--space-3);
+}
+
+.fileFormatLabel {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  line-height: var(--line-height-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.fileFormatTitle {
+  margin: 0;
+
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-heading);
+}
+
+.fileFormatDescription {
+  margin: 0 0 var(--space-4);
+
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-card);
+}
+
+
+/* =========================
+   CODE EXAMPLE
+========================= */
+
+.fileFormatExample {
+  width: 100%;
+  margin: 0 0 var(--space-4);
+  padding: var(--space-3);
+
+  overflow-x: auto;
+
+  border-radius: var(--radius-sm);
+
+  background: rgb(0 0 0 / 18%);
+
+  font-family: monospace;
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-label);
+
+  white-space: pre;
+}
+
+.fileFormatExample code {
+  font-family: inherit;
+}
+
+.fileFormatPoints {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+
+  margin: 0;
+  padding-left: var(--space-4);
+
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-label);
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--space-5);
+
+  background: rgb(0 0 0 / 65%);
+}
+
+.modal {
+  position: relative;
+
+  width: min(100%, 760px);
+  max-height: 85vh;
+
+  padding: var(--space-6);
+
+  overflow-y: auto;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+
+  background: var(--surface-card);
+}
+
+.modalClose {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+
+  background: transparent;
+  border: none;
+  color: var(--text-control);
+
+  font-size: var(--font-size-md);
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    color 0.1s ease,
+    transform 0.1s ease;
+}
+
+.modalClose:hover {
+  transform: scale(1.08);
+  color: var(--accent-2);
+}
+
+
+/* =========================
+   MODAL CONTENT
+========================= */
+
+.modalTitle {
+  margin: 0 40px var(--space-3) 0;
+
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-heading);
+}
+
+.modalLead {
+  max-width: 80ch;
+  margin: 0 0 var(--space-6);
+
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.modalSection {
+  margin: 0;
+}
+
+.modalSectionTitle {
+  margin: 0 0 var(--space-2);
+
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-heading);
+}
+
+.modalSectionText {
+  margin: 0;
+
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+
+  white-space: pre-line;
+}
+
+
+/* =========================
+   RESPONSIVE — 900px
+========================= */
+
+@media (max-width: 900px) {
+  .mainContainer {
+    width: 61%;
+    margin-inline: 0;
+  }
+
+  .cardsGrid,
+  .fileFormatsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* =========================
+   RESPONSIVE — 600px
+========================= */
+
+@media (max-width: 600px) {
+  .mainContainer {
+    width: 96%;
+  }
+
+  .cardsGrid,
+  .fileFormatsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal {
+    max-height: 90vh;
+    padding: var(--space-5);
+  }
+}

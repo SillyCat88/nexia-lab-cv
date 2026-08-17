@@ -42,10 +42,7 @@ export const content = {
     tools: [
       "CrowdIn",
       "Smartcat",
-      "MateCat",
       "SDL Trados",
-      "Phrase",
-      "Lokalise",
       "Unity",
       "VS Code",
       "Google Sheets",
@@ -55,7 +52,6 @@ export const content = {
       "XML",
       "YAML",
       "CSV",
-      "PO"
     ],
 
     languages: "Ukrainian (native), English (C1)",
@@ -121,10 +117,7 @@ export const content = {
     tools: [
       "CrowdIn",
       "Smartcat",
-      "MateCat",
       "SDL Trados",
-      "Phrase",
-      "Lokalise",
       "Unity",
       "VS Code",
       "Google Sheets",
@@ -134,7 +127,6 @@ export const content = {
       "XML",
       "YAML",
       "CSV",
-      "PO"
     ],
 
     languages: "Українська (рідна), Англійська (C1)",

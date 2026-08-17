@@ -26,6 +26,15 @@ export default function SectionNav({ lang }) {
       </NavLink>
 
       <NavLink
+        to="/localization"
+        className={({ isActive }) =>
+          `${styles.navLink} ${isActive ? styles.isActive : ""}`
+        }
+      >
+        {t.localization}
+      </NavLink>
+
+      <NavLink
         to="/media"
         className={({ isActive }) =>
           `${styles.navLink} ${isActive ? styles.isActive : ""}`
