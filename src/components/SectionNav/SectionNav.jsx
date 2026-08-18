@@ -35,6 +35,15 @@ export default function SectionNav({ lang }) {
       </NavLink>
 
       <NavLink
+        to="/documents"
+        className={({ isActive }) =>
+          `${styles.navLink} ${isActive ? styles.isActive : ""}`
+        }
+      >
+        {t.documents}
+      </NavLink>
+
+      <NavLink
         to="/media"
         className={({ isActive }) =>
           `${styles.navLink} ${isActive ? styles.isActive : ""}`

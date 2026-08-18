@@ -1,11 +1,16 @@
 import { Routes, Route } from "react-router-dom";
+
 import Welcome from "./pages/Welcome/Welcome";
 import Home from "./pages/Home/Home";
 import Dashboard from "./pages/Dashboard/dashboard/Dashboard";
+
 import Localization from "./pages/Localization/Localization";
+import Documents from "./pages/Documents/Documents";
+
 import Media from "./pages/Media/Media";
 import ArticleViewer from "./pages/Media/ArticleViewer";
 import Contact from "./pages/Contact/Contact";
+
 import MainLayout from "./layouts/MainLayout";
 import PageLayout from "./components/PageLayout/PageLayout";
 import useLang from "./hooks/useLang";
@@ -55,6 +60,16 @@ export default function App() {
           element={
             <PageLayout lang={lang} setLang={setLang}>
               <Localization 
+                lang={lang} 
+              />
+            </PageLayout>
+          } 
+        />
+        <Route 
+          path="/documents" 
+          element={
+            <PageLayout lang={lang} setLang={setLang}>
+              <Documents 
                 lang={lang} 
               />
             </PageLayout>

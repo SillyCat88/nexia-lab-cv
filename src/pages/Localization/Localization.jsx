@@ -35,8 +35,12 @@ export default function Localization ({ lang }) {
     <div className={styles.mainLayout}>
 
       <header className={styles.headerLayout}>
-        <h1 className={styles.headerTitle}>{t.pageTitle}</h1>
-        <p className={styles.headerText}>{t.pageDescription}</p>
+        <h1 className={styles.headerTitle}>
+          {t.pageTitle}
+        </h1>
+        <p className={styles.headerText}>
+          {t.pageDescription}
+        </p>
       </header>
 
       <section className={styles.cardsSection}>
