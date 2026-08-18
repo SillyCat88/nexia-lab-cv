@@ -1,11 +1,34 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { content } from "./data/contentLocalize";
 import styles from "./Localization.module.css";
+
 
 export default function Localization ({ lang }) {
   
   const t = content[lang];
   const [selectedItem, setSelectedItem] = useState(null);
+
+  useEffect(() => {
+    if (!selectedItem) return;
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setSelectedItem(null);
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedItem]);
+
+  const handleCardClick = (item) => {
+    const selection = window.getSelection();
+    if (selection && selection.toString().length > 0) {
+      return;
+    }
+    setSelectedItem(item);
+  };
+
 
   return (
   <div className={styles.mainContainer}>
@@ -17,12 +40,15 @@ export default function Localization ({ lang }) {
       </header>
 
       <section className={styles.cardsSection}>
-        <div className={styles.cardsGrid}>
+        <div 
+          className={styles.cardsGrid}
+          tabIndex={0}
+        >
           {t.items.map((item) => (
             <article
               key={item.id}
               className={styles.faceCard}
-              onClick={() => setSelectedItem(item)}
+              onClick={() => handleCardClick(item)}
             >
               <h3 className={styles.cardTitle}>{item.card.title}</h3>
               <p className={styles.cardDescription}>
@@ -56,7 +82,10 @@ export default function Localization ({ lang }) {
       <section className={styles.fileFormatsSection}>
         <h2 className={styles.sectionTitle}>{t.fileFormatsTitle}</h2>
 
-        <div className={styles.fileFormatsGrid}>
+        <div 
+          className={styles.fileFormatsGrid}
+          tabIndex={0}
+        >
           {t.fileFormats.map((item) => (
             <article
               key={item.id}
@@ -96,6 +125,7 @@ export default function Localization ({ lang }) {
         >
           <div
             className={styles.modal}
+            tabIndex={0}
             onClick={(event) => event.stopPropagation()}
           >
             <button
