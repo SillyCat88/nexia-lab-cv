@@ -66,9 +66,9 @@
   color: var(--text);
   font: inherit;
 
-  background: rgb(22 26 34 / 55%);
-  border: 1px solid rgb(255 255 255 / 2%);
-  border-radius: 0;
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
 
   cursor: pointer;
   transition:
@@ -76,7 +76,7 @@
 }
 
 .backButton:hover {
-  border: 1px solid rgb(255 255 255 / 6%);
+  border: 1px solid var(--border-2);
 }
 
 
