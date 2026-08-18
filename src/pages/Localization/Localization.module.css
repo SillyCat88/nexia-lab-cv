@@ -120,6 +120,10 @@
   line-height: var(--line-height-label);
 }
 
+.cardPoints li:last-child {
+  margin-bottom: var(--space-2);
+}
+
 .cardPoints strong {
   font-weight: 600;
   font-size: var(--font-size-md);
