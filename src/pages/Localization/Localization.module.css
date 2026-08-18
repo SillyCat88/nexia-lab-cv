@@ -1,5 +1,3 @@
-/* Localization.module.css */
-
 /* =========================
    MAIN LAYOUT
 ========================= */
@@ -7,6 +5,7 @@
 .mainContainer {
   width: min(100%, 1100px);
   margin: var(--space-7) auto;
+  padding: 0 var(--space-5);
 }
 
 .mainLayout {
