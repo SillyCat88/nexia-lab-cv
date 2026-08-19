@@ -17,7 +17,7 @@
   margin: 0 auto;
   background: var(--surface-card);
   border: 1px solid rgb(255 255 255 / 4%);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-lg);
 }
 
 
@@ -67,7 +67,7 @@
   padding: var(--space-2) var(--space-3);
   background: rgb(20 20 24 / 72%);
   border: 1px solid rgb(255 255 255 / 4%);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   color: rgb(255 255 255 / 95%);
   font-size: var(--font-size-xs);
   pointer-events: none;
