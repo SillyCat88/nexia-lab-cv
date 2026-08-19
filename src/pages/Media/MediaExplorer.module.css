@@ -14,6 +14,7 @@
   border-radius: var(--radius-xl);
 }
 
+
 .explorerLayout {
   display: flex;
   flex-direction: column;

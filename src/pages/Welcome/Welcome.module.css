@@ -19,13 +19,16 @@
   gap: var(--space-5);
   padding: var(--space-5);
   background: var(--surface-card);
-  border: 1px solid rgb(255 255 255 / 2%);
+  border: 1px solid var(--border);
   border-radius: var(--radius-xl);
-  transition: background-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .cardContainer:hover {
   background: var(--surface-card-hover);
+  border-color: var(--border-2);
 }
 
 .mainTitle {

@@ -6,10 +6,10 @@
   width: 100%;
   padding: var(--space-5);
   background: var(--surface-card);
-
   border: 1px solid rgb(255 255 255 / 2%);
   border-radius: var(--radius-xl);
 }
+
 
 .cardLayout {
   display: flex;
