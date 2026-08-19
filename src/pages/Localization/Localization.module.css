@@ -1,23 +1,11 @@
-/* =========================
-   MAIN LAYOUT
-========================= */
-
 .mainContainer {
   width: min(100%, 1100px);
   margin: var(--space-7) auto;
   padding: 0 var(--space-5);
-}
-
-.mainLayout {
   display: flex;
   flex-direction: column;
   gap: var(--space-7);
 }
-
-
-/* =========================
-   HEADER
-========================= */
 
 .headerLayout {
   display: flex;
@@ -26,10 +14,6 @@
 }
 
 .headerTitle {
-  margin: 0;
-  font-size: var(--font-size-lg);
-  line-height: var(--line-height-heading);
-  
   margin-bottom: var(--space-3);
   font-size: clamp(2rem, 2.5vw, 3rem);
   font-weight: var(--font-weight-semibold);

@@ -3,12 +3,10 @@
 ========================= */
 
 .mainContainer {
-  max-width: 1100px;
+  width: min(100%, 1100px);
   margin: var(--space-7) auto;
   padding: 0 var(--space-5);
-}
 
-.mainLayout {
   display: flex;
   flex-direction: column;
   gap: clamp(var(--space-5), 4vw, var(--space-7));

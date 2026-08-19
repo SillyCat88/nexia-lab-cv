@@ -75,41 +75,37 @@ export default function Media({ lang }) {
   
   return (
     <div className={styles.mainContainer}>
-      <div className={styles.mainLayout}>
+      <header className={styles.headerLayout}>
+        <h1 className={styles.headerTitle}>{t.headerTitle}</h1>
+        <p className={styles.headerText}>
+          {t.headerDescription}
+        </p>
+      </header>
 
-        <header className={styles.headerLayout}>
-          <h1 className={styles.headerTitle}>{t.headerTitle}</h1>
-          <p className={styles.headerText}>
-            {t.headerDescription}
-          </p>
-        </header>
+      <div className={styles.mainGrid}>
+        <MediaCard
+          item={currentItem}
+          onPreview={() =>
+            setMediaState((prev) => ({
+              ...prev,
+              selectedId: currentItem.id,
+            }))
+          }
+          onPrevious={handlePrevious}
+          onNext={handleNext}
+          t={t}
+        />
 
-        <div className={styles.mainGrid}>
-          <MediaCard
-            item={currentItem}
-            onPreview={() =>
-              setMediaState((prev) => ({
-                ...prev,
-                selectedId: currentItem.id,
-              }))
-            }
-            onPrevious={handlePrevious}
-            onNext={handleNext}
-            t={t}
-          />
-
-          <MediaExplorer
-            selected={selected}
-            setSelected={(id) =>
-              setMediaState((prev) => ({
-                ...prev,
-                selectedId: id,
-              }))
-            }
-            t={t}
-          />
-        </div>
-
+        <MediaExplorer
+          selected={selected}
+          setSelected={(id) =>
+            setMediaState((prev) => ({
+              ...prev,
+              selectedId: id,
+            }))
+          }
+          t={t}
+        />
       </div>
     </div>
   );

@@ -31,8 +31,7 @@ export default function Localization ({ lang }) {
 
 
   return (
-  <div className={styles.mainContainer}>
-    <div className={styles.mainLayout}>
+    <div className={styles.mainContainer}>
 
       <header className={styles.headerLayout}>
         <h1 className={styles.headerTitle}>
@@ -169,6 +168,5 @@ export default function Localization ({ lang }) {
       )}
 
     </div>
-  </div>
   );
 };

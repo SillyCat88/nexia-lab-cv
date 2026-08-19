@@ -60,42 +60,39 @@ export default function Dashboard({ lang }) {
   }, []);
  
 
-  
   return (
     <div className={styles.mainContainer}>
-      <div className={styles.mainLayout}>
 
-        <header className={styles.headerLayout}>
-          <h1 className={styles.headerTitle}>{t.pageTitle}</h1>
-          <p className={styles.headerText}>{t.pageDescription}</p>
-        </header>
+      <header className={styles.headerLayout}>
+        <h1 className={styles.headerTitle}>{t.pageTitle}</h1>
+        <p className={styles.headerText}>{t.pageDescription}</p>
+      </header>
 
-        <div className={styles.mainGrid}>
-          {/* LEFT: BUBBLES */}
-          <BubbleChart
-            projects={t.items}
-            selectedId={selectedId}
-            setSelectedId={setSelectedId}
-            chartRef={chartRef}
-            tooltipRef={tooltipRef}
-            dashboardVertices={dashboardVertices}
-          />
+      <div className={styles.mainGrid}>
+        {/* LEFT: BUBBLES */}
+        <BubbleChart
+          projects={t.items}
+          selectedId={selectedId}
+          setSelectedId={setSelectedId}
+          chartRef={chartRef}
+          tooltipRef={tooltipRef}
+          dashboardVertices={dashboardVertices}
+        />
 
-          {/* RIGHT: EXPLORER */}
-          <Explorer
-            t={t}
-            selected={selected}
-            setSelected={setSelectedId}
-          />
-        </div>
-
-        <div className={styles.bubbleChartContainer}>
-          <p className={styles.bubbleChartPlaceholder}>
-          {t.mobilePlaceholder}
-          </p>
-        </div>
-
+        {/* RIGHT: EXPLORER */}
+        <Explorer
+          t={t}
+          selected={selected}
+          setSelected={setSelectedId}
+        />
       </div>
+
+      <div className={styles.bubbleChartContainer}>
+        <p className={styles.bubbleChartPlaceholder}>
+        {t.mobilePlaceholder}
+        </p>
+      </div>
+
     </div>
   );
 }
