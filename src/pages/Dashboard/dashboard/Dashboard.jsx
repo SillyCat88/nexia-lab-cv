@@ -68,7 +68,7 @@ export default function Dashboard({ lang }) {
         <p className={styles.headerText}>{t.pageDescription}</p>
       </header>
 
-      <div className={styles.mainGrid}>
+      <section className={styles.mainGrid}>
         {/* LEFT: BUBBLES */}
         <BubbleChart
           projects={t.items}
@@ -85,7 +85,7 @@ export default function Dashboard({ lang }) {
           selected={selected}
           setSelected={setSelectedId}
         />
-      </div>
+      </section>
 
       <div className={styles.bubbleChartContainer}>
         <p className={styles.bubbleChartPlaceholder}>

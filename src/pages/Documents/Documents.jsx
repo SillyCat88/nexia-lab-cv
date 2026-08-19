@@ -17,23 +17,25 @@ export default function Documents ({ lang }) {
           </p>
       </header>
 
-      <ul className={styles.listContainer}>
-        {t.documents.map((document) => (
-          <li 
-            key={document.file}
-            className={styles.listItem}
-          >
-            <a
-              href={document.file}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.linkItem}
+      <section className={styles.documentsSection}>
+        <ul className={styles.listContainer}>
+          {t.documents.map((document) => (
+            <li 
+              key={document.file}
+              className={styles.listItem}
             >
-              {document.title}
-            </a>
-          </li>
-        ))}
-      </ul>
+              <a
+                href={document.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.linkItem}
+              >
+                {document.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
     </div>
   );
 };

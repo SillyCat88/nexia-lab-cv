@@ -38,7 +38,7 @@ export default function Home({ lang }) {
           </div>
         </aside>
 
-        <div className={styles.mainContent}>
+        <section className={styles.mainContent}>
           <div className={styles.cardContainer}>
             <div className={styles.cardLayout}>
               <h3>{t.contentAbout}</h3>
@@ -71,7 +71,7 @@ export default function Home({ lang }) {
               </div>
             ))}
           </div>
-        </div>
+        </section>
       </div>
 
     </div>

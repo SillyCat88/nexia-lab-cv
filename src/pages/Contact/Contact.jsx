@@ -88,93 +88,95 @@ export default function Contact({ lang }) {
         <p className={styles.headerText}>{t.description}</p>
       </header>
 
-      <form
-        className={styles.formLayout}
-        onSubmit={handleSubmit}
-      >
-        <label htmlFor="name" className={styles.labelLayout}>
-          <span className={styles.labelField}>{t.nameLabel}</span>
-
-          <input
-            id="name"
-            type="text"
-            name="name"
-            required
-            value={formData.name}
-            onChange={handleChange}
-            placeholder={t.namePlaceholder}
-            className={styles.inputField}
-          />
-        </label>
-
-        <label htmlFor="whatsapp" className={styles.labelLayout}>
-          <span className={styles.labelField}>{t.whatsappLabel}</span>
-
-          <input
-            id="whatsapp"
-            type="tel"
-            name="whatsapp"
-            value={formData.whatsapp}
-            onChange={handleChange}
-            placeholder={t.whatsappPlaceholder}
-            className={styles.inputField}
-          />
-        </label>
-
-        <label htmlFor="email" className={styles.labelLayout}>
-          <span className={styles.labelField}>
-            {t.emailLabel}
-            <sup>*</sup>
-          </span>
-
-          <input
-            id="email"
-            type="email"
-            name="email"
-            required
-            value={formData.email}
-            onChange={handleChange}
-            placeholder={t.emailPlaceholder}
-            className={styles.inputField}
-          />
-        </label>
-
-        <label htmlFor="message" className={styles.labelLayout}>
-          <span className={styles.labelField}>{t.messageLabel}</span>
-
-          <textarea
-            id="message"
-            name="message"
-            required
-            rows={8}
-            value={formData.message}
-            onChange={handleChange}
-            placeholder={t.messagePlaceholder}
-            className={styles.textareaField}
-          />
-        </label>
-
-        <button 
-          type="submit" 
-          disabled={isSending}
-          className={styles.submitButton}
+      <section className={styles.contactSection}>
+        <form
+          className={styles.formLayout}
+          onSubmit={handleSubmit}
         >
-          {isSending ? t.sendingButton : t.submitButton}
-        </button>
+          <label htmlFor="name" className={styles.labelLayout}>
+            <span className={styles.labelField}>{t.nameLabel}</span>
 
-        {status === "success" && (
-          <p className={styles.successMessage}>
-            {t.successMessage}
-          </p>
-        )}
+            <input
+              id="name"
+              type="text"
+              name="name"
+              required
+              value={formData.name}
+              onChange={handleChange}
+              placeholder={t.namePlaceholder}
+              className={styles.inputField}
+            />
+          </label>
 
-        {status === "error" && (
-          <p className={styles.errorMessage}>
-            {t.errorMessage}
-          </p>
-        )}
+          <label htmlFor="whatsapp" className={styles.labelLayout}>
+            <span className={styles.labelField}>{t.whatsappLabel}</span>
 
-      </form>
+            <input
+              id="whatsapp"
+              type="tel"
+              name="whatsapp"
+              value={formData.whatsapp}
+              onChange={handleChange}
+              placeholder={t.whatsappPlaceholder}
+              className={styles.inputField}
+            />
+          </label>
+
+          <label htmlFor="email" className={styles.labelLayout}>
+            <span className={styles.labelField}>
+              {t.emailLabel}
+              <sup>*</sup>
+            </span>
+
+            <input
+              id="email"
+              type="email"
+              name="email"
+              required
+              value={formData.email}
+              onChange={handleChange}
+              placeholder={t.emailPlaceholder}
+              className={styles.inputField}
+            />
+          </label>
+
+          <label htmlFor="message" className={styles.labelLayout}>
+            <span className={styles.labelField}>{t.messageLabel}</span>
+
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows={8}
+              value={formData.message}
+              onChange={handleChange}
+              placeholder={t.messagePlaceholder}
+              className={styles.textareaField}
+            />
+          </label>
+
+          <button 
+            type="submit" 
+            disabled={isSending}
+            className={styles.submitButton}
+          >
+            {isSending ? t.sendingButton : t.submitButton}
+          </button>
+
+          {status === "success" && (
+            <p className={styles.successMessage}>
+              {t.successMessage}
+            </p>
+          )}
+
+          {status === "error" && (
+            <p className={styles.errorMessage}>
+              {t.errorMessage}
+            </p>
+          )}
+
+        </form>
+      </section>
     </div>
 
   );

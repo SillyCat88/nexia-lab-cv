@@ -82,7 +82,7 @@ export default function Media({ lang }) {
         </p>
       </header>
 
-      <div className={styles.mainGrid}>
+      <section className={styles.mainGrid}>
         <MediaCard
           item={currentItem}
           onPreview={() =>
@@ -106,7 +106,7 @@ export default function Media({ lang }) {
           }
           t={t}
         />
-      </div>
+      </section>
     </div>
   );
 }

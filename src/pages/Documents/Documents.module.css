@@ -30,6 +30,7 @@
   font-weight: var(--font-weight-normal);
 }
 
+
 .listContainer {
   display: flex;
   flex-direction: column;
