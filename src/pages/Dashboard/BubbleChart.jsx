@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { buildBubbleLayout } from "../layout/bubbleLayout";
+import { buildBubbleLayout } from "./layout/bubbleLayout";
 import styles from "./BubbleChart.module.css";
 
 export default function BubbleChart({

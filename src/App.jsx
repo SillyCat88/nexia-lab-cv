@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Welcome from "./pages/Welcome/Welcome";
 import Home from "./pages/Home/Home";
-import Dashboard from "./pages/Dashboard/dashboard/Dashboard";
+import Dashboard from "./pages/Dashboard/Dashboard";
 import Localization from "./pages/Localization/Localization";
 import Documents from "./pages/Documents/Documents";
 import Media from "./pages/Media/Media";
