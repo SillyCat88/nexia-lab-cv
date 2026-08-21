@@ -3,7 +3,7 @@ export const content = {
     pageTitle: "Localization",
 
     pageDescription:
-      "Core rules and principles for working with translations in game, UI, software, GUI, and website localization projects.",
+      "Basic rules and principles concerning localization workflows in game, web and software development.",
 
     readMore: "Read more",
 
@@ -453,7 +453,7 @@ export const content = {
     pageTitle: "Локалізація",
 
     pageDescription:
-      "Основні правила і принципи роботи з перекладами у проектах локалізації ігор, UI, програмного забезпечення, GUI для софту, вебсайтів.",
+      "Основні правила і принципи роботи з перекладами у проектах локалізації ігор, вебсайтів, ПЗ.",
 
     readMore: "Детальніше",
 
