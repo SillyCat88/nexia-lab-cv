@@ -84,3 +84,15 @@
 .tooltipWords {
   opacity: 0.8;
 }
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (min-width: 1600px) {
+  .bubbleChartContainer {
+    border-radius: var(--radius-lg);
+  }
+}
+

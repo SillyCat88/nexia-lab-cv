@@ -51,3 +51,16 @@
 .linkItem:hover {
   color: var(--accent);
 }
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (min-width: 1600px) {
+  .mainContainer {
+    width: min(100%, 1180px);
+  }
+}
+
+

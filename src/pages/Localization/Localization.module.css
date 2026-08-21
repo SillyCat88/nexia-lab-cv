@@ -412,3 +412,13 @@
     flex-basis: min(280px, 88vw);
   }
 }
+
+@media (min-width: 1600px) {
+  .mainContainer {
+    width: min(100%, 1180px);
+  }
+
+  .modal {
+    width: min(100%, 860px);
+  }
+}

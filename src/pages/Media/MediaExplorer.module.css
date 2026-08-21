@@ -1,7 +1,3 @@
-/* =========================
-   MEDIA EXPLORER
-========================= */
-
 .explorerContainer {
   position: relative;
 
@@ -109,5 +105,11 @@
 @media (max-width: 900px) {
   .explorerTitle {
     display: none;
+  }
+}
+
+@media (min-width: 1600px) {
+  .explorerContainer {
+    border-radius: var(--radius-lg);
   }
 }

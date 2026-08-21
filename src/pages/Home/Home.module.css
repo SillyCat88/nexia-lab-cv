@@ -181,6 +181,8 @@
 
 @media (min-width: 1600px) {
 	.mainContainer {
-		max-width: 1200px;
+		width: min(100%, 1180px);
 	}
 }
+
+

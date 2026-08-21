@@ -132,3 +132,15 @@
 .arrow:hover {
   transform: scale(1.12);
 }
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (min-width: 1600px) {
+  .cardContainer {
+    border-radius: var(--radius-lg);
+  }
+}
+
