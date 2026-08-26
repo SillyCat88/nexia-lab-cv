@@ -92,7 +92,7 @@
 
 @media (min-width: 1600px) {
   .bubbleChartContainer {
-    border-radius: var(--radius-lg);
+    border: 1px solid rgb(255 255 255 / 2%);
   }
 }
 

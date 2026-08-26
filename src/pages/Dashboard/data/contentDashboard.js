@@ -1,7 +1,7 @@
 export const projects = {
   en: {
     pageTitle: "Projects Dashboard",
-    pageDescription: "Interactive visualization of completed projects. Hover to preview, click to inspect details.",
+    pageDescription: "Interactive visualization of completed translation projects. Hover to preview, click to inspect details.",
     mobilePlaceholder: "Bubble chart, no mobile version currently",
 
     explorerWords: "Words",
@@ -191,7 +191,7 @@ export const projects = {
 
   ua: {
     pageTitle: "Дашборд проектів",
-    pageDescription: "Інтерактивна візуалізація виконаних проектів. Наведіть курсор для прев'ю, клікніть щоб дізнатись подробиці.",
+    pageDescription: "Інтерактивна візуалізація виконаних перекладацьких проектів. Наведіть курсор для прев'ю, клікніть щоб дізнатись подробиці.",
     mobilePlaceholder: "Бульбашковий чарт, мобільна версія тимчасово відсутня",
 
     explorerWords: "Слова",

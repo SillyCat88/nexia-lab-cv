@@ -10,9 +10,10 @@ export const content = {
       "Translation",
       "Editing & Proofreading",
       "MTPE",
-      "Website & Software Localization",
       "UI Localization",
-      "Technical Translation",
+      "Website Localization",
+      "Software Localization",
+      "Game Localization",
       "Content Writing",
       "Transcreation",
       "DTP"
@@ -60,7 +61,7 @@ export const content = {
 
     heroLanguagePair: "En↔Ua Translator",
 
-    heroSubtitle: "MTPE • UX/UI Localization • Technical Translation • Content Writing",
+    heroSubtitle: "MTPE • UX/UI Localization • Content Writing",
 
     contentLanguages: "Languages",
 
@@ -85,9 +86,10 @@ export const content = {
       "Переклад",
       "Редагування та коректура",
       "Постредагування",
-      "Локалізація сайтів і ПЗ",
-      "UI локалізація",
-      "Технічний переклад",
+      "Локалізація UI",
+      "Локалізація сайтів",
+      "Локалізація ПЗ",
+      "Локалізація ігор",
       "Контент-райтинг",
       "Транскреація",
       "DTP"
@@ -135,7 +137,7 @@ export const content = {
 
     heroLanguagePair: "En↔Укр Перекладач",
 
-    heroSubtitle: "Постредагування • UX/UI Локалізація • Технічний переклад • Написання контенту",
+    heroSubtitle: "Постредагування • UX/UI Локалізація • Написання контенту",
 
     contentLanguages: "Мови",
 
