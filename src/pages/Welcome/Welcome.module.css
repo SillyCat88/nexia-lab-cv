@@ -46,7 +46,7 @@
 
 .cardLink {
   align-self: flex-start;
-  color: var(--accent);
+  color: var(--accent-interactive);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-medium);
   letter-spacing: var(--letter-spacing-wide);

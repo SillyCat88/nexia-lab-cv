@@ -7,7 +7,7 @@ export default function Welcome({ lang, setLang }) {
   const t = content[lang];
 
   return (
-    <div className={styles.mainLayout}>
+    <main className={styles.mainLayout}>
 
       <LanguageSwitcher
         lang={lang}
@@ -24,6 +24,6 @@ export default function Welcome({ lang, setLang }) {
         </section>
       </div>
 
-    </div>
+    </main>
   );
 }
