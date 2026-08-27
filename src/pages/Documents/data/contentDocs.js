@@ -43,7 +43,7 @@ export const content = {
         file: "/documents/Contractor_Agreement_Template_UA.pdf",
       },
       {
-        title: "Шаблон технічного завдання (SoW)",
+        title: "Шаблон технічного завдання",
         file: "/documents/SoW_Template_UA.pdf",
       },
       {
