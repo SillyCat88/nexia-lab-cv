@@ -17,8 +17,27 @@
 }
 
 .footerText {
-  padding-inline: var(--space-3);
+  margin-bottom: var(--space-5);
+  padding-inline: 0;
 }
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: var(--space-5);
+}
+
+.footerLogo {
+  margin-bottom: var(--space-3);
+}
+
+.footerLogo img {
+  display: block;
+  width: 127px;
+  height: 31px;
+}
+
 
 .backToTopButton {
   margin-right: var(--space-3);

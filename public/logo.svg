@@ -1,0 +1,85 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="8 11 127 31"
+  width="127"
+  height="31"
+  shape-rendering="crispEdges"
+  aria-hidden="true"
+>
+  <!-- LEFT DOCUMENT / CAT TOOL -->
+  <path
+    d="M8 13h20v4h4v14h-4v4H8z"
+    fill="#eaeaea"
+  />
+
+  <path
+    d="M8 13h20v4H8z"
+    fill="#5834eb"
+  />
+
+  <!-- SMALL TERMINAL WINDOW -->
+  <path
+    d="M13 20h15v9H13z"
+    fill="#2a2f3a"
+  />
+
+  <path
+    d="M15 23h4v2h-4z"
+    fill="#34c759"
+  />
+
+  <path
+    d="M21 23h5v2h-5z"
+    fill="#ff4d4f"
+  />
+
+  <!-- TRANSLATION ZIGZAG OUTLINE -->
+  <path
+    d="M32 16h12v4h8v4h12v4h8v7H60v-4H48v-4H36v-4H32z"
+    fill="#2a2f3a"
+  />
+
+  <!-- TRANSLATION ZIGZAG -->
+  <path
+    d="M34 18h10v4h8v4h12v4h6v3H61v-4H49v-4H37v-4h-3z"
+    fill="#5834eb"
+  />
+
+  <!-- ZIGZAG LIGHT BREAK -->
+  <path
+    d="M44 18h8v4h8v4h8v4h-8v-4h-8v-4h-8z"
+    fill="#eaeaea"
+  />
+
+  <!-- SPEECH BUBBLE OUTLINE -->
+  <path
+    d="M78 11h30v4h4v17h-4v4H98v5h-5v-5H78v-4h-4V15h4z"
+    fill="#2a2f3a"
+  />
+
+  <!-- SPEECH BUBBLE -->
+  <path
+    d="M80 13h27v3h3v14h-3v3H96v4h-2v-4H80v-3h-3V16h3z"
+    fill="#ffe1d6"
+  />
+
+  <!-- GREY SPEECH BUBBLE TAIL -->
+  <path
+    d="M94 33h2v4h-2z"
+    fill="#a0a0a0"
+  />
+
+  <!-- TRANSLATION SYMBOL -->
+  <path
+    d="M83 18h7v3h3v3h-3v4h-4v-3h-3zm14 0h7v3h-3v7h-4v-3h-3v-3h3z"
+    fill="#5834eb"
+  />
+
+  <!-- DIGITAL / GAME PIXELS -->
+  <path d="M116 15h5v5h-5z" fill="#a0a0a0"/>
+  <path d="M123 22h5v5h-5z" fill="#5834eb"/>
+  <path d="M130 29h5v5h-5z" fill="#ffe1d6"/>
+  <path d="M123 36h5v5h-5z" fill="#a0a0a0"/>
+</svg>
+
+

@@ -1,0 +1,108 @@
+<svg
+xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 64 64"
+width="64"
+height="64"
+shape-rendering="crispEdges"
+
+>
+
+  <!-- DOCUMENT -->
+
+<path
+ d="M16 5h26v4h4v4h3v21h-4v5h-5v4H16V9h4V5h-4z"
+ fill="#eef0f5"
+/>
+
+  <!-- document blue edge -->
+
+<path
+ d="M12 10h4v30h4v5h-4v-3h-4V10zm4-5h26v4H16V5z"
+ fill="#58a9ed"
+/>
+
+  <!-- document shadow -->
+
+<path
+ d="M16 45h23v-4h5v-5h4v7h-4v5H39v4H16z"
+ fill="#4775ad"
+/>
+
+  <!-- document lines -->
+
+  <path d="M21 16h21v3H21z" fill="#18365d"/>
+  <path d="M21 23h16v3H21z" fill="#18365d"/>
+  <path d="M21 30h16v3H21z" fill="#18365d"/>
+  <path d="M21 37h16v3H21z" fill="#18365d"/>
+
+  <!-- SPEECH BUBBLE outline -->
+
+<path
+ d="M39 15h19v3h3v18h-3v4h-7v7h-5v-7h-8v-3h-3V20h4v-5z"
+ fill="#17365f"
+/>
+
+  <!-- speech bubble -->
+
+<path
+ d="M40 17h17v3h3v15h-3v3h-7v7h-3v-7h-8v-3h-3V21h4z"
+ fill="#8f63e9"
+/>
+
+  <!-- speech bubble highlight -->
+
+<path
+ d="M41 20h16v3h3v12h-3v3h-8v5h-3v-5h-8v-3h-3V23h3z"
+ fill="#e9ddff"
+/>
+
+  <!-- A -->
+
+<path
+ d="M43 23h5v3h2v10h-3v-3h-5v3h-3v-7h2v-3h2v-3zm-1 7h5v-4h-3v2h-2z"
+ fill="#17365f"
+/>
+
+  <!-- 文 -->
+
+<path
+ d="M52 25h3v3h3v2h-3v2h-2v2h4v3h-5v-2h-3v-3h3v-2h-2v-2h2z"
+ fill="#17365f"
+/>
+
+  <!-- GAMEPAD outline -->
+
+<path
+ d="M10 47h4v-4h7v-3h17v3h7v4h4v12h-4v3h-10v-3h-3v-3h-8v3h-3v3H11v-3h-4V47z"
+ fill="#142f55"
+/>
+
+  <!-- GAMEPAD body -->
+
+<path
+ d="M14 47h7v-3h17v3h7v10h-7v-3h-3v-2h-8v2h-3v3h-10z"
+ fill="#2463a4"
+/>
+
+  <!-- gamepad highlight -->
+
+<path
+ d="M18 45h7v-2h10v3H23v3h-9v-2h4z"
+ fill="#6eb7f2"
+/>
+
+  <!-- D-pad -->
+
+<path
+ d="M20 48h3v3h3v3h-3v3h-3v-3h-3v-3h3z"
+ fill="#9365ed"
+/>
+
+  <!-- buttons -->
+
+  <path d="M39 47h3v3h-3z" fill="#57d9ef"/>
+  <path d="M43 50h3v3h-3z" fill="#ff777d"/>
+  <path d="M39 53h3v3h-3z" fill="#e77bdf"/>
+  <path d="M35 50h3v3h-3z" fill="#54d6ed"/>
+</svg>
+

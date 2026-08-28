@@ -7,10 +7,16 @@ export default function Footer ({ lang }) {
 
   return (
     <footer className={styles.footerContainer}>
-      <p className={styles.footerText}>
-        {"© "}{year} <span className={styles.footerAccent}>{t.name}</span>
-        {" • "}{t.footerRole}
-      </p>
+      <div className={styles.footerInfo}>
+        <div className={styles.footerLogo}>
+          <img src="/logo.svg" alt="" />
+        </div>
+
+        <p className={styles.footerText}>
+          {"© "}{year} <span className={styles.footerAccent}>{t.name}</span>
+          {" • "}{t.footerRole}
+        </p>
+      </div>
       <button
         type="button"
         className={styles.backToTopButton}
