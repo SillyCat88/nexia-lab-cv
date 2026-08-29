@@ -19,8 +19,8 @@ export const contentContact = {
     submitButton: "Send Message",
     sendingButton: "Sending...",
 
-    successMessage: "Thank you! Your message has been sent.",
-    errorMessage: "Something went wrong. Please try again later.",
+    successMessage: "Thank you! \nYour message has been sent.",
+    errorMessage: "Something went wrong. \nPlease try again later.",
   },
 
   ua: {
@@ -43,7 +43,7 @@ export const contentContact = {
     submitButton: "Відправити повідомлення",
     sendingButton: "Відправлення...",
 
-    successMessage: "Успіх! Ваше повідомлення відправлено.",
-    errorMessage: "Сталася помилка. Спробуйте ще раз пізніше.",
+    successMessage: "Успіх! \nВаше повідомлення відправлено.",
+    errorMessage: "Сталася помилка. \nСпробуйте ще раз пізніше.",
   },
 };

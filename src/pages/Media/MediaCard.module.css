@@ -6,7 +6,7 @@
   width: 100%;
   padding: var(--space-5);
   background: var(--surface-card);
-  border: 1px solid rgb(255 255 255 / 2%);
+  border: 1px solid rgb(255 255 255 / 4%);
   border-radius: var(--radius-md);
 }
 
@@ -131,16 +131,5 @@
 
 .arrow:hover {
   transform: scale(1.12);
-}
-
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (min-width: 1600px) {
-  .cardContainer {
-    border: 1px solid rgb(255 255 255 / 4%);
-  }
 }
 

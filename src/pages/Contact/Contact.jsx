@@ -61,7 +61,7 @@ export default function Contact({ lang }) {
 
       setTimeout(() => {
         setStatus(null);
-      }, 3000);
+      }, 7000);
 
       setFormData({
         name: "",

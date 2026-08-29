@@ -16,7 +16,7 @@
   min-height: 520px;
   margin: 0 auto;
   background: var(--surface-card);
-  border: 1px solid rgb(255 255 255 / 4%);
+  border: 1px solid rgb(255 255 255 / 6%);
   border-radius: var(--radius-md);
 }
 
@@ -83,16 +83,5 @@
 
 .tooltipWords {
   opacity: 0.8;
-}
-
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (min-width: 1600px) {
-  .bubbleChartContainer {
-    border: 1px solid rgb(255 255 255 / 6%);
-  }
 }
 
