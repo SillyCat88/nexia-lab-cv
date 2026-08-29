@@ -2,7 +2,7 @@ export const content = {
   en: {
     pageTitle: "Documents",
     
-    pageDescription: "Here you can download templates for freelance collaboration (or you can suggest another way of cooperation in a message).",
+    pageDescription: "Here you can download templates for freelance collaboration (or please suggest another way of cooperation in a message).",
     
     documents: [
       {
