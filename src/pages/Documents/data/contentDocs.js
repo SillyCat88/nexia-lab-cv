@@ -2,7 +2,7 @@ export const content = {
   en: {
     pageTitle: "Documents",
     
-    pageDescription: "Here you can download templates for freelance collaboration (or please suggest another way of cooperation in a message).",
+    pageDescription: "Here you can download templates for freelance, project-based or ongoing collaboration. Have something else in mind? Just let me know in your message.",
     
     documents: [
       {
@@ -31,7 +31,7 @@ export const content = {
   ua: {
     pageTitle: "Документи",
     
-    pageDescription: "Тут ви можете завантажити темплейти документів для фріланс-співпраці (або запропонуйте інший формат взаємодії у повідомленні).",
+    pageDescription: "Тут ви можете завантажити шаблони для фріланс-, проектної або постійної співпраці. Маєте інший формат? Просто напишіть мені у повідомленні.",
     
     documents: [
       {
