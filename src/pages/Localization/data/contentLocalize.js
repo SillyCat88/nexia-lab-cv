@@ -3,7 +3,7 @@ export const content = {
     pageTitle: "Localization",
 
     pageDescription:
-      "Basic rules and principles concerning localization workflows in game, web and software development.",
+      "Basic rules and principles informing localization workflows in game, web and software development.",
 
     readMore: "Read more",
 
