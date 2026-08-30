@@ -35,21 +35,30 @@ export default function SectionNav({ lang }) {
       </NavLink>
 
       <NavLink
-        to="/documents"
-        className={({ isActive }) =>
-          `${styles.navLink} ${isActive ? styles.isActive : ""}`
-        }
-      >
-        {t.documents}
-      </NavLink>
-
-      <NavLink
         to="/media"
         className={({ isActive }) =>
           `${styles.navLink} ${isActive ? styles.isActive : ""}`
         }
       >
         {t.media}
+      </NavLink>
+
+      <NavLink
+        to="/start-a-project"
+        className={({ isActive }) =>
+          `${styles.navLink} ${isActive ? styles.isActive : ""}`
+        }
+      >
+        {t.startAProject}
+      </NavLink>
+
+      <NavLink
+        to="/documents"
+        className={({ isActive }) =>
+          `${styles.navLink} ${isActive ? styles.isActive : ""}`
+        }
+      >
+        {t.documents}
       </NavLink>
 
       <NavLink

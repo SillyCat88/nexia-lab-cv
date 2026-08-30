@@ -6,6 +6,7 @@ import Localization from "./pages/Localization/Localization";
 import Documents from "./pages/Documents/Documents";
 import Media from "./pages/Media/Media";
 import ArticleViewer from "./pages/Media/ArticleViewer";
+import StartAProject from "./pages/StartAProject/StartAProject";
 import Contact from "./pages/Contact/Contact";
 import MainLayout from "./layouts/MainLayout";
 import PageLayout from "./components/PageLayout/PageLayout";
@@ -41,6 +42,7 @@ export default function App() {
             </PageLayout>
           } 
         />
+
         <Route 
           path="/dashboard" 
           element={
@@ -51,6 +53,7 @@ export default function App() {
             </PageLayout>
           } 
         />
+
         <Route 
           path="/localization" 
           element={
@@ -61,16 +64,7 @@ export default function App() {
             </PageLayout>
           } 
         />
-        <Route 
-          path="/documents" 
-          element={
-            <PageLayout lang={lang} setLang={setLang}>
-              <Documents 
-                lang={lang} 
-              />
-            </PageLayout>
-          } 
-        />
+
         <Route 
           path="/media" 
           element={
@@ -81,6 +75,7 @@ export default function App() {
             </PageLayout>
           } 
         />
+
         <Route 
           path="media/:articleId" 
           element={
@@ -91,6 +86,29 @@ export default function App() {
             </PageLayout>
           } 
         />
+
+        <Route 
+          path="/start-a-project" 
+          element={
+            <PageLayout lang={lang} setLang={setLang}>
+              <StartAProject 
+                lang={lang} 
+              />
+            </PageLayout>
+          } 
+        />
+
+        <Route 
+          path="/documents" 
+          element={
+            <PageLayout lang={lang} setLang={setLang}>
+              <Documents 
+                lang={lang} 
+              />
+            </PageLayout>
+          } 
+        />
+
         <Route 
           path="/contact" 
           element={
@@ -101,7 +119,7 @@ export default function App() {
             </PageLayout>
           } 
         />
-      </Route>
+      </Route>        
     </Routes>
   );
 }
