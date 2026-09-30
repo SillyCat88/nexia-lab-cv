@@ -1,5 +1,13 @@
-import useSessionStorage from "./useSessionStorage";
+import { useEffect, useState } from "react";
 
 export default function useLang() {
-  return useSessionStorage("app-lang", "en");
+  const [lang, setLang] = useState(() => {
+    return sessionStorage.getItem("app-lang") || "en";
+  });
+
+  useEffect(() => {
+    sessionStorage.setItem("app-lang", lang);
+  }, [lang]);
+
+  return [lang, setLang];
 }

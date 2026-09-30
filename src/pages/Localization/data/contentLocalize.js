@@ -1,4 +1,4 @@
-export const content = {
+export const contentLocalize = {
   en: {
     pageTitle: "Localization",
 

@@ -75,9 +75,7 @@
 }
 
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* Large screens */
 
 @media (min-width: 1600px) {
   .mainContainer {

@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import { content } from "./data/contentLocalize";
+import { contentLocalize } from "./data/contentLocalize";
 import styles from "./Localization.module.css";
 
 
 export default function Localization ({ lang }) {
   
-  const t = content[lang];
+  const t = contentLocalize[lang];
   const [selectedItem, setSelectedItem] = useState(null);
 
   useEffect(() => {

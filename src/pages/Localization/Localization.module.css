@@ -15,7 +15,7 @@
 
 .headerTitle {
   margin-bottom: var(--space-3);
-  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-size: clamp(2rem, 3vw, 3.5rem);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-heading);
 }
@@ -377,9 +377,7 @@
 }
 
 
-/* =========================
-   RESPONSIVE — 900px
-========================= */
+/* Tablet */
 
 @media (max-width: 900px) {
   .mainContainer {
@@ -389,9 +387,7 @@
 }
 
 
-/* =========================
-   RESPONSIVE — 600px
-========================= */
+/* Mobile */
 
 @media (max-width: 600px) {
   .mainContainer {
@@ -412,6 +408,8 @@
     flex-basis: min(280px, 88vw);
   }
 }
+
+/* Large screens */
 
 @media (min-width: 1600px) {
   .mainContainer {
