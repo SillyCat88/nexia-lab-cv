@@ -1,6 +1,6 @@
 
 .mainContainer {
-  width: min(100%, 1180px);
+  width: min(100%, 1100px);
   margin: var(--space-7) auto;
   padding: 0 var(--space-5);
 }

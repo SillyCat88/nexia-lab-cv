@@ -3,6 +3,7 @@ import Welcome from "./pages/Welcome/Welcome";
 import Home from "./pages/Home/Home";
 import Samples from "./pages/Samples/Samples";
 import WebLocalize from "./pages/WebLocalize/WebLocalize";
+import AppLocalize from "./pages/AppLocalize/AppLocalize";
 import Localization from "./pages/Localization/Localization";
 import Documents from "./pages/Documents/Documents";
 import Contact from "./pages/Contact/Contact";
@@ -10,7 +11,6 @@ import MainLayout from "./layouts/MainLayout";
 import PageLayout from "./components/PageLayout/PageLayout";
 import useLang from "./hooks/useLang";
 import useRouteStorage from "./hooks/useRouteStorage";
-
 
 
 export default function App() {
@@ -58,6 +58,17 @@ export default function App() {
           element={
             <PageLayout lang={lang} setLang={setLang}>
               <WebLocalize 
+                lang={lang} 
+              />
+            </PageLayout>
+          } 
+        />
+
+        <Route 
+          path="/samples/app" 
+          element={
+            <PageLayout lang={lang} setLang={setLang}>
+              <AppLocalize 
                 lang={lang} 
               />
             </PageLayout>

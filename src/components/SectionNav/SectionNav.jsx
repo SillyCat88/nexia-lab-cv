@@ -33,6 +33,13 @@ export default function SectionNav({ lang }) {
           >
             {t.website}
           </NavLink>
+
+          <NavLink
+            to="/samples/app"
+            className={styles.dropdownLink}
+          >
+            {t.app}
+          </NavLink>
         </div>
       </div>
 
