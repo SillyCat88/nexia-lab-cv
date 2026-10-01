@@ -26,6 +26,67 @@
   transform: translateY(-1px);
 }
 
+.samplesMenu {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + var(--space-3));
+  left: 50%;
+  z-index: 20;
+
+  display: flex;
+  flex-direction: column;
+  min-width: 220px;
+
+  padding: var(--space-2);
+
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+
+  box-shadow: 0 12px 30px rgb(0 0 0 / 18%);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -6px);
+
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease,
+    visibility 0.18s ease;
+}
+
+.samplesMenu:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+.dropdownLink {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-nav);
+  text-transform: uppercase;
+  color: var(--text);
+
+  border-radius: var(--radius-sm);
+
+  transition:
+    background 0.18s ease,
+    color 0.18s ease;
+}
+
+.dropdownLink:hover {
+  background: rgb(255 255 255 / 6%);
+  color: var(--accent);
+}
+
 .isActive {
   opacity: 1;
   color: var(--text);

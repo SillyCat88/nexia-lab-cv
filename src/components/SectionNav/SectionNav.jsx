@@ -16,14 +16,25 @@ export default function SectionNav({ lang }) {
         {t.home}
       </NavLink>
 
-      <NavLink
-        to="/samples"
-        className={({ isActive }) =>
-          `${styles.navLink} ${isActive ? styles.isActive : ""}`
-        }
-      >
-        {t.samples}
-      </NavLink>
+      <div className={styles.samplesMenu}>
+        <NavLink
+          to="/samples"
+          className={({ isActive }) =>
+            `${styles.navLink} ${isActive ? styles.isActive : ""}`
+          }
+        >
+          {t.samples}
+        </NavLink>
+
+        <div className={styles.dropdown}>
+          <NavLink
+            to="/samples/website"
+            className={styles.dropdownLink}
+          >
+            {t.website}
+          </NavLink>
+        </div>
+      </div>
 
       <NavLink
         to="/localization"

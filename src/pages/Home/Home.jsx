@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { contentHome } from "./data/contentHome";
 import styles from "./Home.module.css";
 
@@ -109,12 +110,12 @@ export default function Home({ lang }) {
             ))}
           </div>
 
-          <a
-            href="/samples"
+          <Link
+            to="/samples"
             className={styles.portfolioButton}
           >
             {t.portfolio.button}
-          </a>
+          </Link>
         </section>
 
 
@@ -129,7 +130,7 @@ export default function Home({ lang }) {
             <p className={styles.ctaText}>{t.cta.text}</p>
           </div>
 
-          <div className={styles.ctaActions}>
+          {/* <div className={styles.ctaActions}>
             <a
               href="/samples"
               className={styles.ctaPrimary}
@@ -143,7 +144,7 @@ export default function Home({ lang }) {
             >
               {t.cta.contactButton}
             </a>
-          </div>
+          </div> */}
         </section>
       </main>
     </div>

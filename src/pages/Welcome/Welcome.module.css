@@ -8,7 +8,6 @@
   width: min(100%, 1100px);
   margin: var(--space-7) auto;
   padding: 0 var(--space-5);
-  background: var(--bg);
   opacity: 0;
   animation: fadeIn 240ms ease forwards;
 }
@@ -33,11 +32,7 @@
 
 .mainTitle {
   margin: 0;
-  font-size: clamp(
-    var(--font-size-2xl), 
-    2.5vw, 
-    3rem
-  );
+  font-size: clamp(2rem, 3vw, 3.5rem);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-heading);
   letter-spacing: var(--letter-spacing-hero);

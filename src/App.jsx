@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Welcome from "./pages/Welcome/Welcome";
 import Home from "./pages/Home/Home";
 import Samples from "./pages/Samples/Samples";
+import WebLocalize from "./pages/WebLocalize/WebLocalize";
 import Localization from "./pages/Localization/Localization";
 import Documents from "./pages/Documents/Documents";
 import Contact from "./pages/Contact/Contact";
@@ -46,6 +47,17 @@ export default function App() {
           element={
             <PageLayout lang={lang} setLang={setLang}>
               <Samples 
+                lang={lang} 
+              />
+            </PageLayout>
+          } 
+        />
+
+        <Route 
+          path="/samples/website" 
+          element={
+            <PageLayout lang={lang} setLang={setLang}>
+              <WebLocalize 
                 lang={lang} 
               />
             </PageLayout>

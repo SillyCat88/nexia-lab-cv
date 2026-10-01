@@ -1,14 +1,14 @@
 export const contentSamples = {
 	en: {
 		pageTitle: "SAMPLES",
-		leadTitle: "Localization in practice.",
+		leadTitle: "Localization in workflows.",
 		lead:
-			"These samples show localization in practice — across websites, applications, and game environments, from translated content and interfaces to the technical structures behind them.",
+			"These samples show localization in workflows — across websites, applications, and game environments, from translated content to interfaces and technical structures behind them.",
 
 		samples: [
 			{
 				number: "01",
-				title: "LOCALIZATION PLATFORMS",
+				title: "WEBSITE LOCALIZATION",
 				description:
 					"A localized web interface built around real localization workflows, showing how translated content fits into a working digital environment.",
 				link: "View sample →",
@@ -40,24 +40,20 @@ export const contentSamples = {
 			},
 		],
 
-		quote: {
-			text: "The Web does not just connect machines, it connects people.",
-			author: "Tim Berners-Lee",
-		},
 	},
 
 	ua: {
 		pageTitle: "СЕМПЛИ",
-		leadTitle: "Локалізація в роботі.",
+		leadTitle: "Локалізація в процесах.",
 		lead:
-			"Ці семпли показують локалізацію в роботі — від вебсайтів, застосунків і ігрових середовищ до перекладеного контенту, інтерфейсів і технічних структур, що стоять за ними.",
+			"Семпли демонструють робочі процеси локалізації — від вебсайтів, застосунків та ігрових середовищ до перекладеного контенту, інтерфейсів і технічних структур, що стоять за ними.",
 
 		samples: [
 			{
 				number: "01",
-				title: "ЛОКАЛІЗАЦІЙНІ ПЛАТФОРМИ",
+				title: "ЛОКАЛІЗАЦІЯ ВЕБСАЙТА",
 				description:
-					"Локалізований вебінтерфейс на основі реальних локалізаційних процесів, що показує, як перекладений контент працює в цифровому середовищі.",
+					"Вебінтерфейс, розроблений в межах локалізаційних процесів, що показує, як перекладений контент працює в цифровому середовищі.",
 				link: "Переглянути семпл →",
 				path: "/samples/website",
 			},
@@ -86,10 +82,5 @@ export const contentSamples = {
 				path: "/samples/i18n",
 			},
 		],
-
-		quote: {
-			text: "The Web does not just connect machines, it connects people.",
-			author: "Tim Berners-Lee",
-		},
 	},
 };

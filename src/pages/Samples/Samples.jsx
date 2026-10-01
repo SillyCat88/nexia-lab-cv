@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import { contentSamples } from "./data/contentSamples";
 import styles from "./Samples.module.css";
-
 
 export default function Samples({ lang }) {
 	const t = contentSamples[lang];
@@ -13,16 +13,12 @@ export default function Samples({ lang }) {
 				<h1>{t.leadTitle}</h1>
 
 				<p className={styles.lead}>{t.lead}</p>
+
 			</header>
 
 			<section className={styles.samples}>
-				{t.samples.map((sample, index) => (
-					<article
-						key={sample.number}
-						className={`${styles.sample} ${
-							index % 2 !== 0 ? styles.reverse : ""
-						}`}
-					>
+				{t.samples.map((sample) => (
+					<article key={sample.number} className={styles.sample}>
 						<div className={styles.content}>
 							<span className={styles.number}>{sample.number}</span>
 
@@ -32,24 +28,16 @@ export default function Samples({ lang }) {
 								{sample.description}
 							</p>
 
-							<a href={sample.path} className={styles.link}>
+							<Link to={sample.path} className={styles.link}>
 								{sample.link}
-							</a>
+							</Link>
 						</div>
 
-                        <div className={styles.visual} />
-					
-                    </article>
+						<div className={styles.visual} />
+					</article>
 				))}
-			</section>
-
-			<section className={styles.quoteSection}>
-				<blockquote className={styles.quote}>
-					“{t.quote.text}”
-				</blockquote>
-
-				<cite className={styles.author}>— {t.quote.author}</cite>
 			</section>
 		</main>
 	);
 }
+
